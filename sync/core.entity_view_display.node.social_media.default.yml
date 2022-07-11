@@ -1,0 +1,81 @@
+uuid: 15fbbb37-1577-4cc5-84af-cc23d2727d8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_media.field_advertisement
+    - field.field.node.social_media.field_image_one
+    - field.field.node.social_media.field_link_for_media
+    - field.field.node.social_media.field_statistics
+    - field.field.node.social_media.field_stay_connected_tag
+    - node.type.social_media
+  module:
+    - image
+    - link
+    - user
+id: node.social_media.default
+targetEntityType: node
+bundle: social_media
+mode: default
+content:
+  field_advertisement:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_one:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_for_media:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_statistics:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_stay_connected_tag:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

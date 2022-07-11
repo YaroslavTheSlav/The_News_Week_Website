@@ -1,0 +1,21 @@
+uuid: bcb21883-ca5c-4889-9a54-c77f8350bdad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header
+    - node.type.article
+  module:
+    - text
+id: node.article.field_header
+field_name: field_header
+entity_type: node
+bundle: article
+label: header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

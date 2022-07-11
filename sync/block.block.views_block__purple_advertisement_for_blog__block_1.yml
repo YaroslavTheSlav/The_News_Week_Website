@@ -1,0 +1,24 @@
+uuid: 1620d94d-17d9-4a7b-bdfa-1d11c335e783
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.purple_advertisement_for_blog_
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__purple_advertisement_for_blog__block_1
+theme: olivero
+region: sidebar
+weight: -13
+provider: null
+plugin: 'views_block:purple_advertisement_for_blog_-block_1'
+settings:
+  id: 'views_block:purple_advertisement_for_blog_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

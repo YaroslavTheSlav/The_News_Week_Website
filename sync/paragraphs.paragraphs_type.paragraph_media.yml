@@ -1,0 +1,10 @@
+uuid: 54888551-cc54-4947-97d4-8aa4148757fa
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_media
+label: 'paragraph media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

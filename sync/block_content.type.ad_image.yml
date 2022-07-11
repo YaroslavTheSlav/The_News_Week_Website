@@ -1,0 +1,8 @@
+uuid: 7c8a71c1-9b02-49a0-9344-ef97b3a7da1c
+langcode: en
+status: true
+dependencies: {  }
+id: ad_image
+label: ad_image
+revision: 0
+description: 'Image that contains web link to the advertisement'

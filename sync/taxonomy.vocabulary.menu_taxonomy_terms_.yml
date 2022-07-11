@@ -1,0 +1,8 @@
+uuid: 435dc537-9b3c-4c2e-ace6-6f40ecd75f6d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Menu taxonomy terms'
+vid: menu_taxonomy_terms_
+description: 'Headers of different sections that are used in menu '
+weight: 0

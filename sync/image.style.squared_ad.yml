@@ -1,0 +1,14 @@
+uuid: aa560b9f-f93a-4f8d-a562-5a08ca834a6d
+langcode: en
+status: true
+dependencies: {  }
+name: squared_ad
+label: 'Squared ad'
+effects:
+  71541267-3664-43cd-bf93-c549ac608d93:
+    uuid: 71541267-3664-43cd-bf93-c549ac608d93
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 250

@@ -1,0 +1,21 @@
+uuid: e7a86a1b-492f-4536-af48-e7a6c3ae8bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.taxonomy.field_taxonomy
+    - paragraphs.paragraphs_type.taxonomy
+id: paragraph.taxonomy.default
+targetEntityType: paragraph
+bundle: taxonomy
+mode: default
+content:
+  field_taxonomy:
+    type: options_buttons
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

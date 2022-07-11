@@ -1,0 +1,77 @@
+uuid: e796f1fb-c863-4f4a-99e4-e8b67ae791f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_media.field_advertisement
+    - field.field.node.social_media.field_image_one
+    - field.field.node.social_media.field_link_for_media
+    - field.field.node.social_media.field_statistics
+    - field.field.node.social_media.field_stay_connected_tag
+    - image.style.thumbnail
+    - node.type.social_media
+  module:
+    - image
+    - link
+id: node.social_media.default
+targetEntityType: node
+bundle: social_media
+mode: default
+content:
+  field_advertisement:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image_one:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link_for_media:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_statistics:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_stay_connected_tag:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

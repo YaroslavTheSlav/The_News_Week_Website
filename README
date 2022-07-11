@@ -1,0 +1,24 @@
+To get this project for your pc you need.
+
+Open Empty folder
+Open terminal inside it 
+
+* note * 
+apache2 should be stoped 
+-> sudo service apache2 stop 
+And make sure to have .env file 
+
+
+Than do the following commands 
+
+-> git init
+-> git pull https://github.com/YaroslavTheSlav/The_News_Week_Website.git
+
+then 
+-> composer instal
+
+and to start the project use the following command 
+-> make 
+
+to stop the project do 
+-> make stop 

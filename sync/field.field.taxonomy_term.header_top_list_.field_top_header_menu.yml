@@ -1,0 +1,21 @@
+uuid: 0622b818-381e-4f40-b806-53f31e06c476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_top_header_menu
+    - taxonomy.vocabulary.header_top_list_
+id: taxonomy_term.header_top_list_.field_top_header_menu
+field_name: field_top_header_menu
+entity_type: taxonomy_term
+bundle: header_top_list_
+label: top_header_menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 7398b827-cc32-447b-b839-84f957bb16c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_advertisement
+    - node.type.social_media
+  module:
+    - link
+id: node.social_media.field_advertisement
+field_name: field_advertisement
+entity_type: node
+bundle: social_media
+label: Advertisement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

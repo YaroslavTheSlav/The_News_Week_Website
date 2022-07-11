@@ -1,0 +1,30 @@
+uuid: 9c5f77ee-e1b9-4a11-b9f1-acc356dc28ce
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_media.field_advertisement
+    - field.field.node.social_media.field_image_one
+    - field.field.node.social_media.field_link_for_media
+    - field.field.node.social_media.field_statistics
+    - field.field.node.social_media.field_stay_connected_tag
+    - node.type.social_media
+  module:
+    - user
+id: node.social_media.teaser
+targetEntityType: node
+bundle: social_media
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_advertisement: true
+  field_image_one: true
+  field_link_for_media: true
+  field_statistics: true
+  field_stay_connected_tag: true

@@ -1,0 +1,29 @@
+uuid: 216e13c3-6822-4370-bc0e-ea40afe6ae29
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_menu_taxonomy
+    - taxonomy.vocabulary.menu_taxonomy_terms_
+id: block_content.basic.field_menu_taxonomy
+field_name: field_menu_taxonomy
+entity_type: block_content
+bundle: basic
+label: menu_taxonomy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      menu_taxonomy_terms_: menu_taxonomy_terms_
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,41 @@
+uuid: e843a022-36ee-4899-9d74-8c11d724b8f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.header_top_list_.field_top_header_menu
+    - taxonomy.vocabulary.header_top_list_
+  module:
+    - path
+id: taxonomy_term.header_top_list_.default
+targetEntityType: taxonomy_term
+bundle: header_top_list_
+mode: default
+content:
+  field_top_header_menu:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  status: true

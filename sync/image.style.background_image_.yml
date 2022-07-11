@@ -1,0 +1,7 @@
+uuid: 7974a074-b5fb-4195-93b6-fd617bd53c79
+langcode: en
+status: true
+dependencies: {  }
+name: background_image_
+label: 'background image '
+effects: {  }
