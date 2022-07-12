@@ -4,15 +4,15 @@ Open Empty folder
 Open terminal inside it 
 
 * note * 
-apache2 should be stoped 
--> sudo service apache2 stop 
+Apache should be removed (docker containers are much more flexible)  
 And make sure to have .env file 
 
 
 Than do the following commands 
 
--> git init
--> git pull https://github.com/YaroslavTheSlav/The_News_Week_Website.git
+-> git clone https://github.com/YaroslavTheSlav/The_News_Week_Website.git
+
+-> docker-compose exec php bash
 
 then 
 -> composer instal
@@ -20,5 +20,5 @@ then
 and to start the project use the following command 
 -> make 
 
-to stop the project do 
+to stop running project do 
 -> make stop 
