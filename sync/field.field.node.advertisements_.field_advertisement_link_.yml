@@ -1,0 +1,23 @@
+uuid: bad4434c-ac61-44ee-8579-a908cbd1015c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_advertisement_link_
+    - node.type.advertisements_
+  module:
+    - link
+id: node.advertisements_.field_advertisement_link_
+field_name: field_advertisement_link_
+entity_type: node
+bundle: advertisements_
+label: 'advertisement link '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

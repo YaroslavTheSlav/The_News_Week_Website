@@ -1,0 +1,55 @@
+uuid: 8174b588-070b-4040-9742-1f84b3c18357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.advertisements_.field_advertisement_image
+    - field.field.node.advertisements_.field_advertisement_link_
+    - field.field.node.advertisements_.field_advertisement_placement_
+    - node.type.advertisements_
+  module:
+    - image
+    - link
+    - user
+id: node.advertisements_.default
+targetEntityType: node
+bundle: advertisements_
+mode: default
+content:
+  field_advertisement_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_advertisement_link_:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_advertisement_placement_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
