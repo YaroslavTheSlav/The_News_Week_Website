@@ -1,0 +1,23 @@
+uuid: fdcd7787-37b3-418a-9b8a-3ce0ce926673
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_for_media
+    - node.type.social_media
+  module:
+    - link
+id: node.social_media.field_link_for_media
+field_name: field_link_for_media
+entity_type: node
+bundle: social_media
+label: 'link for media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

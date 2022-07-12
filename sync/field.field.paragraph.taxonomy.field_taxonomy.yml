@@ -1,0 +1,31 @@
+uuid: 62f59968-64ca-4a5e-8f4e-2d5a07786dc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_taxonomy
+    - paragraphs.paragraphs_type.taxonomy
+    - taxonomy.vocabulary.categories_for_articles_
+    - taxonomy.vocabulary.tags
+id: paragraph.taxonomy.field_taxonomy
+field_name: field_taxonomy
+entity_type: paragraph
+bundle: taxonomy
+label: taxonomy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories_for_articles_: categories_for_articles_
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categories_for_articles_
+field_type: entity_reference

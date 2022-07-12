@@ -1,0 +1,26 @@
+uuid: 9ec4ea50-7770-4f48-b678-1c248963ee0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ad_image
+    - field.field.block_content.ad_image.field_ad_image
+  module:
+    - image
+id: block_content.ad_image.default
+targetEntityType: block_content
+bundle: ad_image
+mode: default
+content:
+  field_ad_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

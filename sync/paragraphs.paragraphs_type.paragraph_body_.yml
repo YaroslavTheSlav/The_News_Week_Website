@@ -1,0 +1,10 @@
+uuid: 1e717131-b43e-41df-a27b-bc39c0191cf6
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_body_
+label: 'paragraph body '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

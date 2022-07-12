@@ -1,0 +1,21 @@
+uuid: 345aef87-efef-4247-90e4-54c4d503724e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.taxonomy.field_taxonomy
+    - paragraphs.paragraphs_type.taxonomy
+id: paragraph.taxonomy.default
+targetEntityType: paragraph
+bundle: taxonomy
+mode: default
+content:
+  field_taxonomy:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

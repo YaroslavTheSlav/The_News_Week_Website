@@ -1,0 +1,10 @@
+uuid: 480b36e6-96d4-4e58-a891-620acff25bff
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy
+label: Taxonomy
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: a520204c-d612-49cd-8837-c73b1d6f497d
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_top_header_menu
+field_name: field_top_header_menu
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

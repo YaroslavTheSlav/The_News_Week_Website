@@ -1,0 +1,29 @@
+uuid: d3fe8e3c-e08c-47ab-97bb-8ec76e461a02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stay_connected_tag
+    - node.type.social_media
+    - taxonomy.vocabulary.tags
+id: node.social_media.field_stay_connected_tag
+field_name: field_stay_connected_tag
+entity_type: node
+bundle: social_media
+label: 'Stay Connected Tag'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

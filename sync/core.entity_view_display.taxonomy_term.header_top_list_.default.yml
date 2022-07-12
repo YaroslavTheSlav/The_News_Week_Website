@@ -1,0 +1,30 @@
+uuid: b6c13ffb-6333-404a-bc29-004f7894c040
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.header_top_list_.field_top_header_menu
+    - taxonomy.vocabulary.header_top_list_
+  module:
+    - text
+id: taxonomy_term.header_top_list_.default
+targetEntityType: taxonomy_term
+bundle: header_top_list_
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_top_header_menu:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
