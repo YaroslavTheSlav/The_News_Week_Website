@@ -26,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Trending now slider'
+      title: 'TRENDING NOW'
       fields:
         title:
           id: title
@@ -100,7 +100,7 @@ display:
           id: 0
           tags:
             next: ›
-            previous: ‹
+            previous: '‹ '
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -211,8 +211,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
+  trending_now_slider:
+    id: trending_now_slider
     display_title: Block
     display_plugin: block
     position: 1

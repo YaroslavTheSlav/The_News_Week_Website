@@ -1,6 +1,6 @@
 uuid: 47b72dbb-9306-4e7e-9370-516a98ad8b15
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:ad_image:64fbec81-cb61-42d9-ba36-88d0304740fa'
@@ -11,7 +11,7 @@ dependencies:
 id: advertisement_in_header
 theme: olivero
 region: header
-weight: -8
+weight: -9
 provider: null
 plugin: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
 settings:

@@ -1,4 +1,4 @@
-uuid: 27edf28e-5167-4821-be5a-adee31453cbe
+uuid: 66a42a87-0a47-499c-a5fd-ecb1d3668152
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__stay_connected__block_1
+id: views_block__stay_connected__stay_connected
 theme: olivero
 region: sidebar
-weight: -14
+weight: -16
 provider: null
-plugin: 'views_block:stay_connected_-block_1'
+plugin: 'views_block:stay_connected_-stay_connected'
 settings:
-  id: 'views_block:stay_connected_-block_1'
+  id: 'views_block:stay_connected_-stay_connected'
   label: ''
   label_display: visible
   provider: views

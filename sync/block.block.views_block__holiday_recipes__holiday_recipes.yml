@@ -1,21 +1,21 @@
-uuid: b471bfa8-89f5-48f9-ae38-df3617acea56
+uuid: 46e6f3c8-3617-462b-909a-9ad26adcf37d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.most_popular
+    - views.view.holiday_recipes_
   module:
     - views
   theme:
     - olivero
-id: views_block__most_popular_block_1
+id: views_block__holiday_recipes__holiday_recipes
 theme: olivero
 region: sidebar
-weight: -10
+weight: 0
 provider: null
-plugin: 'views_block:most_popular-block_1'
+plugin: 'views_block:holiday_recipes_-holiday_recipes'
 settings:
-  id: 'views_block:most_popular-block_1'
+  id: 'views_block:holiday_recipes_-holiday_recipes'
   label: ''
   label_display: visible
   provider: views

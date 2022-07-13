@@ -1,19 +1,21 @@
-uuid: e4d71597-f0e1-43ca-95b7-2b016e83aff8
+uuid: 1b623012-d069-4f8d-ab96-65bd588fe575
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image_one
-    - field.storage.node.field_link_for_media
-    - image.style.thumbnail
-    - node.type.social_media
+    - field.storage.node.field_media_bg_image
+    - image.style.medium
+    - node.type.article
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:87132d06-e4d5-4549-9b96-7529e6d45924'
   module:
-    - image
-    - link
+    - media
     - node
+    - taxonomy
     - user
-id: social_media_list
-label: 'Social Media list'
+id: house_design_
+label: 'HOUSE DESIGN '
 module: views
 description: ''
 tag: ''
@@ -26,18 +28,18 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Social Media list'
+      title: 'HOUSE DESIGN '
       fields:
-        field_link_for_media:
-          id: field_link_for_media
-          table: node__field_link_for_media
-          field: field_link_for_media
+        field_media_bg_image:
+          id: field_media_bg_image
+          table: node__field_media_bg_image
+          field: field_media_bg_image
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -77,15 +79,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: uri
-          type: link
+          click_sort_column: target_id
+          type: media_thumbnail
           settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
+            image_link: ''
+            image_style: medium
+            image_loading:
+              attribute: lazy
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -95,21 +96,22 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_image_one:
-          id: field_image_one
-          table: node__field_image_one
-          field: field_image_one
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          entity_type: node
+          plugin_id: taxonomy_index_tid
           label: ''
           exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: '{{ field_link_for_media }}'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -144,14 +146,70 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          type: separator
+          separator: ', '
+          link_to_taxonomy: true
+          limit: false
+          vids:
+            advertisement_placement_: '0'
+            categories_for_articles_: '0'
+            header_top_list_: '0'
+            menu_taxonomy_terms_: '0'
+            tags: '0'
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
           settings:
-            image_link: ''
-            image_style: thumbnail
-            image_loading:
-              attribute: lazy
-          group_column: ''
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -162,10 +220,23 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: mini
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 3
+          total_pages: null
+          id: 0
+          tags:
+            next: ›
+            previous: ‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -184,7 +255,23 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
@@ -208,12 +295,32 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            social_media: social_media
+            article: article
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          plugin_id: taxonomy_index_tid
+          value:
+            - 63
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+          vid: tags
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: fields
       query:
@@ -225,6 +332,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -233,13 +341,14 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_image_one'
-        - 'config:field.storage.node.field_link_for_media'
-  social_media_list:
-    id: social_media_list
+        - 'config:field.storage.node.field_media_bg_image'
+  house_design:
+    id: house_design
     display_title: Block
     display_plugin: block
     position: 1
@@ -250,8 +359,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_image_one'
-        - 'config:field.storage.node.field_link_for_media'
+        - 'config:field.storage.node.field_media_bg_image'

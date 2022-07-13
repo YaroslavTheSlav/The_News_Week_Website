@@ -1,0 +1,24 @@
+uuid: 5e369b2a-8a89-4443-aa3a-d8343a637dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.lifestyle_news
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__lifestyle_news_lifestyle_news
+theme: olivero
+region: content_above
+weight: -15
+provider: null
+plugin: 'views_block:lifestyle_news-lifestyle_news'
+settings:
+  id: 'views_block:lifestyle_news-lifestyle_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
