@@ -1,0 +1,14 @@
+uuid: 3c51bbf1-dc69-45d9-b88e-86fe247a1561
+langcode: en
+status: true
+dependencies: {  }
+name: top_news_wide_image_
+label: 'top news wide image '
+effects:
+  fe83297c-2eaf-4685-abcd-55bcb4a2666d:
+    uuid: fe83297c-2eaf-4685-abcd-55bcb4a2666d
+    id: image_resize
+    weight: 1
+    data:
+      width: 480
+      height: 200
