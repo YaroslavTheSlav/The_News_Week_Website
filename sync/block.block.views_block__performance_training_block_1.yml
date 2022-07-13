@@ -1,21 +1,21 @@
-uuid: ffa3d565-d20c-41ff-ad08-3d8acbabc00e
+uuid: 15ea65f7-bbeb-4017-9cb4-bc3cac183628
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.house_design_
+    - views.view.performance_training
   module:
     - views
   theme:
     - olivero
-id: views_block__house_design__house_design
+id: views_block__performance_training_block_1
 theme: olivero
 region: content_above
-weight: -15
+weight: -14
 provider: null
-plugin: 'views_block:house_design_-house_design'
+plugin: 'views_block:performance_training-block_1'
 settings:
-  id: 'views_block:house_design_-house_design'
+  id: 'views_block:performance_training-block_1'
   label: ''
   label_display: visible
   provider: views
