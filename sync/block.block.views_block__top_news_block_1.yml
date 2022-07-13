@@ -2,16 +2,12 @@ uuid: e2ea5915-e536-4032-9fe7-9c888c23917d
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.top_news
-  module:
-    - views
   theme:
     - olivero
 id: views_block__top_news_block_1
 theme: olivero
 region: highlighted
-weight: -6
+weight: -8
 provider: null
 plugin: 'views_block:top_news-block_1'
 settings:

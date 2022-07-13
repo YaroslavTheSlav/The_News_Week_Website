@@ -1,4 +1,4 @@
-uuid: 66d1a288-60d1-406b-baae-4899bef8eddd
+uuid: b60c6c73-4847-4356-a1bb-a5a3390e73cc
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__top_header_menu_block_1
+id: views_block__top_header_menu_header_top_bar
 theme: olivero
 region: header
-weight: -7
+weight: -14
 provider: null
-plugin: 'views_block:top_header_menu-block_1'
+plugin: 'views_block:top_header_menu-header_top_bar'
 settings:
-  id: 'views_block:top_header_menu-block_1'
+  id: 'views_block:top_header_menu-header_top_bar'
   label: ''
   label_display: '0'
   provider: views

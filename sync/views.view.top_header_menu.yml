@@ -13,7 +13,7 @@ module: views
 description: ''
 tag: ''
 base_table: taxonomy_term_field_data
-base_field: nid
+base_field: tid
 display:
   default:
     id: default
@@ -137,6 +137,7 @@ display:
       relationships: {  }
       header: {  }
       footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -144,8 +145,8 @@ display:
         - 'languages:language_interface'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
+  header_top_bar:
+    id: header_top_bar
     display_title: Block
     display_plugin: block
     position: 1

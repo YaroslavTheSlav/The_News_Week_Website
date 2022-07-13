@@ -497,8 +497,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_media_bg_image'
-  block_1:
-    id: block_1
+  top_news:
+    id: top_news
     display_title: Block
     display_plugin: block
     position: 1

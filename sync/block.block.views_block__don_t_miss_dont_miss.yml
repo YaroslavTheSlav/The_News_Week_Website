@@ -1,4 +1,4 @@
-uuid: 9aaa734b-39b3-42e9-b2f5-abb67a402ecc
+uuid: fb7b2d88-b87b-4f3c-904a-8ca6162246e5
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__don_t_miss_block_1
+id: views_block__don_t_miss_dont_miss
 theme: olivero
 region: content_above
-weight: -12
+weight: -15
 provider: null
-plugin: 'views_block:don_t_miss-block_1'
+plugin: 'views_block:don_t_miss-dont_miss'
 settings:
-  id: 'views_block:don_t_miss-block_1'
+  id: 'views_block:don_t_miss-dont_miss'
   label: ''
   label_display: visible
   provider: views

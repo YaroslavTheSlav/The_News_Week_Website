@@ -1,4 +1,4 @@
-uuid: 81372759-a6cc-428c-bf25-d86c56fb9c2e
+uuid: 8496e97e-a7e8-4cd7-8364-a1ec8643ea92
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__make_it_modern_block_1
+id: views_block__make_it_modern_make_it_modern
 theme: olivero
 region: sidebar
-weight: -12
+weight: -14
 provider: null
-plugin: 'views_block:make_it_modern-block_1'
+plugin: 'views_block:make_it_modern-make_it_modern'
 settings:
-  id: 'views_block:make_it_modern-block_1'
+  id: 'views_block:make_it_modern-make_it_modern'
   label: ''
   label_display: visible
   provider: views

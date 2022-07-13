@@ -1,4 +1,4 @@
-uuid: 242150db-9701-4e5c-8293-c6ba673bd0a0
+uuid: c605250d-afc6-49f8-b83f-dedaa0232ee5
 langcode: en
 status: true
 dependencies:
@@ -8,16 +8,16 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__social_media_list_block_1
+id: views_block__social_media_list_social_media_list
 theme: olivero
 region: header
-weight: -6
+weight: -11
 provider: null
-plugin: 'views_block:social_media_list-block_1'
+plugin: 'views_block:social_media_list-social_media_list'
 settings:
-  id: 'views_block:social_media_list-block_1'
+  id: 'views_block:social_media_list-social_media_list'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
   items_per_page: none
