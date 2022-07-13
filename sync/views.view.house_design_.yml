@@ -1,21 +1,21 @@
-uuid: 6c77a482-76f6-4614-bd57-df90eb8f7b0b
+uuid: 1b623012-d069-4f8d-ab96-65bd588fe575
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_media_bg_image
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.article
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:bb4a2a45-f6f7-40b7-b695-c85bda9e85fc'
+    - 'taxonomy_term:tags:87132d06-e4d5-4549-9b96-7529e6d45924'
   module:
     - media
     - node
     - taxonomy
     - user
-id: most_popular
-label: 'MOST POPULAR'
+id: house_design_
+label: 'HOUSE DESIGN '
 module: views
 description: ''
 tag: ''
@@ -28,7 +28,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'MOST POPULAR'
+      title: 'HOUSE DESIGN '
       fields:
         field_media_bg_image:
           id: field_media_bg_image
@@ -83,7 +83,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: thumbnail
+            image_style: medium
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -96,6 +96,66 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: taxonomy_index_tid
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          type: separator
+          separator: ', '
+          link_to_taxonomy: true
+          limit: false
+          vids:
+            advertisement_placement_: '0'
+            categories_for_articles_: '0'
+            header_top_list_: '0'
+            menu_taxonomy_terms_: '0'
+            tags: '0'
         title:
           id: title
           table: node_field_data
@@ -149,73 +209,6 @@ display:
           type: string
           settings:
             link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        created:
-          id: created
-          table: node_field_revision
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: custom
-            custom_date_format: 'F d, Y'
-            timezone: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -312,13 +305,22 @@ display:
           field: tid
           plugin_id: taxonomy_index_tid
           value:
-            - 58
+            - 63
           expose:
             operator_limit_selection: false
             operator_list: {  }
           vid: tags
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: fields
       query:
@@ -345,8 +347,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_media_bg_image'
-  most_popular:
-    id: most_popular
+  house_design:
+    id: house_design
     display_title: Block
     display_plugin: block
     position: 1
