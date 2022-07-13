@@ -1,21 +1,21 @@
-uuid: fb7b2d88-b87b-4f3c-904a-8ca6162246e5
+uuid: ffa3d565-d20c-41ff-ad08-3d8acbabc00e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.don_t_miss
+    - views.view.house_design_
   module:
     - views
   theme:
     - olivero
-id: views_block__don_t_miss_dont_miss
+id: views_block__house_design__house_design
 theme: olivero
 region: content_above
-weight: -16
+weight: -14
 provider: null
-plugin: 'views_block:don_t_miss-dont_miss'
+plugin: 'views_block:house_design_-house_design'
 settings:
-  id: 'views_block:don_t_miss-dont_miss'
+  id: 'views_block:house_design_-house_design'
   label: ''
   label_display: visible
   provider: views
