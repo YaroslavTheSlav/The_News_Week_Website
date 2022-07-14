@@ -1,21 +1,15 @@
-uuid: 6c77a482-76f6-4614-bd57-df90eb8f7b0b
+uuid: b0d7e5e2-6940-470f-9ddb-377ed7fcfabb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_media_bg_image
-    - image.style.thumbnail
     - node.type.article
-    - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:bb4a2a45-f6f7-40b7-b695-c85bda9e85fc'
   module:
-    - media
+    - comment
     - node
-    - taxonomy
     - user
-id: most_popular
-label: 'MOST POPULAR'
+id: recent_comments_
+label: 'RECENT COMMENTS '
 module: views
 description: ''
 tag: ''
@@ -28,16 +22,16 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'MOST POPULAR'
+      title: 'RECENT COMMENTS '
       fields:
-        field_media_bg_image:
-          id: field_media_bg_image
-          table: node__field_media_bg_image
-          field: field_media_bg_image
+        last_comment_name:
+          id: last_comment_name
+          table: comment_entity_statistics
+          field: last_comment_name
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: comment_ces_last_comment_name
           label: ''
           exclude: false
           alter:
@@ -79,23 +73,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: media_thumbnail
-          settings:
-            image_link: ''
-            image_style: thumbnail
-            image_loading:
-              attribute: lazy
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
+          link_to_user: true
         title:
           id: title
           table: node_field_data
@@ -159,91 +137,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        created:
-          id: created
-          table: node_field_revision
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: custom
-            custom_date_format: 'F d, Y'
-            timezone: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
-        type: mini
+        type: some
         options:
           offset: 0
           items_per_page: 3
-          total_pages: null
-          id: 0
-          tags:
-            next: ›
-            previous: ‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -306,17 +204,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          plugin_id: taxonomy_index_tid
-          value:
-            - 58
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-          vid: tags
       style:
         type: default
       row:
@@ -330,7 +217,6 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -339,27 +225,22 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_media_bg_image'
-  most_popular:
-    id: most_popular
-    display_title: Block
+      tags: {  }
+  recent_comments:
+    id: recent_comments
+    display_title: 'Recent comments'
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_media_bg_image'
+      tags: {  }

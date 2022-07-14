@@ -1,21 +1,21 @@
-uuid: fe7a6280-9a9f-4af7-91c3-da9b6f99a4e8
+uuid: ffa3d565-d20c-41ff-ad08-3d8acbabc00e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.most_popular
+    - views.view.house_design_
   module:
     - views
   theme:
     - olivero
-id: views_block__most_popular_most_popular
+id: views_block__house_design__house_design
 theme: olivero
-region: sidebar
-weight: -11
+region: content_above
+weight: -15
 provider: null
-plugin: 'views_block:most_popular-most_popular'
+plugin: 'views_block:house_design_-house_design'
 settings:
-  id: 'views_block:most_popular-most_popular'
+  id: 'views_block:house_design_-house_design'
   label: ''
   label_display: visible
   provider: views

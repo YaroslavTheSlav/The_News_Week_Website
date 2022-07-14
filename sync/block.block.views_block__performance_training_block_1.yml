@@ -1,21 +1,21 @@
-uuid: 5e369b2a-8a89-4443-aa3a-d8343a637dab
+uuid: 15ea65f7-bbeb-4017-9cb4-bc3cac183628
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.lifestyle_news
+    - views.view.performance_training
   module:
     - views
   theme:
     - olivero
-id: views_block__lifestyle_news_lifestyle_news
+id: views_block__performance_training_block_1
 theme: olivero
 region: content_above
-weight: -16
+weight: -14
 provider: null
-plugin: 'views_block:lifestyle_news-lifestyle_news'
+plugin: 'views_block:performance_training-block_1'
 settings:
-  id: 'views_block:lifestyle_news-lifestyle_news'
+  id: 'views_block:performance_training-block_1'
   label: ''
   label_display: visible
   provider: views
