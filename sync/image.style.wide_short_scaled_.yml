@@ -1,0 +1,15 @@
+uuid: d0b1763f-93a3-406c-a373-5450c00dceb5
+langcode: en
+status: true
+dependencies: {  }
+name: wide_short_scaled_
+label: 'wide short scaled '
+effects:
+  6ce401b2-251f-430f-8f6a-e385f069114c:
+    uuid: 6ce401b2-251f-430f-8f6a-e385f069114c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 220
+      anchor: center-center

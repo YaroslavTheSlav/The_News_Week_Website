@@ -1,4 +1,4 @@
-uuid: 83886b29-c633-42db-bb0e-4493fc1bee63
+uuid: 4e2baa00-5047-465a-8b4c-492b11056e99
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__top_news_top_news
+id: views_block__top_news_top_news_2
 theme: olivero
 region: highlighted
-weight: -13
+weight: -16
 provider: null
 plugin: 'views_block:top_news-top_news'
 settings:
