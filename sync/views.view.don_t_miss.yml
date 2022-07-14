@@ -10,7 +10,6 @@ dependencies:
     - taxonomy.vocabulary.tags
   content:
     - 'taxonomy_term:tags:6bc32d06-8b26-4137-9af9-9076245da993'
-    - 'taxonomy_term:tags:e1d7d2b0-c62c-459b-b589-788de210e0b4'
   module:
     - media
     - node
