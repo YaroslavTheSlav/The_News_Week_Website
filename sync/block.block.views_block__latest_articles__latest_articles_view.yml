@@ -1,21 +1,21 @@
-uuid: 15ea65f7-bbeb-4017-9cb4-bc3cac183628
+uuid: c128e402-12c7-4b50-ab42-82da782ae61e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.performance_training
+    - views.view.latest_articles_
   module:
     - views
   theme:
     - olivero
-id: views_block__performance_training_block_1
+id: views_block__latest_articles__latest_articles_view
 theme: olivero
 region: content_above
-weight: -14
+weight: -13
 provider: null
-plugin: 'views_block:performance_training-block_1'
+plugin: 'views_block:latest_articles_-latest_articles_view'
 settings:
-  id: 'views_block:performance_training-block_1'
+  id: 'views_block:latest_articles_-latest_articles_view'
   label: ''
   label_display: visible
   provider: views
