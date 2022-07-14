@@ -1,0 +1,24 @@
+uuid: 46e6f3c8-3617-462b-909a-9ad26adcf37d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.holiday_recipes_
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__holiday_recipes__holiday_recipes
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:holiday_recipes_-holiday_recipes'
+settings:
+  id: 'views_block:holiday_recipes_-holiday_recipes'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
