@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:sync/block.block.views_block__top_news_top_news.yml
-uuid: 83886b29-c633-42db-bb0e-4493fc1bee63
-========
 uuid: 4e2baa00-5047-465a-8b4c-492b11056e99
->>>>>>>> 713bb19 (issue 4979 created recent comments view (expiremented litle with view content), weight of some views was changed):sync/block.block.views_block__top_news_top_news_2.yml
 langcode: en
 status: true
 dependencies:
@@ -12,17 +8,10 @@ dependencies:
     - views
   theme:
     - olivero
-<<<<<<<< HEAD:sync/block.block.views_block__top_news_top_news.yml
-id: views_block__top_news_top_news
-theme: olivero
-region: highlighted
-weight: -13
-========
 id: views_block__top_news_top_news_2
 theme: olivero
 region: highlighted
 weight: -16
->>>>>>>> 713bb19 (issue 4979 created recent comments view (expiremented litle with view content), weight of some views was changed):sync/block.block.views_block__top_news_top_news_2.yml
 provider: null
 plugin: 'views_block:top_news-top_news'
 settings:
