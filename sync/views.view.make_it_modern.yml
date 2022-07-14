@@ -345,8 +345,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_media_bg_image'
-  block_1:
-    id: block_1
+  make_it_modern:
+    id: make_it_modern
     display_title: Block
     display_plugin: block
     position: 1
