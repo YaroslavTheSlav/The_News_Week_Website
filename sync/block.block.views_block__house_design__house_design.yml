@@ -1,21 +1,21 @@
-uuid: 5e369b2a-8a89-4443-aa3a-d8343a637dab
+uuid: ffa3d565-d20c-41ff-ad08-3d8acbabc00e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.lifestyle_news
+    - views.view.house_design_
   module:
     - views
   theme:
     - olivero
-id: views_block__lifestyle_news_lifestyle_news
+id: views_block__house_design__house_design
 theme: olivero
 region: content_above
-weight: -16
+weight: -15
 provider: null
-plugin: 'views_block:lifestyle_news-lifestyle_news'
+plugin: 'views_block:house_design_-house_design'
 settings:
-  id: 'views_block:lifestyle_news-lifestyle_news'
+  id: 'views_block:house_design_-house_design'
   label: ''
   label_display: visible
   provider: views

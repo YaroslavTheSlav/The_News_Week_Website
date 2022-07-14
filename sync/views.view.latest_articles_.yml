@@ -1,21 +1,18 @@
-uuid: 6c77a482-76f6-4614-bd57-df90eb8f7b0b
+uuid: dc111e88-a1e7-47f7-960c-b41b7ed18b26
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_media_bg_image
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.article
-    - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:bb4a2a45-f6f7-40b7-b695-c85bda9e85fc'
   module:
     - media
     - node
     - taxonomy
     - user
-id: most_popular
-label: 'MOST POPULAR'
+id: latest_articles_
+label: 'LATEST ARTICLES '
 module: views
 description: ''
 tag: ''
@@ -28,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'MOST POPULAR'
+      title: 'LATEST ARTICLES '
       fields:
         field_media_bg_image:
           id: field_media_bg_image
@@ -83,7 +80,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: thumbnail
+            image_style: medium
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -96,6 +93,66 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: taxonomy_index_tid
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          type: separator
+          separator: ', '
+          link_to_taxonomy: true
+          limit: false
+          vids:
+            advertisement_placement_: '0'
+            categories_for_articles_: '0'
+            header_top_list_: '0'
+            menu_taxonomy_terms_: '0'
+            tags: '0'
         title:
           id: title
           table: node_field_data
@@ -161,7 +218,7 @@ display:
           field_api_classes: false
         created:
           id: created
-          table: node_field_revision
+          table: node_field_data
           field: created
           relationship: none
           group_type: group
@@ -226,16 +283,75 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        comment_count:
+          id: comment_count
+          table: comment_entity_statistics
+          field: comment_count
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: '['
+          suffix: ']'
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 8
           total_pages: null
           id: 0
           tags:
             next: ›
             previous: ‹
+            first: '« '
+            last: »
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -244,6 +360,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -306,19 +423,17 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          plugin_id: taxonomy_index_tid
-          value:
-            - 58
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-          vid: tags
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 2
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: fields
       query:
@@ -340,13 +455,12 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_media_bg_image'
-  most_popular:
-    id: most_popular
+  latest_articles_view:
+    id: latest_articles_view
     display_title: Block
     display_plugin: block
     position: 1
@@ -358,7 +472,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
