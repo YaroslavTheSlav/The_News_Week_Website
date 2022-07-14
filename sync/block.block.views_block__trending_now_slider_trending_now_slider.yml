@@ -1,4 +1,4 @@
-uuid: d11137bf-0c11-4037-b8d3-c95503b5bafb
+uuid: 3ef31398-e1ba-42fe-917e-c2f66da6844e
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__trending_now_slider_block_1
+id: views_block__trending_now_slider_trending_now_slider
 theme: olivero
 region: highlighted
-weight: -12
+weight: -17
 provider: null
-plugin: 'views_block:trending_now_slider-block_1'
+plugin: 'views_block:trending_now_slider-trending_now_slider'
 settings:
-  id: 'views_block:trending_now_slider-block_1'
+  id: 'views_block:trending_now_slider-trending_now_slider'
   label: 'TRENDING NOW'
   label_display: visible
   provider: views

@@ -1,0 +1,24 @@
+uuid: 15ea65f7-bbeb-4017-9cb4-bc3cac183628
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.performance_training
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__performance_training_block_1
+theme: olivero
+region: content_above
+weight: -14
+provider: null
+plugin: 'views_block:performance_training-block_1'
+settings:
+  id: 'views_block:performance_training-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

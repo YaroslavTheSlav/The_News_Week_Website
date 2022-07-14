@@ -1,23 +1,23 @@
-uuid: 297f4cb0-d851-47d2-8d0d-3175615cab7e
+uuid: 3f127e0a-5500-492f-85f4-8f942d9e7b04
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_media_bg_image
-    - image.style.medium
+    - image.style.media_library
     - node.type.article
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:6bc32d06-8b26-4137-9af9-9076245da993'
+    - 'taxonomy_term:tags:e1d7d2b0-c62c-459b-b589-788de210e0b4'
   module:
     - media
     - node
     - taxonomy
     - text
     - user
-id: don_t_miss
-label: 'DON''T MISS'
+id: lifestyle_news
+label: 'LIFESTYLE NEWS'
 module: views
 description: ''
 tag: ''
@@ -30,7 +30,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'DON''T MISS'
+      title: 'LIFESTYLE NEWS'
       fields:
         field_media_bg_image:
           id: field_media_bg_image
@@ -85,7 +85,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: medium
+            image_style: media_library
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -98,66 +98,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        term_node_tid:
-          id: term_node_tid
-          table: node_field_data
-          field: term_node_tid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: taxonomy_index_tid
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          type: separator
-          separator: ', '
-          link_to_taxonomy: true
-          limit: false
-          vids:
-            advertisement_placement_: '0'
-            categories_for_articles_: '0'
-            header_top_list_: '0'
-            menu_taxonomy_terms_: '0'
-            tags: '0'
         title:
           id: title
           table: node_field_data
@@ -223,7 +163,7 @@ display:
           field_api_classes: false
         uid:
           id: uid
-          table: node_field_data
+          table: node_field_revision
           field: uid
           relationship: none
           group_type: group
@@ -232,7 +172,7 @@ display:
           entity_field: uid
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -353,11 +293,69 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        comment_count:
-          id: comment_count
-          table: comment_entity_statistics
-          field: comment_count
-          plugin_id: numeric
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: summary
+          type: text_trimmed
+          settings:
+            trim_length: 600
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: mini
         options:
@@ -366,8 +364,8 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -448,7 +446,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 51
+            - 19
           group: 1
           exposed: false
           expose:
@@ -520,10 +518,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_media_bg_image'
-  dont_miss:
-    id: dont_miss
-    display_title: Block
+  lifestyle_news:
+    id: lifestyle_news
+    display_title: lifestyle_news
     display_plugin: block
     position: 1
     display_options:
@@ -581,7 +580,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: medium
+            image_style: media_library
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -594,66 +593,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        term_node_tid:
-          id: term_node_tid
-          table: node_field_data
-          field: term_node_tid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: taxonomy_index_tid
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          type: separator
-          separator: ', '
-          link_to_taxonomy: true
-          limit: false
-          vids:
-            advertisement_placement_: '0'
-            categories_for_articles_: '0'
-            header_top_list_: '0'
-            menu_taxonomy_terms_: '0'
-            tags: '0'
         title:
           id: title
           table: node_field_data
@@ -719,7 +658,7 @@ display:
           field_api_classes: false
         uid:
           id: uid
-          table: node_field_data
+          table: node_field_revision
           field: uid
           relationship: none
           group_type: group
@@ -728,7 +667,7 @@ display:
           entity_field: uid
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -849,24 +788,72 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      style:
-        type: grid
-        options:
-          grouping: {  }
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
-      row:
-        type: fields
-        options: {  }
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: summary
+          type: text_trimmed
+          settings:
+            trim_length: 600
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       defaults:
-        style: false
-        row: false
         fields: false
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -878,14 +865,14 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_media_bg_image'
-  dont_miss_attachment:
-    id: dont_miss_attachment
+  lifestyle_news_attachment:
+    id: lifestyle_news_attachment
     display_title: Attachment
     display_plugin: attachment
-    position: 3
+    position: 2
     display_options:
-      enabled: true
       fields:
         field_media_bg_image:
           id: field_media_bg_image
@@ -940,7 +927,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: medium
+            image_style: media_library
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -1332,12 +1319,12 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 2
       defaults:
         fields: false
       display_extenders: {  }
       displays:
-        dont_miss: dont_miss
+        lifestyle_news: lifestyle_news
     cache_metadata:
       max-age: -1
       contexts:

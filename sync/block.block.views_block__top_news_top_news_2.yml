@@ -1,0 +1,24 @@
+uuid: 4e2baa00-5047-465a-8b4c-492b11056e99
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_news
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__top_news_top_news_2
+theme: olivero
+region: highlighted
+weight: -16
+provider: null
+plugin: 'views_block:top_news-top_news'
+settings:
+  id: 'views_block:top_news-top_news'
+  label: 'TOP NEWS'
+  label_display: visible
+  provider: views
+  views_label: 'TOP NEWS'
+  items_per_page: none
+visibility: {  }

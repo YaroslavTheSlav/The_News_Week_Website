@@ -1,21 +1,21 @@
-uuid: 799b7106-162f-432b-b552-eb444102ed22
+uuid: fe7a6280-9a9f-4af7-91c3-da9b6f99a4e8
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.top_news
+    - views.view.most_popular
   module:
     - views
   theme:
     - olivero
-id: views_block__top_news_block_1_2
+id: views_block__most_popular_most_popular
 theme: olivero
-region: highlighted
+region: sidebar
 weight: -11
 provider: null
-plugin: 'views_block:top_news-block_1'
+plugin: 'views_block:most_popular-most_popular'
 settings:
-  id: 'views_block:top_news-block_1'
+  id: 'views_block:most_popular-most_popular'
   label: ''
   label_display: visible
   provider: views

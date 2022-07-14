@@ -1,19 +1,15 @@
-uuid: e4d71597-f0e1-43ca-95b7-2b016e83aff8
+uuid: b0d7e5e2-6940-470f-9ddb-377ed7fcfabb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image_one
-    - field.storage.node.field_link_for_media
-    - image.style.thumbnail
-    - node.type.social_media
+    - node.type.article
   module:
-    - image
-    - link
+    - comment
     - node
     - user
-id: social_media_list
-label: 'Social Media list'
+id: recent_comments_
+label: 'RECENT COMMENTS '
 module: views
 description: ''
 tag: ''
@@ -26,18 +22,18 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Social Media list'
+      title: 'RECENT COMMENTS '
       fields:
-        field_link_for_media:
-          id: field_link_for_media
-          table: node__field_link_for_media
-          field: field_link_for_media
+        last_comment_name:
+          id: last_comment_name
+          table: comment_entity_statistics
+          field: last_comment_name
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: comment_ces_last_comment_name
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -77,28 +73,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_image_one:
-          id: field_image_one
-          table: node__field_image_one
-          field: field_image_one
+          link_to_user: true
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
@@ -108,8 +87,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: '{{ field_link_for_media }}'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -136,7 +115,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -144,14 +123,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          click_sort_column: value
+          type: string
           settings:
-            image_link: ''
-            image_style: thumbnail
-            image_loading:
-              attribute: lazy
-          group_column: ''
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -165,7 +141,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -184,7 +160,23 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
@@ -208,7 +200,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            social_media: social_media
+            article: article
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -235,15 +227,14 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image_one'
-        - 'config:field.storage.node.field_link_for_media'
-  social_media_list:
-    id: social_media_list
-    display_title: Block
+      tags: {  }
+  recent_comments:
+    id: recent_comments
+    display_title: 'Recent comments'
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -252,6 +243,4 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image_one'
-        - 'config:field.storage.node.field_link_for_media'
+      tags: {  }
