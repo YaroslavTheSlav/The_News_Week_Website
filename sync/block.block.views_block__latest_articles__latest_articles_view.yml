@@ -5,13 +5,14 @@ dependencies:
   config:
     - views.view.latest_articles_
   module:
+    - system
     - views
   theme:
     - olivero
 id: views_block__latest_articles__latest_articles_view
 theme: olivero
 region: content_above
-weight: -13
+weight: -12
 provider: null
 plugin: 'views_block:latest_articles_-latest_articles_view'
 settings:
@@ -21,4 +22,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
