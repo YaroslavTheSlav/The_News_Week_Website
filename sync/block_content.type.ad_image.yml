@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: ad_image
-label: ad_image
+label: offer_image
 revision: 0
 description: 'Image that contains web link to the advertisement'

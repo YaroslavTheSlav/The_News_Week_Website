@@ -31,7 +31,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Purple advertisement for blog '
+      title: 'Purple offer for blog '
       fields:
         field_advertisement:
           id: field_advertisement

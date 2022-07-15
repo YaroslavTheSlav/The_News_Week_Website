@@ -12,7 +12,7 @@ dependencies:
 id: views_block__make_it_modern_make_it_modern
 theme: olivero
 region: sidebar
-weight: -14
+weight: -18
 provider: null
 plugin: 'views_block:make_it_modern-make_it_modern'
 settings:
