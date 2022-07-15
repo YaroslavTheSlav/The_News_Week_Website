@@ -1,21 +1,21 @@
-uuid: b60c6c73-4847-4356-a1bb-a5a3390e73cc
+uuid: 3ff377d8-d357-4061-8de4-a19d30e3c018
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.top_header_menu
+    - views.view.purple_ad_view_
   module:
     - views
   theme:
     - olivero
-id: views_block__top_header_menu_header_top_bar
+id: views_block__purple_view__wide_blog_offer
 theme: olivero
 region: header
-weight: -21
+weight: -19
 provider: null
-plugin: 'views_block:top_header_menu-header_top_bar'
+plugin: 'views_block:purple_ad_view_-wide_blog_offer'
 settings:
-  id: 'views_block:top_header_menu-header_top_bar'
+  id: 'views_block:purple_ad_view_-wide_blog_offer'
   label: ''
   label_display: '0'
   provider: views

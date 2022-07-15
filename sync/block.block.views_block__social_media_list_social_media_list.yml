@@ -11,7 +11,7 @@ dependencies:
 id: views_block__social_media_list_social_media_list
 theme: olivero
 region: header
-weight: -11
+weight: -17
 provider: null
 plugin: 'views_block:social_media_list-social_media_list'
 settings:

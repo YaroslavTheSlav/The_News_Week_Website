@@ -2,7 +2,7 @@ uuid: 92b8365a-6fc0-4afc-8058-16288bce1514
 langcode: en
 status: true
 dependencies: {  }
-name: 'Advertisement placement'
+name: 'OFFER placement'
 vid: advertisement_placement_
 description: ''
 weight: 0

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__latest_articles__latest_articles_view
 theme: olivero
 region: content_above
-weight: -12
+weight: -16
 provider: null
 plugin: 'views_block:latest_articles_-latest_articles_view'
 settings:

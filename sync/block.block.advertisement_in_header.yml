@@ -11,7 +11,7 @@ dependencies:
 id: advertisement_in_header
 theme: olivero
 region: header
-weight: -9
+weight: -15
 provider: null
 plugin: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
 settings:

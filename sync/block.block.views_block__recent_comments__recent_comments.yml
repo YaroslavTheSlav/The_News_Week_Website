@@ -12,7 +12,7 @@ dependencies:
 id: views_block__recent_comments__recent_comments
 theme: olivero
 region: sidebar
-weight: 0
+weight: -13
 provider: null
 plugin: 'views_block:recent_comments_-recent_comments'
 settings:

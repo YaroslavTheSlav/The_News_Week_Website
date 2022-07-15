@@ -12,7 +12,7 @@ dependencies:
 id: views_block__house_design__house_design
 theme: olivero
 region: content_above
-weight: -15
+weight: -20
 provider: null
 plugin: 'views_block:house_design_-house_design'
 settings:

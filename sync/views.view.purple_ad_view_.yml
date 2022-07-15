@@ -306,13 +306,13 @@ display:
       tags:
         - 'config:field.storage.node.field_advertisement_image'
         - 'config:field.storage.node.field_advertisement_link_'
-  squared_blog_ad:
-    id: squared_blog_ad
-    display_title: 'Squared blog advertisement'
+  squared_blog_offer:
+    id: squared_blog_offer
+    display_title: 'Squared blog offer'
     display_plugin: block
     position: 1
     display_options:
-      title: 'Squared blog advertisement'
+      title: 'Squared blog offer'
       fields:
         field_advertisement_link_:
           id: field_advertisement_link_
@@ -541,13 +541,13 @@ display:
       tags:
         - 'config:field.storage.node.field_advertisement_image'
         - 'config:field.storage.node.field_advertisement_link_'
-  wide_blog_ad:
-    id: wide_blog_ad
-    display_title: 'Wide blog advertisement'
+  wide_blog_offer:
+    id: wide_blog_offer
+    display_title: 'Wide blog offer'
     display_plugin: block
     position: 1
     display_options:
-      title: 'Wide blog advertisement'
+      title: 'Wide blog offer'
       fields:
         field_advertisement_link_:
           id: field_advertisement_link_
