@@ -1,0 +1,14 @@
+uuid: 61f68041-6b40-4e69-98d9-4b96351fc5cf
+langcode: en
+status: true
+dependencies: {  }
+name: images_for_footer
+label: 'Images for footer'
+effects:
+  635dd6e6-bfbe-4d00-9564-39c3aa6c0d30:
+    uuid: 635dd6e6-bfbe-4d00-9564-39c3aa6c0d30
+    id: image_resize
+    weight: 1
+    data:
+      width: 140
+      height: 100

@@ -1,0 +1,24 @@
+uuid: e12bb982-25cf-4a35-ab6e-1b94f8d9b631
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.editor_picks
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__editor_picks_editor_picks
+theme: olivero
+region: footer_top
+weight: -19
+provider: null
+plugin: 'views_block:editor_picks-editor_picks'
+settings:
+  id: 'views_block:editor_picks-editor_picks'
+  label: 'EDITOR PICKS'
+  label_display: visible
+  provider: views
+  views_label: 'EDITOR PICKS'
+  items_per_page: none
+visibility: {  }

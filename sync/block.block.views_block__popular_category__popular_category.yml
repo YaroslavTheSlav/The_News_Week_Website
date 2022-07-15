@@ -1,0 +1,24 @@
+uuid: f060d931-572a-4b83-88a3-0b1bffaaf57f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.popular_category_
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__popular_category__popular_category
+theme: olivero
+region: footer_top
+weight: -17
+provider: null
+plugin: 'views_block:popular_category_-popular_category'
+settings:
+  id: 'views_block:popular_category_-popular_category'
+  label: 'POPULAR CATEGORY'
+  label_display: visible
+  provider: views
+  views_label: 'POPULAR CATEGORY'
+  items_per_page: none
+visibility: {  }
