@@ -1,0 +1,24 @@
+uuid: d7b243a5-3f17-4c93-ae92-22ab974c8988
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+id: pagetitle
+theme: olivero
+region: content_above
+weight: -16
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

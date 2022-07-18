@@ -1,0 +1,26 @@
+uuid: 12c87239-ceeb-415b-94e9-f543fff5f2c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gadgets
+    - taxonomy.vocabulary.tags
+    - views.view.purple_ad_view_
+    - views.view.recent_articles
+    - views.view.taxonomy_term
+  module:
+    - layout_builder
+    - layout_discovery
+    - system
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content: {  }
+hidden:
+  description: true

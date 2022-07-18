@@ -12,7 +12,7 @@ dependencies:
 id: views_block__most_popular_most_popular
 theme: olivero
 region: sidebar
-weight: -14
+weight: -16
 provider: null
 plugin: 'views_block:most_popular-most_popular'
 settings:

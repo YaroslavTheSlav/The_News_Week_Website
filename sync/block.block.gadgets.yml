@@ -1,0 +1,29 @@
+uuid: 7aed79fd-225e-4dc6-bc38-5c36c998d9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gadgets
+  module:
+    - system
+  theme:
+    - olivero
+id: gadgets
+theme: olivero
+region: content_above
+weight: -15
+provider: null
+plugin: 'system_menu_block:gadgets'
+settings:
+  id: 'system_menu_block:gadgets'
+  label: GADGETS
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

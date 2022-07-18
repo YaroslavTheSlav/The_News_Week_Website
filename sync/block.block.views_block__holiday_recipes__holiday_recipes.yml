@@ -12,7 +12,7 @@ dependencies:
 id: views_block__holiday_recipes__holiday_recipes
 theme: olivero
 region: sidebar
-weight: -15
+weight: -17
 provider: null
 plugin: 'views_block:holiday_recipes_-holiday_recipes'
 settings:

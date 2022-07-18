@@ -1,0 +1,10 @@
+uuid: de1c9542-667d-460d-9c44-aa078e2f27d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.taxonomy_term_list_
+label: 'Taxonomy term list '
+targetEntityType: node
+cache: true
