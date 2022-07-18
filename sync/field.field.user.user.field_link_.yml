@@ -1,0 +1,21 @@
+uuid: 3ea5dd5d-bf5c-4b2d-bb8f-11c6196f1f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_link_
+  module:
+    - text
+    - user
+id: user.user.field_link_
+field_name: field_link_
+entity_type: user
+bundle: user
+label: 'Link '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
