@@ -1,22 +1,22 @@
-uuid: c128e402-12c7-4b50-ab42-82da782ae61e
+uuid: 009ccc67-3f89-4d1d-adcd-e172c000ba9d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.latest_articles_
+    - views.view.recent_articles
   module:
     - system
     - views
   theme:
     - olivero
-id: views_block__latest_articles__latest_articles_view
+id: views_block__recent_articles_recent_articles_block
 theme: olivero
-region: content_above
-weight: -17
+region: sidebar
+weight: -14
 provider: null
-plugin: 'views_block:latest_articles_-latest_articles_view'
+plugin: 'views_block:recent_articles-recent_articles_block'
 settings:
-  id: 'views_block:latest_articles_-latest_articles_view'
+  id: 'views_block:recent_articles-recent_articles_block'
   label: ''
   label_display: visible
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: '/taxonomy/term/*'

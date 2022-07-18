@@ -1,0 +1,10 @@
+uuid: 0fdb074e-bcde-47ff-87da-bbfe5687aa7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.taxonomy_categories_
+label: 'Taxonomy categories '
+targetEntityType: node
+cache: true

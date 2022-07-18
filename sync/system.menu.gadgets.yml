@@ -1,0 +1,8 @@
+uuid: a6ef3bc7-d7b3-4cf8-ba98-59ee1546e7ab
+langcode: en
+status: true
+dependencies: {  }
+id: gadgets
+label: GADGETS
+description: ''
+locked: false
