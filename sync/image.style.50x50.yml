@@ -1,0 +1,14 @@
+uuid: b163c9ef-bbfa-461a-aede-b1fe85cc0be2
+langcode: en
+status: true
+dependencies: {  }
+name: 50x50
+label: 50x50
+effects:
+  6c12bfc3-0b95-43f4-9468-c23a0f164499:
+    uuid: 6c12bfc3-0b95-43f4-9468-c23a0f164499
+    id: image_resize
+    weight: 1
+    data:
+      width: 50
+      height: 50

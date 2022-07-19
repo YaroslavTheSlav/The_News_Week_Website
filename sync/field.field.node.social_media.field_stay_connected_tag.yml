@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_stay_connected_tag
     - node.type.social_media
     - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.user_page_
 id: node.social_media.field_stay_connected_tag
 field_name: field_stay_connected_tag
 entity_type: node
@@ -21,9 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       tags: tags
+      user_page_: user_page_
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: tags
 field_type: entity_reference

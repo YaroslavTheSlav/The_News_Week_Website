@@ -12,7 +12,7 @@ dependencies:
 id: views_block__top_news_top_news_2
 theme: olivero
 region: highlighted
-weight: -16
+weight: -23
 provider: null
 plugin: 'views_block:top_news-top_news'
 settings:
