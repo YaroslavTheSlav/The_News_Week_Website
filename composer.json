@@ -31,7 +31,11 @@
         "webflo/drupal-finder": "^1.2"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.4"
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "drupal/coder": "^8.3",
+        "drupal/core-dev": "^9.4",
+        "wearerequired/coding-standards": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -66,13 +70,19 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
+        ],       
+        "post-install-cmd": "@update-git-hooks",
+        "post-update-cmd": "@update-git-hooks",
+        "update-git-hooks": "[[ -f ./vendor/bin/cghooks ]] && ./vendor/bin/cghooks update ||:;"
     },
     "extra": {
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
-            }
+            },
+              "hooks": {
+            "pre-commit": "./utility/git-hooks/pre-commit.sh",
+            "commit-msg": "./utility/git-hooks/commit-msg.sh $1"
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
