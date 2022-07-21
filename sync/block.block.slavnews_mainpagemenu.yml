@@ -1,0 +1,25 @@
+uuid: a8020199-ac2c-424a-ab21-c145c0fab90c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-page-menu
+  module:
+    - system
+  theme:
+    - slavnews
+id: slavnews_mainpagemenu
+theme: slavnews
+region: header
+weight: -19
+provider: null
+plugin: 'system_menu_block:main-page-menu'
+settings:
+  id: 'system_menu_block:main-page-menu'
+  label: 'Main page Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

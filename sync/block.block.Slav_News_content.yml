@@ -1,0 +1,22 @@
+uuid: f54bc34a-2558-4570-91c8-304bc5638832
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - Slav_News
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: Slav_News_content
+theme: Slav_News
+region: content
+weight: -15
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 010b3f4f-2a6a-4b43-9e95-e59b5d6e0fa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-page-menu
+  module:
+    - system
+  theme:
+    - Slav_News
+id: Slav_News_mainpagemenu
+theme: Slav_News
+region: header
+weight: -16
+provider: null
+plugin: 'system_menu_block:main-page-menu'
+settings:
+  id: 'system_menu_block:main-page-menu'
+  label: 'Main page Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

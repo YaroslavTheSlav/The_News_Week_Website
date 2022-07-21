@@ -1,0 +1,24 @@
+uuid: 90d833f1-c4db-4c36-b5c5-281967bc4f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_media_list
+  module:
+    - views
+  theme:
+    - Slav_News
+id: Slav_News_views_block__social_media_list_social_media_list
+theme: Slav_News
+region: header
+weight: -17
+provider: null
+plugin: 'views_block:social_media_list-social_media_list'
+settings:
+  id: 'views_block:social_media_list-social_media_list'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

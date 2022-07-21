@@ -1,0 +1,24 @@
+uuid: 3c5bf45b-f67c-4953-95c9-24fa7065e6e3
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.taxonomy_menu
+  module:
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__taxonomy_menu_block_1
+theme: slavnews
+region: primary_menu
+weight: -24
+provider: null
+plugin: 'views_block:taxonomy_menu-block_1'
+settings:
+  id: 'views_block:taxonomy_menu-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 786a8145-2566-4c07-b108-f4bcbae6a49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gadgets
+  module:
+    - system
+  theme:
+    - slavnews
+id: slavnews_gadgets
+theme: slavnews
+region: content_above
+weight: -15
+provider: null
+plugin: 'system_menu_block:gadgets'
+settings:
+  id: 'system_menu_block:gadgets'
+  label: GADGETS
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

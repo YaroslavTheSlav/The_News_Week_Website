@@ -1,0 +1,29 @@
+uuid: 6d5514a8-af0f-493f-ac14-5ac0fc89e2d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_articles
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__recent_articles_recent_articles_block
+theme: slavnews
+region: sidebar
+weight: -14
+provider: null
+plugin: 'views_block:recent_articles-recent_articles_block'
+settings:
+  id: 'views_block:recent_articles-recent_articles_block'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

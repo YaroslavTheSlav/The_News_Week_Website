@@ -1,0 +1,24 @@
+uuid: 05fbbcb7-c37e-44d7-8542-85f36a87c393
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_header_menu
+  module:
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__top_header_menu_header_top_bar
+theme: slavnews
+region: header
+weight: -23
+provider: null
+plugin: 'views_block:top_header_menu-header_top_bar'
+settings:
+  id: 'views_block:top_header_menu-header_top_bar'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

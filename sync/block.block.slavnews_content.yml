@@ -1,0 +1,22 @@
+uuid: a0f43146-5e6b-4126-a380-257c3f1558ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slavnews
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: slavnews_content
+theme: slavnews
+region: content
+weight: -15
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

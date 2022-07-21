@@ -1,0 +1,29 @@
+uuid: 2ae2e1ff-f56b-47d6-bf14-5f2bdf43bcf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_news
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__top_news_top_news_2
+theme: slavnews
+region: highlighted
+weight: -23
+provider: null
+plugin: 'views_block:top_news-top_news'
+settings:
+  id: 'views_block:top_news-top_news'
+  label: 'TOP NEWS'
+  label_display: visible
+  provider: views
+  views_label: 'TOP NEWS'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

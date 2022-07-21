@@ -1,0 +1,22 @@
+uuid: ae3fbafd-1201-4511-aee1-ba87962b25ff
+langcode: en
+status: true
+dependencies:
+  theme:
+    - slavnews
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: slavnews_secondary_local_tasks
+theme: slavnews
+region: highlighted
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

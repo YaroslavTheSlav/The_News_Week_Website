@@ -1,0 +1,29 @@
+uuid: 62f676ff-9fee-4327-8d9c-bb09b5421fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_comments_
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__recent_comments__recent_comments
+theme: slavnews
+region: sidebar
+weight: -15
+provider: null
+plugin: 'views_block:recent_comments_-recent_comments'
+settings:
+  id: 'views_block:recent_comments_-recent_comments'
+  label: 'RECENT COMMENTS '
+  label_display: visible
+  provider: views
+  views_label: 'RECENT COMMENTS '
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

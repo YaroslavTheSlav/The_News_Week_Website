@@ -1,0 +1,22 @@
+uuid: 1b88647d-b07d-4090-ae55-1aba2be2fed5
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - Slav_News
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: Slav_News_help
+theme: Slav_News
+region: content_above
+weight: -14
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

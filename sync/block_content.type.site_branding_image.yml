@@ -1,0 +1,8 @@
+uuid: 3580281b-9480-4e6f-8cb8-52de87c630b2
+langcode: en
+status: true
+dependencies: {  }
+id: site_branding_image
+label: 'Site Branding Image'
+revision: 0
+description: ''

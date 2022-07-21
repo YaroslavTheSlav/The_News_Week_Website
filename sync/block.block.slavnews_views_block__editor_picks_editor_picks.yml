@@ -1,0 +1,24 @@
+uuid: 5719fe3c-1da1-42ac-84b0-701a22500676
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.editor_picks
+  module:
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__editor_picks_editor_picks
+theme: slavnews
+region: footer_top
+weight: -19
+provider: null
+plugin: 'views_block:editor_picks-editor_picks'
+settings:
+  id: 'views_block:editor_picks-editor_picks'
+  label: 'EDITOR PICKS'
+  label_display: visible
+  provider: views
+  views_label: 'EDITOR PICKS'
+  items_per_page: none
+visibility: {  }

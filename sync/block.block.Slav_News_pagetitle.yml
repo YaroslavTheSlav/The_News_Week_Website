@@ -1,0 +1,24 @@
+uuid: 82e14a36-9268-4717-8337-ffe244d5047b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - Slav_News
+id: Slav_News_pagetitle
+theme: Slav_News
+region: content_above
+weight: -16
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

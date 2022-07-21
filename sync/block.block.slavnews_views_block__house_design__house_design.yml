@@ -1,0 +1,29 @@
+uuid: 8d4420e7-c61b-4a02-8fb6-77db370c4d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.house_design_
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__house_design__house_design
+theme: slavnews
+region: content_above
+weight: -20
+provider: null
+plugin: 'views_block:house_design_-house_design'
+settings:
+  id: 'views_block:house_design_-house_design'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,29 @@
+uuid: b16a7a42-ce9b-4d3d-9ae1-552594a8e157
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.stay_connected_
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__stay_connected__stay_connected
+theme: slavnews
+region: sidebar
+weight: -21
+provider: null
+plugin: 'views_block:stay_connected_-stay_connected'
+settings:
+  id: 'views_block:stay_connected_-stay_connected'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

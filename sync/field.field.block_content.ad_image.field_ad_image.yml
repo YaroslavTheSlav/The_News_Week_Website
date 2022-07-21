@@ -11,7 +11,7 @@ id: block_content.ad_image.field_ad_image
 field_name: field_ad_image
 entity_type: block_content
 bundle: ad_image
-label: ad_image
+label: image
 description: ''
 required: false
 translatable: false

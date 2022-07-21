@@ -1,0 +1,9 @@
+@mixin font($fontWeight) {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: $fontWeight;
+}
+@mixin flex-direction-justify($flex,$direction,$justify) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}

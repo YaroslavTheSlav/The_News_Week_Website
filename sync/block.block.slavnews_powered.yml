@@ -1,0 +1,22 @@
+uuid: 94b513c0-23ad-4275-9bee-b139c9d7002a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - slavnews
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: slavnews_powered
+theme: slavnews
+region: footer_bottom
+weight: -16
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
