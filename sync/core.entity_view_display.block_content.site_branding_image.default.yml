@@ -1,0 +1,26 @@
+uuid: 78c5fd34-4143-443c-a7a5-170755bde291
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.site_branding_image
+    - field.field.block_content.site_branding_image.field_site_branding_image
+  module:
+    - image
+id: block_content.site_branding_image.default
+targetEntityType: block_content
+bundle: site_branding_image
+mode: default
+content:
+  field_site_branding_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

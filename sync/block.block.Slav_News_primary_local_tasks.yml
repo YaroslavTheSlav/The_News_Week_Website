@@ -1,0 +1,22 @@
+uuid: abe8fe35-d79d-4784-af9b-1bca4944aefc
+langcode: en
+status: false
+dependencies:
+  theme:
+    - Slav_News
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: Slav_News_primary_local_tasks
+theme: Slav_News
+region: highlighted
+weight: -16
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

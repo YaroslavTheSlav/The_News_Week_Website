@@ -1,0 +1,29 @@
+uuid: 1f128e81-8f6f-4381-913d-d19f3e00ee1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.lifestyle_news
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__lifestyle_news_lifestyle_news
+theme: slavnews
+region: content_above
+weight: -21
+provider: null
+plugin: 'views_block:lifestyle_news-lifestyle_news'
+settings:
+  id: 'views_block:lifestyle_news-lifestyle_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

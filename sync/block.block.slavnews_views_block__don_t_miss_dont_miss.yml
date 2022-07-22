@@ -1,0 +1,29 @@
+uuid: 6f9500c9-b409-48dd-ab32-ef50a3956ace
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.don_t_miss
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__don_t_miss_dont_miss
+theme: slavnews
+region: content_above
+weight: -22
+provider: null
+plugin: 'views_block:don_t_miss-dont_miss'
+settings:
+  id: 'views_block:don_t_miss-dont_miss'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

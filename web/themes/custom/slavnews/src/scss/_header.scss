@@ -1,0 +1,124 @@
+.site-header__inner__container {
+  flex-direction: column;
+}
+#site-header__inner{
+  .container{
+    padding: 0;
+  }
+}
+.view-id-top_header_menu, .view-id-social_media_list{
+  .view-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.view-id-top_header_menu{
+  a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#block-slavnews-mainpagemenu{
+  width: 60%;
+  list-style: none;
+  @include font(700);
+  :hover{
+    text-decoration: #0a65aa 6px;
+  }
+  a{
+    text-decoration: none;
+    color: #222222;
+  }
+  .menu{
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.top_header_bar_background_container{
+  background: #222222;
+  width: 100%;
+  a{
+    color: #FFFFFF;
+  }
+}
+.top_header_bar_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top_header_bar_container,.header_container{
+  margin: auto;
+  max-width: 70%;
+}
+
+#block-slavnews-views-block-top-header-menu-header-top-bar{
+  @include font(400);
+  width: 40%;
+  font-size: 12px;
+  align-self: center;
+}
+.top_middle_bar_container{
+  @include flex-direction-justify(flex,row,space-between);
+}
+.top_header_menu{
+  @include flex-direction-justify(flex,row,space-between);
+  margin: 0;
+}
+#block-slavnews-views-block-social-media-list-social-media-list{
+  width: 12%;
+}
+.header_menu_list{
+  @include flex-direction-justify(flex,row,space-between);
+}
+#page-wrapper{
+  max-width: 100%;
+}
+#block-slavnews-views-block-purple-view-wide-blog-offer{
+  align-self: center;
+}
+#block-slavnews-site-branding{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: transparent;
+}
+.block-search-wide__button{
+  background: top;
+  border: 0;
+}
+.menu--main-page-menu {
+  .menu--level-1 {
+    display: flex;
+      border-bottom: #0a6eb4 3px;
+      padding-bottom: 4px;
+    .menu--level-2{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      font-weight: 400;
+    }
+  }
+}
+.menu__item--has-children:hover .menu--level-2{
+  display: block;
+}
+.my_burger_menu{
+  display: none;
+  span{
+    display: block;
+    margin: 5px;
+    width: 26px;
+    height: 3px;
+    background: #ffffff;
+  }
+}
+.responsive_logo{
+  display: none;
+}
+

@@ -1,0 +1,26 @@
+uuid: f4f699b9-fd54-48a1-8235-841387387855
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.white_website_branding_
+    - field.field.block_content.white_website_branding_.field_white_website_branding_fie
+  module:
+    - image
+id: block_content.white_website_branding_.default
+targetEntityType: block_content
+bundle: white_website_branding_
+mode: default
+content:
+  field_white_website_branding_fie:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

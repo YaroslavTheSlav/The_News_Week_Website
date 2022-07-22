@@ -1,0 +1,58 @@
+@media (min-width: 1201px) {
+  #block-whitewebsitebranding{
+    display: none;
+  }
+}
+@media (max-width: 1420px) {
+  #block-slavnews-views-block-top-header-menu-header-top-bar {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  #block-slavnews-mainpagemenu{
+    display: none;
+  }
+  #block-slavnews-views-block-social-media-list-social-media-list,#block-slavnews-views-block-top-header-menu-header-top-bar,#block-slavnews-views-block-purple-view-wide-blog-offer{
+    display: none;
+  }
+  .my_burger_menu,.responsive_logo{
+    display: block;
+    align-self: center;
+  }
+  .header_menu_list{
+    .block-search-wide__button{
+      display: none;
+    }
+  }
+  .block-search-wide__button{
+    align-self: center;
+    color: #ffffff;
+  }
+  .top_middle_bar_container{
+    #block-slavnews-site-branding{
+      display: none;
+    }
+  }
+  #block-slavnews-mainpagemenu{
+    .menu--level-1 {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+    }
+  }
+  .responsive_logo{
+    display: flex;
+  }
+  .top_header_bar_container{
+    justify-content: center;
+  }
+  #block-whitewebsitebrandin{
+    display: block;
+    justify-content: center;
+  }
+  .field--name-field-white-website-branding-fie{
+    img{
+      margin: 0 auto;
+    }
+  }
+}

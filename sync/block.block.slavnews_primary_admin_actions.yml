@@ -1,0 +1,20 @@
+uuid: e01c3162-6ddd-4417-aec2-5510eab32b10
+langcode: en
+status: true
+dependencies:
+  theme:
+    - slavnews
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: slavnews_primary_admin_actions
+theme: slavnews
+region: highlighted
+weight: -22
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

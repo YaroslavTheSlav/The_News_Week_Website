@@ -1,0 +1,23 @@
+uuid: bc97aabd-a0c8-455f-bab3-c2796e7289c1
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - slavnews
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: slavnews_syndicate
+theme: slavnews
+region: header
+weight: -16
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: visible
+  provider: node
+  block_count: 10
+visibility: {  }

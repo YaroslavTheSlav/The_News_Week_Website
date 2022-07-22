@@ -1,0 +1,29 @@
+uuid: ba1ef75f-d3ec-4b3c-9326-14791f0c7435
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.purple_ad_view_
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__purple_ad_view__wide_blog_offer
+theme: slavnews
+region: content_above
+weight: -18
+provider: null
+plugin: 'views_block:purple_ad_view_-wide_blog_offer'
+settings:
+  id: 'views_block:purple_ad_view_-wide_blog_offer'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

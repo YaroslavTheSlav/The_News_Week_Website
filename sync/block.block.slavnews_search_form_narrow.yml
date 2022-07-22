@@ -1,0 +1,23 @@
+uuid: a2a8cbdc-6096-4c77-b7cc-73fb25848f98
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - slavnews
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: slavnews_search_form_narrow
+theme: slavnews
+region: secondary_menu
+weight: -23
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 4ca8d653-d1c7-4180-a8ae-ca367009cde8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.make_it_modern
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__make_it_modern_make_it_modern
+theme: slavnews
+region: sidebar
+weight: -19
+provider: null
+plugin: 'views_block:make_it_modern-make_it_modern'
+settings:
+  id: 'views_block:make_it_modern-make_it_modern'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

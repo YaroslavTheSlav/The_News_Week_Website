@@ -1,0 +1,25 @@
+uuid: ebf28392-c0ba-428a-9628-8bf93e6a3782
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:site_branding_image:d9e3efd3-b3b1-4ad9-9dd2-c68f05626515'
+  module:
+    - block_content
+  theme:
+    - slavnews
+id: sitebrandinglogo
+theme: slavnews
+region: header
+weight: -18
+provider: null
+plugin: 'block_content:d9e3efd3-b3b1-4ad9-9dd2-c68f05626515'
+settings:
+  id: 'block_content:d9e3efd3-b3b1-4ad9-9dd2-c68f05626515'
+  label: 'Site Branding Logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

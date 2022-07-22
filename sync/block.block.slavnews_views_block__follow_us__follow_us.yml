@@ -1,0 +1,24 @@
+uuid: fb5d2346-2684-42fe-a04c-c28c06ca35be
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.follow_us_
+  module:
+    - views
+  theme:
+    - slavnews
+id: slavnews_views_block__follow_us__follow_us
+theme: slavnews
+region: footer_bottom
+weight: -21
+provider: null
+plugin: 'views_block:follow_us_-follow_us'
+settings:
+  id: 'views_block:follow_us_-follow_us'
+  label: 'FOLLOW US '
+  label_display: visible
+  provider: views
+  views_label: 'FOLLOW US '
+  items_per_page: none
+visibility: {  }

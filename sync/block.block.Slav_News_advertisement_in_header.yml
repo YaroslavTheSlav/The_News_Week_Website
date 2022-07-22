@@ -1,0 +1,25 @@
+uuid: 5a3294b5-bf4c-4aff-a1c2-2115974d69b9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:ad_image:64fbec81-cb61-42d9-ba36-88d0304740fa'
+  module:
+    - block_content
+  theme:
+    - Slav_News
+id: Slav_News_advertisement_in_header
+theme: Slav_News
+region: header
+weight: -15
+provider: null
+plugin: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
+settings:
+  id: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
+  label: Advertisement_in_header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
