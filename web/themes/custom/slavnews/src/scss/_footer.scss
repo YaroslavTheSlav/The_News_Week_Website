@@ -1,0 +1,20 @@
+#block-slavnews-views-block-editor-picks-editor-picks{
+  color: #ffffff;
+  .block__title{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .views-field-title{
+    font-weight: 500;
+    font-size: 14px;
+    :hover{
+      color: rgb(77, 178, 236);
+    }
+  }
+  .views-field-created{
+    color: #767676;
+    font-weight: 400;
+    font-size: 11px;
+  }
+}
