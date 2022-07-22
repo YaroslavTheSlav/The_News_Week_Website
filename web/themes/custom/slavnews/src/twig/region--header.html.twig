@@ -15,6 +15,18 @@
 {#  {{ content }}#}
 <div class="top_header_bar_background_container">
   <div class="top_header_bar_container">
+    <div class="my_burger_menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="responsive_logo">
+      {{ elements['whitewebsitebranding'] }}
+      <button class="block-search-wide__button" aria-label="{{ 'Search Form'|t }}" data-drupal-selector="block-search-wide-button">
+        {% include "@olivero/../images/search.svg" %}
+        <span class="block-search-wide__button-close"></span>
+      </button>
+    </div>
     {{ elements['slavnews_views_block__top_header_menu_header_top_bar'] }}
     {{ elements['slavnews_views_block__social_media_list_social_media_list'] }}
   </div>
@@ -24,7 +36,7 @@
     {{ elements['slavnews_site_branding'] }}
     {{ elements['slavnews_views_block__purple_view__wide_blog_offer'] }}
   </div>
-  <div class="Header_menu_list">
+  <div class="header_menu_list">
     {{ elements['slavnews_mainpagemenu'] }}
     {#  {{ elements['slavnews_search_form_narrow'] }}#}
     <button class="block-search-wide__button" aria-label="{{ 'Search Form'|t }}" data-drupal-selector="block-search-wide-button">
@@ -34,3 +46,9 @@
   </div>
   <div class="header-nav-overlay" data-drupal-selector="header-nav-overlay"></div>
 </div>
+
+{#<div class="header_burger_menu">#}
+{#  <span class="burger_menu_stripe"></span>#}
+{#  <span class="burger_menu_stripe"></span>#}
+{#  <span class="burger_menu_stripe"></span>#}
+{#</div>#}
