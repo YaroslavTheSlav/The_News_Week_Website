@@ -63,7 +63,6 @@
 }
 .top_middle_bar_container{
   @include flex-direction-justify(flex,row,space-between);
-
 }
 .top_header_menu{
   @include flex-direction-justify(flex,row,space-between);
@@ -71,10 +70,6 @@
 }
 #block-slavnews-views-block-social-media-list-social-media-list{
   width: 12%;
-}
-.all_header_container,.top_header_bar_container{
-  //max-width: 70%;
-
 }
 .header_menu_list{
   @include flex-direction-justify(flex,row,space-between);
@@ -95,13 +90,11 @@
   background: top;
   border: 0;
 }
-
 .menu--main-page-menu {
   .menu--level-1 {
     display: flex;
       border-bottom: #0a6eb4 3px;
       padding-bottom: 4px;
-
     .menu--level-2{
       display: none;
       position: absolute;
@@ -112,11 +105,9 @@
     }
   }
 }
-
 .menu__item--has-children:hover .menu--level-2{
   display: block;
 }
-
 .my_burger_menu{
   display: none;
   span{

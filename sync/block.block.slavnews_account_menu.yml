@@ -13,7 +13,7 @@ _core:
 id: slavnews_account_menu
 theme: slavnews
 region: footer_bottom
-weight: -17
+weight: -20
 provider: null
 plugin: 'system_menu_block:account'
 settings:
