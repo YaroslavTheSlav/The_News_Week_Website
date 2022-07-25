@@ -1,0 +1,24 @@
+uuid: f2ee5a68-3413-45fc-bd22-72ce69b1d628
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.popular_category_taxonomy_view
+  module:
+    - views
+  theme:
+    - slavnews
+id: block__popular_category_taxonomy_view_popular_category_taxonomy
+theme: slavnews
+region: footer_top
+weight: -21
+provider: null
+plugin: 'views_block:popular_category_taxonomy_view-popular_category_taxonomy_view'
+settings:
+  id: 'views_block:popular_category_taxonomy_view-popular_category_taxonomy_view'
+  label: 'POPULAR CATEGORY '
+  label_display: visible
+  provider: views
+  views_label: 'POPULAR CATEGORY '
+  items_per_page: none
+visibility: {  }

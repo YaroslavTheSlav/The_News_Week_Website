@@ -36,4 +36,4 @@
 
 /web/themes/custom/*/node_modules
 /web/themes/custom/*/dist
-
+/node_modules

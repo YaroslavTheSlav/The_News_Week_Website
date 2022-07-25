@@ -1,5 +1,13 @@
-#block-slavnews-views-block-editor-picks-editor-picks{
+.my_footer{
+  background-image: url("../images/footer_background.jpg");
+  background-repeat: round;
+}
+.site-footer__inner{
+  background: #2e2e2e;
+}
+#block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-posts-popular-posts,#block-block-popular-category-taxonomy-view-popular-category-taxonomy,#block-slavnews-views-block-about-us-about-us{
   color: #ffffff;
+  font-family: 'Roboto Flex', sans-serif;
   .block__title{
     color: white;
     font-weight: 600;
@@ -16,5 +24,92 @@
     color: #767676;
     font-weight: 400;
     font-size: 11px;
+  }
+}
+#block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-category-popular-category, #block-slavnews-views-block-popular-posts-popular-posts{
+  .views-row{
+    font-weight: 400;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    .views-field-field-media-bg-image{
+      max-width: 30%;
+      padding: 3px 0;
+    }
+    .views-field-title{
+      max-width: 70%;
+      font-family: 'Roboto Flex', sans-serif;
+      letter-spacing: -0.5px;
+      font-weight: 500;
+      line-height: 1.4;
+      font-size: 14px;
+      padding: 1px 8px;
+    }
+    .views-field-created{
+      font-size: 11px;
+      margin: -2% auto 5% auto;
+      padding: 0 10% 0 0;
+    }
+  }
+}
+#block-slavnews-views-block-popular-posts-popular-posts .views-row .views-field-created{
+  margin: -8% auto 8% auto;
+}
+#block-block-popular-category-taxonomy-view-popular-category-taxonomy{
+  li{
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    font-size: 14px;
+    margin: 0 0;
+  }
+  .views-row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+}
+#block-slavnews-views-block-about-us-about-us{
+  .block__title{
+    max-width: 35%;
+    margin: 0 auto;
+  }
+  .block__content{
+    .view-display-id-about_us{
+      font-size: 14px;
+      line-height: 1.6;
+      .view-content{
+        .views-row{
+          .views-field-field-praragraph-body{
+            .field-content{
+              p{
+                a{
+                  color: #0a7bc1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#block-slavnews-views-block-follow-us-follow-us{
+  .block__title{
+    max-width: 41%;
+    margin: 0 auto;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  .view-content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 55%;
+    margin: 0 auto;
+  }
+  .field-content{
+    background: transparent;
+    padding: 15px;
+    border: solid #272727 1px;
   }
 }

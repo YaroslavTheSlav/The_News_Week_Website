@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
     - field.storage.node.field_media_bg_image
     - image.style.images_for_footer
     - node.type.article
@@ -343,10 +342,12 @@ display:
       style:
         type: default
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          relationship: none
-          view_mode: teaser
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -356,6 +357,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: editor-picks-css
       header: {  }
       footer: {  }
       display_extenders: {  }

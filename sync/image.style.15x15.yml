@@ -1,0 +1,14 @@
+uuid: 3505c1de-4d81-4130-9efe-1249843cefe4
+langcode: en
+status: true
+dependencies: {  }
+name: 15x15
+label: 15x15
+effects:
+  c9d3bf85-e003-4c23-ace0-bd894299a308:
+    uuid: c9d3bf85-e003-4c23-ace0-bd894299a308
+    id: image_resize
+    weight: 1
+    data:
+      width: 15
+      height: 15

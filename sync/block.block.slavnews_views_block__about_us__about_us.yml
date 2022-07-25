@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_views_block__about_us__about_us
 theme: slavnews
 region: footer_bottom
-weight: -22
+weight: -23
 provider: null
 plugin: 'views_block:about_us_-about_us'
 settings:

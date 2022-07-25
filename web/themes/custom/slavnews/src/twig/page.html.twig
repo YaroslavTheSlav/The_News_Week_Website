@@ -47,7 +47,7 @@
 #}
 
 <div id="page-wrapper" class="page-wrapper">
-  <div id="page">
+  <footer id="page">
 
     {% if page.header or page.primary_menu or page.secondary_menu %}
       <header id="header" class="site-header" data-drupal-selector="site-header" role="banner">
@@ -106,14 +106,16 @@
       </div>
     </div>
 
-    <footer class="site-footer">
+    {#    <footer class="site-footer footer_first_container">#}
+    <footer class="my_footer">
       <div class="site-footer__inner container">
         {{ page.footer_top }}
         {{ page.footer_bottom }}
       </div>
     </footer>
+    {#    </footer>#}
 
     <div class="overlay" data-drupal-selector="overlay"></div>
 
-  </div>
+</div>
 </div>
