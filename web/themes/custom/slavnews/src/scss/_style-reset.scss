@@ -54,3 +54,9 @@ a{
 .container {
   max-width: none;
 }
+.main-content__container {
+  padding-top: 0;
+}
+.region > * {
+  margin-bottom: 0;
+}

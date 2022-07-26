@@ -134,6 +134,12 @@
       }
     }
   }
+  .block-views-blocktrending-now-slider-trending-now-slider{
+    .pager{
+      display: block;
+    }
+  }
+
 }
 @media(min-width: 75rem){
   .my_footer{
@@ -154,3 +160,4 @@
     }
   }
 }
+
