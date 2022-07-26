@@ -121,5 +121,36 @@
   }
 }
 @media (min-width: 1000px) {
-
+  #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-posts-popular-posts,#block-block-popular-category-taxonomy-view-popular-category-taxonomy{
+    padding: 0 3% 0 0;
+    .views-field-title{
+      a{
+        color: #FFFFFF;
+      }
+      .views-field-created{
+        a{
+          color: #767676;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 75rem){
+  .my_footer{
+    .container{
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+  #block-slavnews-views-block-follow-us-follow-us {
+    padding: 0;
+    .view-content {
+      max-width: 50%;
+    }
+    .block__title {
+      text-align: center;
+    }
+  }
 }

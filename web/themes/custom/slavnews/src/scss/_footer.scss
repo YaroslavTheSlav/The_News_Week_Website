@@ -1,9 +1,13 @@
-.my_footer{
-  background-image: url("../images/footer_background.jpg");
-  background-repeat: round;
+.my_footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-image: url("../images/footer_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.site-footer__inner{
-  background: #2e2e2e;
+.region--footer_top__inner,.region--footer_bottom__inner{
+  opacity: 1;
 }
 #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-posts-popular-posts,#block-block-popular-category-taxonomy-view-popular-category-taxonomy,#block-slavnews-views-block-about-us-about-us{
   color: #ffffff;
@@ -19,13 +23,24 @@
     :hover{
       color: rgb(77, 178, 236);
     }
-  }
-  .views-field-created{
-    color: #767676;
-    font-weight: 400;
-    font-size: 11px;
+    .views-field-created{
+      color: #767676;
+      font-weight: 400;
+      font-size: 11px;
+    }
   }
 }
+#block-block-popular-category-taxonomy-view-popular-category-taxonomy{
+  .views-row{
+    &:hover{
+      .views-field-name a, .views-field-name-1{
+        color: rgb(77, 178, 236);
+      }
+    }
+  }
+}
+
+
 #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-category-popular-category, #block-slavnews-views-block-popular-posts-popular-posts{
   .views-row{
     font-weight: 400;
@@ -49,6 +64,7 @@
       font-size: 11px;
       margin: -2% auto 5% auto;
       padding: 0 10% 0 0;
+      color: #111111;
     }
   }
 }
