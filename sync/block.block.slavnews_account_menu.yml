@@ -12,8 +12,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: slavnews_account_menu
 theme: slavnews
-region: footer_bottom
-weight: -20
+region: content_below
+weight: -24
 provider: null
 plugin: 'system_menu_block:account'
 settings:

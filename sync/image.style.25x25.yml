@@ -1,0 +1,14 @@
+uuid: dfd5a19d-46c6-436a-bde6-561f9e0ee3ae
+langcode: en
+status: true
+dependencies: {  }
+name: 25x25
+label: 25x25
+effects:
+  2a2296d3-49ed-4a06-8e6f-d425d2423c75:
+    uuid: 2a2296d3-49ed-4a06-8e6f-d425d2423c75
+    id: image_resize
+    weight: 1
+    data:
+      width: 25
+      height: 25

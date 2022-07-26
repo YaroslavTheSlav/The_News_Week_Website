@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_views_block__editor_picks_editor_picks
 theme: slavnews
 region: footer_top
-weight: -19
+weight: -24
 provider: null
 plugin: 'views_block:editor_picks-editor_picks'
 settings:
