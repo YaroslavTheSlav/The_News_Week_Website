@@ -1,3 +1,4 @@
+//header
 @media (min-width: 1201px) {
   #block-whitewebsitebranding{
     display: none;
@@ -53,6 +54,103 @@
   .field--name-field-white-website-branding-fie{
     img{
       margin: 0 auto;
+    }
+  }
+}
+
+//footer
+@media (max-width: 1000px) {
+  #block-slavnews-views-block-editor-picks-editor-picks{
+  }
+}
+@media (min-width: 500px) {
+  #block-slavnews-views-block-popular-posts-popular-posts .views-row .views-field-created {
+    margin: auto;
+  }
+  .view-display-id-popular_posts{
+    .views-field-created{
+      margin: auto;
+    }
+  }
+  #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-category-popular-category, #block-slavnews-views-block-popular-posts-popular-posts{
+    .views-row{
+      .views-field-created{
+        margin: 0;
+        padding:0 0 3% 0;
+      }
+    }
+  }
+  .region--footer_top__inner{
+    display: flex;
+    flex-direction: column;
+  }
+  div{
+    #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-posts-popular-posts,#block-block-popular-category-taxonomy-view-popular-category-taxonomy,#block-slavnews-views-block-about-us-about-us,#block-slavnews-views-block-follow-us-follow-us{
+      max-width: 61%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .region--footer_top__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #block-whitewebsitebranding-2 {
+    align-self: center;
+    .block__content .field--name-field-white-website-branding-fie{
+      width: 100%;
+      margin: 0;
+    }
+  }
+  #block-slavnews-views-block-follow-us-follow-us{
+    .view-content{
+      max-width: none;
+    }
+    .block__title {
+      max-width: none;
+      justify-content: center;
+    }
+  }
+  #block-slavnews-views-block-about-us-about-us{
+    padding: 0 6px 0 0;
+    .block__title{
+      max-width: none;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-posts-popular-posts,#block-block-popular-category-taxonomy-view-popular-category-taxonomy{
+    padding: 0 3% 0 0;
+    .views-field-title{
+      a{
+        color: #FFFFFF;
+      }
+      .views-field-created{
+        a{
+          color: #767676;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 75rem){
+  .my_footer{
+    .container{
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+  #block-slavnews-views-block-follow-us-follow-us {
+    padding: 0;
+    .view-content {
+      max-width: 50%;
+    }
+    .block__title {
+      text-align: center;
     }
   }
 }

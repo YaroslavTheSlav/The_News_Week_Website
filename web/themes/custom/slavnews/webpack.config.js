@@ -16,7 +16,17 @@ module.exports = {
         'css-loader',
         'sass-loader',
       ]
-    }]
+    },
+      {
+        test: /\.(jpg|png|gif|woff|eot|ttf|svg)/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            esModule: false,
+          }
+        }
+      }
+    ]
   },
   plugins: [
     new miniCss({

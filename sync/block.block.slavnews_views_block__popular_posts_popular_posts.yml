@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_views_block__popular_posts_popular_posts
 theme: slavnews
 region: footer_top
-weight: -18
+weight: -23
 provider: null
 plugin: 'views_block:popular_posts-popular_posts'
 settings:

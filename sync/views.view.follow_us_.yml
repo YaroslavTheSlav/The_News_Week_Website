@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_image_one
     - field.storage.node.field_link_for_media
+    - image.style.15x15
     - node.type.social_media
     - taxonomy.vocabulary.tags
   content:
@@ -151,7 +152,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: ''
+            image_style: 15x15
             image_loading:
               attribute: lazy
           group_column: ''
