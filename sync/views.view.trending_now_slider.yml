@@ -197,6 +197,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: trending-now-pager-class
       use_ajax: true
       header: {  }
       footer: {  }

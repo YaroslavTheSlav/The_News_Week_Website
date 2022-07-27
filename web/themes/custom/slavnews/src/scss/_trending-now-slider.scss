@@ -25,7 +25,50 @@
     margin: 0 auto;
   }
   .pager{
+    align-self: center;
     display: none;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 7px;
+    color: #b7b7b7;
+    .pager__link{
+     display: flex;
+    }
+    .pager__item{
+      align-self: center;
+      border: 1px solid #dcdcdc;
+    }
+    .pager__items{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 3.6rem;
+      svg{
+        display: none;
+      }
+    }
+    .pager__item--active{
+      display: none;
+    }
+    .pager__item--previous{
+      ::after{
+        content: "<";
+        font-size: 14px;
+        padding: 0 8px;
+      }
+    }
+    .pager__item--next{
+      ::after{
+        content: ">";
+        font-size: 14px;
+        padding: 0 8px;
+      }
+    }
+  }
+  .view-display-id-trending_now_slider {
+    display: flex;
+    justify-content: center;
   }
   .view-row{
     width: 100%;
@@ -36,7 +79,6 @@
 }
 #block-slavnews-views-block-trending-now-slider-trending-now-slider{
   margin-bottom: 0;
-//  height: 70px;
   display: flex;
   flex-direction: column;
 }
