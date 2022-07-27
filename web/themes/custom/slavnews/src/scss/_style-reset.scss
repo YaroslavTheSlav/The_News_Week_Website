@@ -50,7 +50,21 @@
 a{
   text-decoration: none;
   color: unset;
+  height: fit-content;
+  width: fit-content;
 }
 .container {
   max-width: none;
+}
+.main-content__container {
+  padding-top: 0;
+}
+.region > * {
+  margin-bottom: 0;
+}
+ul{
+  margin: 0;
+}
+li {
+  list-style: none;
 }

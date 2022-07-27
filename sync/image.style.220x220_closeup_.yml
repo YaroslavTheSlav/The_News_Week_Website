@@ -1,0 +1,15 @@
+uuid: 3e1369de-4c7b-4937-a8da-485e3cc1f620
+langcode: en
+status: true
+dependencies: {  }
+name: 220x220_closeup_
+label: '220x220 closeup '
+effects:
+  fcd252ad-969d-4754-ac2a-653439d3b9d9:
+    uuid: fcd252ad-969d-4754-ac2a-653439d3b9d9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center
