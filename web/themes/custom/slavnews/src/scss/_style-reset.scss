@@ -68,3 +68,8 @@ ul{
 li {
   list-style: none;
 }
+@media (min-width: 31.25rem) {
+  .views-view-grid--vertical.cols-2 {
+    column-count: unset;
+  }
+}

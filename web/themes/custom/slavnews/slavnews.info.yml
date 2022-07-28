@@ -27,5 +27,7 @@ libraries-override:
     css:
       layout:
         css/layout/layout.css: false
+        css/layout/views.css: false
+        css/layout/grid.css: false
       component:
         css/components/pager.css: false

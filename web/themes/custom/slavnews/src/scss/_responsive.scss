@@ -119,6 +119,13 @@
       max-width: none;
     }
   }
+  //top news
+  #block-views-block-desktop-version-of-top-news-main-block,#block-views-block-desktop-version-of-top-news-wide-block,#block-views-block-desktop-version-of-top-news-two-small-blocks {
+    display: block;
+  }
+  #block-views-block-mobile-version-of-top-news-main-block,#block-views-block-mobile-version-of-top-news-tree-block-slider {
+    display: none;
+  }
 }
 @media (min-width: 1000px) {
   #block-slavnews-views-block-editor-picks-editor-picks,#block-slavnews-views-block-popular-posts-popular-posts,#block-block-popular-category-taxonomy-view-popular-category-taxonomy{
@@ -146,6 +153,7 @@
     }
     .pager{
       display: block;
+      margin-bottom: auto;
     }
     .view-display-id-trending_now_slider {
       justify-content: space-between;
