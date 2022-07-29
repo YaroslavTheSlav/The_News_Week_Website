@@ -29,5 +29,9 @@ libraries-override:
         css/layout/layout.css: false
         css/layout/views.css: false
         css/layout/grid.css: false
+        css/layout/region.css: false
       component:
         css/components/pager.css: false
+        css/components/wide-image.css: false
+      base:
+        css/base/base.css: false

@@ -18,7 +18,7 @@ plugin: 'views_block:desktop_version_of_top_news_main_block_-desktop_version_of_
 settings:
   id: 'views_block:desktop_version_of_top_news_main_block_-desktop_version_of_top_news_main_block'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: none
