@@ -1,9 +1,4 @@
 //header
-@media (max-width: 1420px) {
-  #block-slavnews-views-block-top-header-menu-header-top-bar {
-    width: 80%;
-  }
-}
 @media (max-width: 1199px) {
   #block-slavnews-mainpagemenu{
     display: none;
@@ -154,7 +149,8 @@
     flex-direction: row;
     margin: 0 auto 10px auto;
     padding-top: 10px;
-    width: 56rem;
+    justify-content: center;
+    //width: 56rem; // here
   }
   .block-views-blocktrending-now-slider-trending-now-slider{
     .block__title{

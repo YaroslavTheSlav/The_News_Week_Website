@@ -2,6 +2,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: $fontWeight;
 }
+@mixin width-margin($width,$margin){
+  width: $width;
+  margin: $margin;
+}
 @mixin flex-direction-justify($flex,$direction,$justify) {
   display: $flex;
   flex-direction: $direction;

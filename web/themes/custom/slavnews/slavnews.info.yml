@@ -36,6 +36,7 @@ libraries-override:
       component:
         css/components/pager.css: false
         css/components/wide-image.css: false
+        css/components/header-site-branding.css: false
   olivero/layout-views-grid-vertical:
     css:
       layout:

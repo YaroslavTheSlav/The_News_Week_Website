@@ -46,21 +46,19 @@
   }
 }
 .top_header_bar_container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.top_header_bar_container,.header_container{
-}
+  @include flex-direction-justify(flex,row,space-between);
+  @include width-margin(90%,0 auto);
 
+}
 #block-slavnews-views-block-top-header-menu-header-top-bar{
   @include font(400);
-  width: 40%;
+  width: 45%;
   font-size: 12px;
   align-self: center;
 }
 .top_middle_bar_container{
   @include flex-direction-justify(flex,row,space-between);
+  @include width-margin(90%,0 auto);
 }
 .top_header_menu{
   @include flex-direction-justify(flex,row,space-between);
@@ -71,6 +69,7 @@
 }
 .header_menu_list{
   @include flex-direction-justify(flex,row,space-between);
+  @include width-margin(90%,0 auto);
 }
 #page-wrapper{
   max-width: 100%;
