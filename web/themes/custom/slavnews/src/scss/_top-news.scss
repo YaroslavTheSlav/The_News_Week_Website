@@ -47,7 +47,7 @@
   }
   //positioning elements on top of image
   .views-field-term-node-tid,.views-field-title,.views-field-nothing{
-    position: absolute;
+    position: relative;
     color: #FFFFFF;
   }
   // first taxonomy term of article
@@ -192,7 +192,7 @@
 }
 //top news wide image
 #block-views-block-desktop-version-of-top-news-wide-block {
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 
   .views-field-term-node-tid {
     bottom: 3.8em;

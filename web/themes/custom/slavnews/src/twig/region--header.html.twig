@@ -14,17 +14,17 @@
 #}
 <div class="top_header_bar_background_container">
   <div class="top_header_bar_container">
-    <div class="my_burger_menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <div class="responsive_logo">
+    <div class="my_burger_menu">
+      <span class="burger-menu-slice"></span>
+      <span class="burger-menu-slice"></span>
+      <span class="burger-menu-slice"></span>
+    </div>
       {{ elements['whitewebsitebranding'] }}
-      <button class="block-search-wide__button" aria-label="{{ 'Search Form'|t }}" data-drupal-selector="block-search-wide-button">
-        {% include "@olivero/../images/search.svg" %}
-        <span class="block-search-wide__button-close"></span>
-      </button>
+        <button class="block-search-wide__button" aria-label="{{ 'Search Form'|t }}" data-drupal-selector="block-search-wide-button">
+          {% include "@olivero/../images/search.svg" %}
+          <span class="block-search-wide__button-close"></span>
+        </button>
     </div>
     {{ elements['slavnews_views_block__top_header_menu_header_top_bar'] }}
     {{ elements['slavnews_views_block__social_media_list_social_media_list'] }}
