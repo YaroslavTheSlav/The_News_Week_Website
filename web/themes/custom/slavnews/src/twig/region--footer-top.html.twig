@@ -23,10 +23,15 @@
   ]
 %}
 
-{% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    <div class="region--{{ region }}__inner">
-      {{ content }}
-    </div>
-  </div>
-{% endif %}
+{#{% if content %}#}
+{#  <div{{ attributes.addClass(classes) }}>#}
+{#    <div class="region--{{ region }}__inner">#}
+{#      {{ content }}#}
+{#    </div>#}
+{#  </div>#}
+{#{% endif %}#}
+<div class="region--footer_top__inner">
+{{ elements['slavnews_views_block__editor_picks_editor_picks'] }}
+{{ elements['slavnews_views_block__popular_posts_popular_posts'] }}
+{{ elements['block__popular_category_taxonomy_view_popular_category_taxonomy'] }}
+</div>

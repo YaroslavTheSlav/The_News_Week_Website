@@ -31,6 +31,7 @@ libraries-override:
         css/layout/grid.css: false
         css/layout/region.css: false
         css/layout/layout-footer.css: false
+        css/layout/layout-content-medium.css: false
       base:
         css/base/base.css: false
       component:
