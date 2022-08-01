@@ -3,23 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_media_bg_image
-    - image.style.large
-    - image.style.media_library
-    - image.style.medium
-    - image.style.wide_short_scaled_
     - node.type.article
     - taxonomy.vocabulary.tags
     - views.view.top_news
   content:
-    - 'taxonomy_term:tags:0e86c1e8-db66-43e1-aaea-191d0d344a8e'
     - 'taxonomy_term:tags:28edfe9b-5754-46f7-86ca-7b3836c50546'
     - 'taxonomy_term:tags:75c8ff86-1b61-434f-9682-8069c6e3c9c6'
     - 'taxonomy_term:tags:78eec7ef-c7b9-4aa8-82d4-0cc973c7344f'
-    - 'taxonomy_term:tags:e0530ede-b286-4a12-be92-3953240607bf'
-    - 'taxonomy_term:tags:fce1e407-af55-4a53-b0a1-46c3d91a0e30'
   module:
-    - media
     - node
     - taxonomy
     - user
@@ -456,16 +447,11 @@ display:
           limit: true
           error_message: true
       style:
-        type: grid
+        type: default
         options:
           grouping: {  }
-          columns: 2
-          automatic_width: true
-          alignment: vertical
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       query:

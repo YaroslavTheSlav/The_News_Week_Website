@@ -12,24 +12,6 @@
  * @see template_preprocess_region()
  */
 #}
-
-{%
-  set classes = [
-    'region',
-    'region--' ~ region|clean_class,
-    'grid-full',
-    'layout--pass--content-medium',
-    'ie11-autorow',
-  ]
-%}
-
-{#{% if content %}#}
-{#  <div{{ attributes.addClass(classes) }}>#}
-{#    <div class="region--{{ region }}__inner">#}
-{#      {{ content }}#}
-{#    </div>#}
-{#  </div>#}
-{#{% endif %}#}
 <div class="region--footer_top__inner">
 {{ elements['slavnews_views_block__editor_picks_editor_picks'] }}
 {{ elements['slavnews_views_block__popular_posts_popular_posts'] }}

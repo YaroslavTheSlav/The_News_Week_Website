@@ -2,11 +2,11 @@
 
 //hide desktop version of top news
 #block-views-block-desktop-version-of-top-news-main-block,#block-views-block-desktop-version-of-top-news-wide-block,#block-views-block-desktop-version-of-top-news-two-small-blocks {
-  display: none;
+  display: block;
 }
 //display mobile version of top news
 #block-views-block-mobile-version-of-top-news-main-block,#block-views-block-mobile-version-of-top-news-tree-block-slider {
-  display: block;
+  display: none;
 }
 //general theming of top news blocks
 #block-views-block-mobile-version-of-top-news-main-block,#block-views-block-mobile-version-of-top-news-tree-block-slider,#block-views-block-desktop-version-of-top-news-main-block,#block-views-block-desktop-version-of-top-news-wide-block,.top-news-my-view-first-small-image,.top-news-my-view-last-small-image {
@@ -47,13 +47,14 @@
   }
   //positioning elements on top of image
   .views-field-term-node-tid,.views-field-title,.views-field-nothing{
-    position: relative;
+    position: absolute;//relative was
     color: #FFFFFF;
   }
   // first taxonomy term of article
   .views-field-term-node-tid{
-    bottom: 5.7em;
+    bottom: 6.7em;
     left: 1em;
+    line-height: 1.5em;
     a{
       display: flex;
       margin: 0 auto;
@@ -62,7 +63,7 @@
   }
   //article header field
   .views-field-title{
-    bottom: 1.4em;
+    bottom: 2.4em;
     left: 1em;
     padding-right: 6px;
     line-height: 21px;
@@ -73,7 +74,7 @@
   //author - date field
   .views-field-nothing{
     font-weight: 400;
-    bottom: 0.2em;
+    bottom: 1.2em;
     left: 1em;
     display: inline-block;
     color: #FFFFFF;
@@ -81,7 +82,6 @@
       font-size: 11px;
       a{
         color: #FFFFFF;
-        position: relative;
       }
     }
   }
@@ -91,8 +91,13 @@
 }
 //mobile top news big block
 #block-views-block-mobile-version-of-top-news-main-block {
+  .view-content {
+   position: relative;
+  }
   margin-top: 8px;
-  margin-bottom: 21px;
+  img{
+    height: auto;
+  }
 }
 //mobile three block slider
 #block-views-block-mobile-version-of-top-news-tree-block-slider{
@@ -107,7 +112,6 @@
     margin: 0 5px auto auto;
     position: relative;
     img{
-      width: 290px;
       height: 12em;
     }
   }
@@ -119,7 +123,7 @@
   }
   .views-field-title{
     bottom: 2.6em;
-    max-width: 14em;
+    max-width: 15em;
     line-height: 18px;
     a{
       font-weight: 600;
@@ -163,7 +167,7 @@
   .desktop-top-news-wrapper-inner-right{
     height: auto;
     width: 100%;
-    max-width: 45%;
+    max-width: 47.5%;
     flex-direction: column;
     #block-views-block-desktop-version-of-top-news-two-small-blocks{
       .view-footer{
@@ -177,11 +181,16 @@
   margin: 0 4px 0 0;
   width: 100%;
   height: auto;
-  .views-field-term-node-tid{
-    bottom: 4.7em;
+  img {
+    height: auto;
+    aspect-ratio: 3/2.21;
   }
   .views-field-title{
-    bottom: 1.7em;
+    bottom: 2.7em;
+    padding-right: 5.5em;
+  }
+  .view-content{
+    position: relative;
   }
 }
 //elements of inner right container
@@ -189,40 +198,51 @@
   .views-field-nothing{
     display: none;
   }
+  .view-content {
+    position: relative;
+    img {
+      aspect-ratio: 4/2;
+      height: auto;
+    }
+  }
 }
 //top news wide image
 #block-views-block-desktop-version-of-top-news-wide-block {
-  margin-bottom: 17px;
-
   .views-field-term-node-tid {
     bottom: 3.8em;
+    background: rgba(0, 0, 0, 0.7);
   }
   .views-field-title {
-    bottom: 1em;
+    bottom: 1.2em;
+  }
+  .views-field-field-media-bg-image{
+    img {
+
+    }
   }
 }
 //top news two small blocks container
 #block-views-block-desktop-version-of-top-news-two-small-blocks{
   // elements of container selectors
   .top-news-my-view-first-small-image,.top-news-my-view-last-small-image{
-    position: relative;
+    position: relative;//relative was
     width: 100%;
     height: 100%;
     img{
       height: auto;
-      aspect-ratio: 220/153;
+      aspect-ratio: 5/3;
     }
     .views-field-term-node-tid {
       padding: 0 5px;
       max-width: 54%;
       background: rgba(0, 0, 0, 0.7);
-      bottom: 2.3em;
+      bottom: 3.3em;
       a{
         font-size: 0.7em;
       }
     }
     .views-field-title{
-      bottom: -0.4em;
+      bottom: 0.6em;
       line-height: 18px;
       a{
         font-size: 0.7em;
