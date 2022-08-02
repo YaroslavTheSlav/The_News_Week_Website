@@ -1,14 +1,12 @@
 .block-views-blocktrending-now-slider-trending-now-slider {
   .block__title{
     text-align: center;
-    max-width: fit-content;
     padding: 5px;
-    margin: 10px auto 0 auto;
     background:#000000;
     color: #EAEFEE;
     font-weight: 400;
     font-family: 'Roboto Flex', sans-serif;
-    letter-spacing: -0.4;
+    letter-spacing: -0.4px;
     :hover{
       background: #0c97ed;
     }
@@ -20,8 +18,7 @@
     font-family: 'Roboto Flex', sans-serif;
 
     overflow: hidden;
-    max-width: 90%;
-    max-height: 1.5rem;
+    max-height: 1.2rem;
     margin: 0 auto;
   }
   .pager{

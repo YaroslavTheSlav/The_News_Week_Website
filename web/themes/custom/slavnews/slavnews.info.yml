@@ -27,5 +27,19 @@ libraries-override:
     css:
       layout:
         css/layout/layout.css: false
+        css/layout/views.css: false
+        css/layout/grid.css: false
+        css/layout/region.css: false
+        css/layout/layout-footer.css: false
+        css/layout/layout-content-medium.css: false
+      base:
+        css/base/base.css: false
       component:
         css/components/pager.css: false
+        css/components/wide-image.css: false
+        css/components/header-site-branding.css: false
+        css/components/skip-link.css: false
+  olivero/layout-views-grid-vertical:
+    css:
+      layout:
+        css/layout/layout-views-grid-vertical.css: false

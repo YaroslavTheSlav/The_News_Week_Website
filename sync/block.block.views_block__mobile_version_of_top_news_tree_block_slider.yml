@@ -1,0 +1,29 @@
+uuid: 503c17d7-3a59-4015-b240-ea69f92a2290
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobile_version_of_top_news_tree_block_slider_
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: views_block__mobile_version_of_top_news_tree_block_slider
+theme: slavnews
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:mobile_version_of_top_news_tree_block_slider_-mobile_version_of_top_news_three_block_slider'
+settings:
+  id: 'views_block:mobile_version_of_top_news_tree_block_slider_-mobile_version_of_top_news_three_block_slider'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

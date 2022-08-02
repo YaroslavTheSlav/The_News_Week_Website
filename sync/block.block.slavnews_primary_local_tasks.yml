@@ -9,7 +9,7 @@ _core:
 id: slavnews_primary_local_tasks
 theme: slavnews
 region: highlighted
-weight: -16
+weight: -17
 provider: null
 plugin: local_tasks_block
 settings:

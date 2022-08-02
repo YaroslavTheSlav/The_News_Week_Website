@@ -1,6 +1,6 @@
 uuid: ba1ef75f-d3ec-4b3c-9326-14791f0c7435
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.purple_ad_view_

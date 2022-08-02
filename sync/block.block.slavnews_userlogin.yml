@@ -9,7 +9,7 @@ dependencies:
 id: slavnews_userlogin
 theme: slavnews
 region: highlighted
-weight: -19
+weight: -20
 provider: null
 plugin: user_login_block
 settings:

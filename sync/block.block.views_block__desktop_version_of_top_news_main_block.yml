@@ -1,0 +1,29 @@
+uuid: 9b3887a4-33a1-48eb-ae54-2f74e9780584
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.desktop_version_of_top_news_main_block_
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: views_block__desktop_version_of_top_news_main_block
+theme: slavnews
+region: highlighted
+weight: -19
+provider: null
+plugin: 'views_block:desktop_version_of_top_news_main_block_-desktop_version_of_top_news_main_block'
+settings:
+  id: 'views_block:desktop_version_of_top_news_main_block_-desktop_version_of_top_news_main_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
