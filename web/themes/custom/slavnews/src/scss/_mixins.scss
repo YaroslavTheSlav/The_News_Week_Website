@@ -11,3 +11,42 @@
   flex-direction: $direction;
   justify-content: $justify;
 }
+@mixin dont-miss-slider-universal-unset($unset) {
+  //stylizing block view
+  .views-view-grid {
+    //item box of view
+    .views-view-grid__item {
+      //inner item box of view
+      .views-view-grid__item-inner {
+        display: $unset;
+        //view's image
+        .views-field-field-media-bg-image {
+          width: $unset;
+        }
+        //filed with author name, date, and comment count
+        .views-field-nothing {
+          width: $unset;
+          padding:$unset;
+          //tittle link
+          a {
+            font-family: $unset;
+            margin: $unset;
+            font-size: $unset;
+            line-height: $unset;
+            font-weight: $unset;
+            letter-spacing: $unset;
+          }
+          a:hover {
+            color: $unset;;
+          }
+        }
+        //article date
+        .dont-miss-slider-block-date {
+          color:$unset;
+          font-family: $unset;
+          font-size: $unset;
+        }
+      }
+    }
+  }
+}
