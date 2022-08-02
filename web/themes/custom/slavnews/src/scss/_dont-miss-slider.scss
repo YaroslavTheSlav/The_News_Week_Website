@@ -1,3 +1,5 @@
+//importing breakpoints
+@import "breakpoints";
 //dont miss slider
 #block-slavnews-views-block-don-t-miss-dont-miss {
   //dont miss slider tittle
@@ -181,7 +183,7 @@
     }
     .pager__item--active {
       color: transparent;
-     display: flex;
+      display: flex;
     }
     .pager__items {
       li:first-child {
@@ -214,9 +216,27 @@
         font-size: 14px;
         padding: 0 8px;
       }
-
     }
   }
 }
+@include bp-up ('md') {
+  #block-slavnews-views-block-don-t-miss-dont-miss {
+    max-width: 62%;
 
-
+    .attachment-before {
+      width: 120%;
+    }
+    .dont-miss-slider-view-block {
+      display: flex;
+      position: relative;
+    }
+    .views-view-grid--horizontal {
+      flex-direction: column;
+    }
+    .pager {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
