@@ -77,8 +77,11 @@
         "post-update-cmd": "@update-git-hooks",
         "update-git-hooks": "[[ -f ./vendor/bin/cghooks ]] && ./vendor/bin/cghooks update ||:;"
     },
-    "extra": {
+ "extra": {
         "drupal-scaffold": {
+             "file-mapping": {
+          "[web-root]/.eslintrc.json": false                      
+          },
             "locations": {
                 "web-root": "web/"
             },
