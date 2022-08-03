@@ -28,27 +28,36 @@
   //pager
   @include custom-gray-pager-for-view ();
 }
-//@include bp-up ('md') {
-//  #block-slavnews-views-block-lifestyle-news-lifestyle-news {
-//    //positioning big article element to the left
-//    .attachment-before {
-//      width: 100%;
-//      padding-bottom: 20px;
-//    }
-//    //positioning items
-//    .dont-miss-slider-view-block {
-//      display: flex;
-//      position: relative;
-//    }
-//    //positioning element to the right into a column
-//    .views-view-grid--horizontal {
-//      flex-direction: column;
-//    }
-//    //positioning pager
-//    .pager {
-//      position: absolute;
-//      bottom: 0;
-//      left: 0;
-//    }
-//  }
-//}
+@include bp-up ('md') {
+  #block-slavnews-views-block-lifestyle-news-lifestyle-news {
+    //positioning big article element to the left
+    .attachment-before {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    //positioning items
+    .dont-miss-slider-view-block {
+      display: flex;
+      position: relative;
+    }
+    //positioning parent element for pager
+    .lifestyle-news-slider-view-block {
+      position: relative;
+    }
+    //positioning pager
+    .pager {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    // possitioning attachments
+    .lifestyle-news-slider-view-attachment-css:first-child {
+      .view-content {
+        .views-view-grid--horizontal {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
