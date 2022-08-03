@@ -1,0 +1,54 @@
+//importing breakpoints
+@import "breakpoints";
+//dont miss slider
+#block-slavnews-views-block-lifestyle-news-lifestyle-news {
+  //container styles
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+
+  //view tittle and container border top styling
+  @include stylizing-view-name(#3a863d,#FFFFFF);
+
+  //top attachment to full width
+  .lifestyle-news-slider-view-attachment-css:first-child {
+    .view-content {
+      .views-view-grid--horizontal {
+        display: block;
+      }
+    }
+  }
+
+
+  //stylizing block view
+  @include stylizing-block-part-of-view (#3a863d);
+
+  //stylizing attachment
+  @include stylizing-attachment-part-of-view ();
+
+  //pager
+  @include custom-gray-pager-for-view ();
+}
+//@include bp-up ('md') {
+//  #block-slavnews-views-block-lifestyle-news-lifestyle-news {
+//    //positioning big article element to the left
+//    .attachment-before {
+//      width: 100%;
+//      padding-bottom: 20px;
+//    }
+//    //positioning items
+//    .dont-miss-slider-view-block {
+//      display: flex;
+//      position: relative;
+//    }
+//    //positioning element to the right into a column
+//    .views-view-grid--horizontal {
+//      flex-direction: column;
+//    }
+//    //positioning pager
+//    .pager {
+//      position: absolute;
+//      bottom: 0;
+//      left: 0;
+//    }
+//  }
+//}

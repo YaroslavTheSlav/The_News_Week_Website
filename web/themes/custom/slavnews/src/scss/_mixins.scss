@@ -50,3 +50,225 @@
     }
   }
 }
+//mixins for same attachment&block type view
+@mixin stylizing-view-name ($background-color,$text-color) {
+  //title styles
+  .block__title {
+    //styling views tittle
+    color: $text-color;
+    display: inline-block;
+    line-height: 17px;
+    padding: 7px 12px 4px;
+    font-size: 14px;
+    font-weight: 400;
+    background: $background-color;
+    margin-bottom: 0;
+  }
+  //container container with all items
+  .block__content {
+    //top yellow border
+    border-top: solid $background-color 2px;
+    padding-top: 20px;
+  }
+}
+@mixin stylizing-block-part-of-view ($hover) {
+
+  //stylizing block view
+  .views-view-grid {
+    //item box of view
+    .views-view-grid__item {
+      //inner item box of view
+      .views-view-grid__item-inner {
+        display: flex;
+        //view's image
+        .views-field-field-media-bg-image {
+          width: 30%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        //filed with author name, date, and comment count
+        .views-field-nothing {
+          width: 60%;
+          padding: 0 0 0 16px;
+          //tittle link
+          a {
+            font-family: open sans,open sans regular,sans-serif;
+            margin: 0 0 6px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            letter-spacing: -0.7px;
+          }
+          a:hover {
+            color: $hover;
+          }
+        }
+        //article date
+        .dont-miss-slider-block-date {
+          color: #767676;
+          font-family: open sans,open sans regular,sans-serif;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+@mixin stylizing-attachment-part-of-view () {
+  //stylizing attachment
+
+  //general attachment class
+  .attachment-before {
+    //universal unset for elements to not effect attachment
+    @include dont-miss-slider-universal-unset (unset);
+    //single view item
+    .view-content {
+      img {
+        //responsive image
+        height: auto;
+        width: 100%;
+      }
+      //positioning and styling taxonomy term
+      .views-field-term-node-tid {
+        .field-content {
+          background: rgba(0, 0, 0, 0.7);
+          color: #FFFFFF;
+          display: inline-block;
+          font-size: 11px;
+          padding: 3px 5px;
+          a:not(:first-child) {
+            display: none;
+          }
+        }
+      }
+    }
+    //attachment that had different fields
+    .views-field-term-node-tid {
+      margin: -1.5em 0 1em 0;
+      display: block;
+    }
+    //theming title
+    .views-field-title {
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 400;
+    }
+    //theming small fields after title
+    .dont-miss-slider-author-date-coment-count {
+      display: flex;
+      align-items: center;
+      color: #767676;
+      font-size: 12px;
+      line-height: 1;
+      //author
+      a {
+        font-weight: 700;
+        color: #000;
+      }
+      //author field
+      .dont-miss-slider-author {
+        padding-right: 5px;
+      }
+      //date field
+      .dont-miss-slider-date {
+        padding-left: 5px;
+      }
+      //comment count
+      .dont-miss-slider-comment-count {
+        margin-left: auto;
+        text-align: center;
+        display: inline-block;
+        color: #FFFFFF;
+        background: #000;
+        min-width: 17px;
+        padding: 3px 4px 4px 5px;
+        position: relative;
+        font-size: 11px;
+      }
+      //afer element for comment count
+      .dont-miss-slider-comment-count::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3px 3px 0 0;
+        border-color: #000 transparent transparent transparent;
+      }
+    }
+    //body
+    .views-field-body {
+      font-size: 15px;
+      color: #767676;
+    }
+  }
+}
+@mixin custom-gray-pager-for-view () {
+  //pager
+  .pager {
+    align-self: center;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 7px;
+    color: #b7b7b7;
+    .pager__link{
+      display: flex;
+    }
+    //single pager item
+    .pager__item {
+      align-self: center;
+      border: 1px solid #dcdcdc;
+    }
+    //all pager items
+    .pager__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 3.5rem;
+      padding: 0;
+      svg {
+        display: none;
+      }
+    }
+    .pager__item--active {
+      color: transparent;
+      display: flex;
+    }
+    .pager__items {
+      li:first-child {
+        &.pager__item--active::after {
+          content: "<";
+          font-size: 14px;
+          padding: 0 10px 0 3px;
+          color: #b7b7b7;
+        }
+      }
+      :last-child {
+        &.pager__item--active::after {
+          content: ">";
+          font-size: 14px;
+          padding: 0 10px 0 3px;
+          color: #b7b7b7;
+        }
+      }
+    }
+    .pager__item--previous {
+      ::after {
+        content: "<";
+        font-size: 14px;
+        padding: 0 8px;
+      }
+    }
+    .pager__item--next {
+      ::after {
+        content: ">";
+        font-size: 14px;
+        padding: 0 8px;
+      }
+    }
+  }
+}
