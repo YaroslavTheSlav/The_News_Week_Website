@@ -524,7 +524,7 @@ display:
         - 'config:field.storage.node.field_media_bg_image'
   dont_miss:
     id: dont_miss
-    display_title: Block
+    display_title: 'Dont Miss Slider '
     display_plugin: block
     position: 1
     display_options:
@@ -919,6 +919,7 @@ display:
         row: false
         fields: false
       css_class: dont-miss-slider-view-block
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1

@@ -591,7 +591,7 @@ $settings['update_free_access'] = FALSE;
  * If you don't wish to disable FLoC in Chrome, you can set this value
  * to FALSE.
  */
-# $settings['block_interest_cohort'] = TRUE;
+ #$settings['block_interest_cohort'] = FALSE;
 
 /**
  * Configuration overrides.

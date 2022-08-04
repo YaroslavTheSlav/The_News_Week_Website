@@ -1,0 +1,119 @@
+@import "breakpoints";
+//burger menu styles
+@include bp-between ('xs','xl') {
+  //burger menu class that is added when burger is clicked on
+  .active_burger_menu {
+    //making mobile meu page visible
+    left: 0;
+  }
+  // page animate for class that is called when burger is clicked on
+  //all web page
+  .active_burger_menu_page {
+    position: absolute;
+    transition: all .4s ease .4s;
+    width: calc(100% - 40px);
+    left: 20px;
+    top: 11px;
+  }
+  //closing button box
+  .my_burger_menu_closing_x {
+    padding: 10% 0 20% 84%;
+    // the x button
+    .my_burger_menu_closing_line {
+      &::before,&::after {
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+      }
+      //turning other x par around
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  //all menu and its box
+  .menu--main-page-menu {
+    transition: all .6s ease 0.2s;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    //background image
+    background-image: url("../images/burger-menu-background.jpg");
+    background-size: cover;
+    background-position-x: center;
+    //gradient styles
+    &:before {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%);
+      content: "";
+      width: 100%;
+      height: 100%;
+      opacity: 0.95;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  //menu weapper
+  #block-slavnews-mainpagemenu {
+    //menu with links
+    .menu--level-1 {
+      display: block;
+      position: absolute;
+      line-height: 21px;
+      font-size: 18px;
+      margin-left: 0;
+      font-weight: 700;
+      width: 100%;
+      //menu object
+      a {
+        display: block;
+        padding: 12px 30px 12px 32px;
+        color: #FFFFFF;
+        //hover for menu object
+        &:hover {
+          color: #73c7e3;
+        }
+      }
+      //children class
+      .menu--level-2 {
+        background: transparent;
+        position: unset;
+        margin: 9px 26px 9px 36px;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    //items that have children
+    .menu__item--has-children {
+      position: relative;
+      height: auto;
+      //marketr for drop down arrow
+      &:after {
+        position: absolute;
+        display: inline-block;
+        padding: 6px 12px;
+        content: '>';
+        color: #FFFFFF;
+        font-size: 20px;
+        opacity: 0.9;
+        top: 0;
+        right: 0;
+      }
+      //turning marker on hover
+      &:hover {
+        &:after {
+          transition: all .2s ease .2s;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+

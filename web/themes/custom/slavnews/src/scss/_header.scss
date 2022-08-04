@@ -21,8 +21,10 @@
     justify-content: space-between;
   }
 }
-#block-slavnews-mainpagemenu{
+.menu--main-page-menu {
   width: 60%;
+}
+#block-slavnews-mainpagemenu{
   list-style: none;
   @include font(700);
   :hover{
@@ -127,4 +129,3 @@
     }
   }
 }
-
