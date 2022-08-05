@@ -1,11 +1,6 @@
 @import "breakpoints";
 //burger menu styles
 @include bp-between ('xs','xl') {
-  //burger menu class that is added when burger is clicked on
-  .active_burger_menu {
-    //making mobile meu page visible
-    left: 0;
-  }
   // page animate for class that is called when burger is clicked on
   //all web page
   .active_burger_menu_page {
@@ -57,6 +52,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      bottom: 0;
     }
   }
   //menu weapper
@@ -73,6 +69,7 @@
       //menu object
       a {
         display: block;
+        box-sizing: border-box;
         padding: 12px 30px 12px 32px;
         color: #FFFFFF;
         //hover for menu object
@@ -88,12 +85,15 @@
         line-height: 19px;
         font-size: 16px;
         font-weight: 400;
+        box-shadow: none;
       }
     }
     //items that have children
     .menu__item--has-children {
       position: relative;
       height: auto;
+      width: calc(100% - 2em);
+      margin-right: 2em;
       //marketr for drop down arrow
       &:after {
         position: absolute;
@@ -107,12 +107,32 @@
         right: 0;
       }
       //turning marker on hover
-      &:hover {
-        &:after {
-          transition: all .2s ease .2s;
-          transform: rotate(90deg);
-        }
-      }
+      //&:active {
+      //  &:after {
+      //    transition: all .2s ease .2s;
+      //    transform: rotate(90deg);
+      //  }
+      //}
+    }
+  }
+  //burger menu class that is added when burger is clicked on
+  .active_burger_menu {
+    //making mobile meu page visible
+    left: 0;
+    &:before {
+      position: fixed;
+      transition: all .4s ease .4s;
+    }
+  }
+  //opening menu on click class
+  .display-menu-on-click-class {
+    display: block!important;
+  }
+  //turning arrows on click
+  .display-menu-on-click-class-arrows {
+    &:after {
+      transition: all .2s ease .2s;
+      transform: rotate(90deg);
     }
   }
 }
