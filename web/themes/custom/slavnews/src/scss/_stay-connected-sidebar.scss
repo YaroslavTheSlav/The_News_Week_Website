@@ -1,0 +1,36 @@
+@import "breakpoints";
+@import "mixins";
+
+//mobile view blocs removed at desktop widths
+@include bp-up("lg") {
+  #block-views-block-mobile-duplicate-of-stay-connected-stay-connected {
+    display: none;
+  }
+}
+
+//styling stay connected
+#block-views-block-mobile-duplicate-of-stay-connected-stay-connected {
+  //container styles
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+
+  //view tittle and container border top styling
+  @include stylizing-view-name(#222,#FFFFFF);
+
+  //items inside view item
+  .views-row {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  //styling a items
+  .views-field-nothing {
+    padding-left: 1rem;
+    align-self: center;
+    width: 100%;
+    //container inside
+    .stay-connected-sidebar-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
