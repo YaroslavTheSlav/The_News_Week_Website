@@ -66,15 +66,16 @@
             {% if page.primary_menu or page.secondary_menu %}
 
 
-              <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
-                {{ page.primary_menu }}
+                <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
+                  {{ page.primary_menu }}
+                </div>
+                {% endif %}
               </div>
-            {% endif %}
-          </div>
-        </div>
+            </div>
       </header>
     {% endif %}
-
+    <div class="body-width-container">
+      <div class="body-width-container-inner">
     <div id="main-wrapper" class="layout-main-wrapper layout-container">
       <div id="main" class="layout-main">
         <div class="main-content">
@@ -89,8 +90,10 @@
               <div class="sidebar-grid">
                 <main role="main" class="site-main ie11-autorow">
                   <div class="page-and-sidebar">
-                    {{ page.content_above }}
-                    {{ page.sidebar }}
+                    <div class="page-and-sidebar-inner">
+                      {{ page.content_above }}
+                      {{ page.sidebar }}
+                    </div>
                   </div>
                   {{ page.content }}
                 </main>
@@ -108,19 +111,21 @@
 
       </div>
     </div>
-
-    {#    <footer class="site-footer footer_first_container">#}
-    <footer class="my_footer">
-      <div class="site-footer__inner container">
-        {{ page.footer_top }}
-        {{ page.footer_bottom }}
-      </div>
-    </footer>
-    {#    </footer>#}
-
-    <div class="overlay" data-drupal-selector="overlay"></div>
-
   </div>
+</div>
+
+{#    <footer class="site-footer footer_first_container">#}
+<footer class="my_footer">
+  <div class="site-footer__inner container">
+    {{ page.footer_top }}
+    {{ page.footer_bottom }}
+  </div>
+</footer>
+{#    </footer>#}
+
+<div class="overlay" data-drupal-selector="overlay"></div>
+
+</div>
 </div>
 
 

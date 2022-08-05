@@ -9,7 +9,8 @@
 }
 
 //styling stay connected
-#block-views-block-mobile-duplicate-of-stay-connected-stay-connected {
+#block-views-block-mobile-duplicate-of-stay-connected-stay-connected,
+#block-slavnews-views-block-stay-connected-stay-connected {
   //container styles
   max-width: 100%;
   padding: 20px 20px 20px 20px;
@@ -37,3 +38,13 @@
     }
   }
 }
+////stay connected desktop version
+//#block-slavnews-views-block-stay-connected-stay-connected {
+//  //container styles
+//  max-width: 100%;
+//  padding: 20px 20px 20px 20px;
+//
+//  //view tittle and container border top styling
+//  @include stylizing-view-name(#222,#FFFFFF);
+//
+//}
