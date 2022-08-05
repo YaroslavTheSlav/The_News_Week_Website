@@ -12,7 +12,7 @@ dependencies:
 id: slavnews_views_block__latest_articles__latest_articles_view
 theme: slavnews
 region: content_above
-weight: -17
+weight: -20
 provider: null
 plugin: 'views_block:latest_articles_-latest_articles_view'
 settings:

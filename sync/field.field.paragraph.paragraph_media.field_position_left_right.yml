@@ -1,0 +1,23 @@
+uuid: b48c3b58-4634-4cca-8769-5d42ec008309
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_left_right
+    - paragraphs.paragraphs_type.paragraph_media
+  module:
+    - options
+id: paragraph.paragraph_media.field_position_left_right
+field_name: field_position_left_right
+entity_type: paragraph
+bundle: paragraph_media
+label: position-left-right
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: passive
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,51 @@
+@import "breakpoints";
+@import "mixins";
+
+//disabling block for desktop
+@include bp-up("xl") {
+  #block-views-block-mobile-duplicate-of-make-it-modern-make-it-modern {
+    display: none;
+  }
+}
+
+//styling mobile and desktop version of block
+#block-views-block-mobile-duplicate-of-make-it-modern-make-it-modern,
+#block-slavnews-views-block-make-it-modern-make-it-modern {
+  //container styles
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+
+  //view tittle and container border top styling
+  @include stylizing-view-name(#000,#FFFFFF);
+
+  //image and taxonomy term styles
+  @include stylizing-image-and-taxonomy-term ();
+
+  //pager styles
+  @include custom-gray-pager-for-view ();
+
+  //image restyle
+  .view-content img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 220/147;
+  }
+  .views-field-title {
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  //item width
+  .views-view-grid__item {
+    max-width: 47%;
+  }
+  //space between items
+  .views-view-grid--horizontal {
+    justify-content: space-between;
+  }
+  //taxonomy term
+  .views-field-term-node-tid {
+    margin-bottom: 0.5em;
+  }
+}

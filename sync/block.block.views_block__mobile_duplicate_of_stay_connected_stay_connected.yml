@@ -1,0 +1,29 @@
+uuid: 4c3e2f35-9ed8-49a7-a7c7-8311312911a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobile_duplicate_of_stay_connected
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: views_block__mobile_duplicate_of_stay_connected_stay_connected
+theme: slavnews
+region: content_above
+weight: -24
+provider: null
+plugin: 'views_block:mobile_duplicate_of_stay_connected-stay_connected'
+settings:
+  id: 'views_block:mobile_duplicate_of_stay_connected-stay_connected'
+  label: 'STAY CONNECTED '
+  label_display: visible
+  provider: views
+  views_label: 'STAY CONNECTED '
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

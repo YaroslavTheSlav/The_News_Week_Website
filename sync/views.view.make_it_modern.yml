@@ -147,14 +147,16 @@ display:
           empty_zero: false
           hide_alter_empty: true
           type: separator
-          separator: ', '
+          separator: ''
           link_to_taxonomy: true
           limit: false
           vids:
+            advertisement_placement_: '0'
             categories_for_articles_: '0'
             header_top_list_: '0'
             menu_taxonomy_terms_: '0'
             tags: '0'
+            user_page_: '0'
         title:
           id: title
           table: node_field_data
