@@ -1,5 +1,15 @@
+#slawnews theme library
 global-styling:
   version: VERSION
   css:
     base:
       dist/style.css: {}
+  js:
+    dist/javascript.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+    - core/jquery.one
+
+

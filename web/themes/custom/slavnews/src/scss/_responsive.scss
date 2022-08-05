@@ -1,3 +1,4 @@
+@import "breakpoints";
 //1200px
 @media(min-width: 75rem){
   //header
@@ -130,7 +131,13 @@
     }
   }
 }
-
+//letting menu disappear under 1200 px to be called out by burger menu
+@include bp-down('xl') {
+  .menu--main-page-menu{
+    position: absolute;
+    left: -100%;
+  }
+}
 //header
 @media (max-width: 1199px) {
   //header black logo
@@ -158,10 +165,6 @@
     .view-display-id-trending_now_slider {
       justify-content: center;
     }
-  }
-
-  #block-slavnews-mainpagemenu{
-    display: none;
   }
   #block-slavnews-views-block-social-media-list-social-media-list,#block-slavnews-views-block-top-header-menu-header-top-bar,#block-slavnews-views-block-purple-view-wide-blog-offer{
     display: none;
@@ -265,6 +268,11 @@
   }
   #block-block-popular-category-taxonomy-view-popular-category-taxonomy{
     width: 30%;
+  }
+  #block-slavnews-views-block-popular-posts-popular-posts {
+    .views-field-title {
+      font-size: 17px;
+    }
   }
   .region--footer_bottom__inner {
     max-width: 100%;
