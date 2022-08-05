@@ -107,10 +107,10 @@
   }
 }
 //after 1200 menu will open on hover
-@include bp-up('xlMinus') {
-.menu__item--has-children:hover .menu--level-2{
-  display: block;
-}
+@include bp-up('xl') {
+  .menu__item--has-children:hover .menu--level-2{
+    display: block;
+  }
 }
 .my_burger_menu{
   display: none;
