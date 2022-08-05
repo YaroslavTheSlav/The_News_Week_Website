@@ -1,0 +1,59 @@
+@import "breakpoints";
+//positioning page content above and sidebar
+.page-and-sidebar {
+  width: 100%;
+}
+//inner
+.page-and-sidebar-inner {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
+  //body
+  .region--content-above {
+    width: 70%;
+    box-sizing: border-box;
+  }
+  //sidebar
+  .region--sidebar {
+    width: 30%;
+    box-sizing: border-box;
+  }
+}
+
+//body width coiner
+.body-width-container {
+  width: 100%;
+  .body-width-container-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+//footer
+.my_footer {
+  .site-footer__inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+//mobille version widths transition
+@include bp-down("lg") {
+  //region for body is full width now 
+  .page-and-sidebar-inner {
+    .region--content-above {
+      width: 100%;
+    }
+    //region with sidebar is not displayed
+    .region--sidebar {
+      display: none;
+    }
+  }
+  //body positioning for mobile
+  .body-width-container {
+    .body-width-container-inner {
+      width: 100%;
+    }
+  }
+}
