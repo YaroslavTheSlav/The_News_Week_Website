@@ -1,3 +1,4 @@
+@import "breakpoints";
 .site-header__inner__container {
   flex-direction: column;
 }
@@ -105,8 +106,11 @@
     }
   }
 }
-.menu__item--has-children:hover .menu--level-2{
-  display: block;
+//after 1200 menu will open on hover
+@include bp-up('xl') {
+  .menu__item--has-children:hover .menu--level-2{
+    display: block;
+  }
 }
 .my_burger_menu{
   display: none;
