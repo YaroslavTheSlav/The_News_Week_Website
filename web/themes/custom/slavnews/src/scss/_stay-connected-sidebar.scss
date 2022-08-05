@@ -20,13 +20,16 @@
   //items inside view item
   .views-row {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
   }
   //styling a items
   .views-field-nothing {
     padding-left: 1rem;
     align-self: center;
     width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+
     //container inside
     .stay-connected-sidebar-links {
       display: flex;

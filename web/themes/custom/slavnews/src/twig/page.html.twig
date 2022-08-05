@@ -81,17 +81,20 @@
           <a id="main-content" tabindex="-1"></a>
           {{ page.hero }}
           <div class="main-content__container container">
+
             {{ page.highlighted }}
             {{ page.breadcrumb }}
 
             {% if page.sidebar %}
               <div class="sidebar-grid">
                 <main role="main" class="site-main ie11-autorow">
-                  {{ page.content_above }}
+                  <div class="page-and-sidebar">
+                    {{ page.content_above }}
+                    {{ page.sidebar }}
+                  </div>
                   {{ page.content }}
                 </main>
 
-                {{ page.sidebar }}
               </div>
             {% else %}
               <main role="main">

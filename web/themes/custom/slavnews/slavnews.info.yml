@@ -43,3 +43,7 @@ libraries-override:
     css:
       layout:
         css/layout/layout-views-grid-vertical.css: false
+  olivero/sidebar:
+    css:
+      layout:
+        css/layout/layout-sidebar.css: false
