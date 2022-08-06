@@ -12,7 +12,7 @@ mode: default
 content:
   field_taxonomy:
     type: entity_reference_label
-    label: above
+    label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }

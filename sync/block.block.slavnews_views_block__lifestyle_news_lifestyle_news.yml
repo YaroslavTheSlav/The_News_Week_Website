@@ -12,7 +12,7 @@ dependencies:
 id: slavnews_views_block__lifestyle_news_lifestyle_news
 theme: slavnews
 region: content_above
-weight: -21
+weight: -27
 provider: null
 plugin: 'views_block:lifestyle_news-lifestyle_news'
 settings:

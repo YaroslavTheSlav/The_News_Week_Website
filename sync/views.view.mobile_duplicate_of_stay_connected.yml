@@ -1,4 +1,4 @@
-uuid: 5c527e96-6a8a-4379-9a8b-85ae59d105e0
+uuid: 3d509c6b-c923-403b-95fa-ea3252a9db04
 langcode: en
 status: true
 dependencies:
@@ -16,8 +16,8 @@ dependencies:
     - node
     - taxonomy
     - user
-id: stay_connected_
-label: 'STAY CONNECTED '
+id: mobile_duplicate_of_stay_connected
+label: 'Mobile Duplicate of STAY CONNECTED'
 module: views
 description: ''
 tag: ''
