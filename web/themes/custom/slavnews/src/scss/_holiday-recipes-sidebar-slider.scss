@@ -1,0 +1,125 @@
+//imports
+@import "breakpoints";
+@import "mixins";
+@import "colors";
+
+
+//hiding mobile view of this view
+@include bp-up("lg") {
+  #block-views-block-mobile-duplicate-of-holiday-recipes {
+    display: none;
+  }
+}
+//showing for mobile view
+@include bp-down("lg") {
+  #block-views-block-mobile-duplicate-of-holiday-recipes {
+    display: block;
+  }
+}
+
+//general styling
+//mobile version
+#block-views-block-mobile-duplicate-of-holiday-recipes,
+  //desktop version
+#block-slavnews-views-block-holiday-recipes-holiday-recipes{
+  //container styles
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+
+  //view tittle and container border top styling
+  @include stylizing-view-name($purple,$white);
+
+  //stylizing block view
+  @include stylizing-block-part-of-view ($purple);
+
+  //stylizing attachment
+  .view-content {
+    img {
+      //responsive image
+      height: auto;
+      width: 100%;
+    }
+    //positioning and styling taxonomy term
+    .views-field-term-node-tid {
+      .field-content {
+        background: rgba(0, 0, 0, 0.7);
+        color: #FFFFFF;
+        display: inline-block;
+        font-size: 11px;
+        padding: 3px 5px;
+        a:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
+  //attachment that had different fields
+  .views-field-term-node-tid {
+    margin: -1.5em 0 1em 0;
+    display: block;
+  }
+  //theming title
+  .views-field-title {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  //theming small fields after title
+  .dont-miss-slider-author-date-coment-count {
+    display: flex;
+    align-items: center;
+    color: #767676;
+    font-size: 12px;
+    line-height: 1;
+    //author
+    a {
+      font-weight: 700;
+      color: #000;
+    }
+    //author field
+    .dont-miss-slider-author {
+      padding-right: 5px;
+    }
+    //date field
+    .dont-miss-slider-date {
+      padding-left: 5px;
+    }
+    //comment count
+    .dont-miss-slider-comment-count {
+      margin-left: auto;
+      text-align: center;
+      display: inline-block;
+      color: #FFFFFF;
+      background: #000;
+      min-width: 17px;
+      padding: 3px 4px 4px 5px;
+      position: relative;
+      font-size: 11px;
+    }
+    //afer element for comment count
+    .dont-miss-slider-comment-count::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 0 0;
+      border-color: #000 transparent transparent transparent;
+    }
+  }
+  //body
+  .views-field-body {
+    font-size: 15px;
+    color: #767676;
+  }
+  //pager
+  @include custom-gray-pager-for-view ();
+
+  //spacing between fields
+  //author/date/comments count
+      .views-field-nothing {
+        margin: 7px 0 18px 0;
+      }
+}

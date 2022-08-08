@@ -1,4 +1,4 @@
-uuid: fa6043f5-b7a3-42d4-9810-6e700b50214a
+uuid: 1c28896b-2db7-41e2-876d-fd4a1fc7a6fb
 langcode: en
 status: true
 dependencies:
@@ -16,8 +16,8 @@ dependencies:
     - taxonomy
     - text
     - user
-id: holiday_recipes_
-label: 'HOLIDAY RECIPES '
+id: mobile_duplicate_of_holiday_recipes_
+label: 'Mobile Duplicate of HOLIDAY RECIPES '
 module: views
 description: ''
 tag: ''
