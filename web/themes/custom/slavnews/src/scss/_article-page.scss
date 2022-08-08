@@ -180,3 +180,40 @@
     }
   }
 }
+
+//RELATED ARTICLES
+.block-views-blockrelated-articles--related-articles-view {
+  //view tittle and container border top styling
+
+  font-family: open sans,open sans regular,sans-serif;
+
+  @include stylizing-view-name($black,$white);
+
+  //tittle
+  .views-field-title {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    padding: 15px 15px 0 15px;
+  }
+  //date
+  .views-field-created {
+      color: $gray;
+    font-size: 14px;
+    padding: 15px 15px 0 15px;
+  }
+  //pager
+  @include custom-gray-pager-for-view ();
+
+  //item selector
+  .views-row {
+    border-bottom: solid $gray 1px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+//comment styling
+.block-field-blocknodearticlecomment {
+  @include stylizing-view-name($black,$white);
+}

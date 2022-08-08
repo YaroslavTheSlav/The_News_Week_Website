@@ -109,7 +109,9 @@
     {# Comments not part of content, so they won't inherit .text-content styles. #}
     {{ content|without('comment') }}
   </div>
-  {% if content.comment %}
+  {{ content.comment }}
+
+    {% if content.comment %}
     <div id="comments" class="{{ layout }}">
       {{ content.comment }}
     </div>
