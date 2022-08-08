@@ -9,6 +9,14 @@
     padding: 20px 20px 20px 20px;
   }
 }
+//unsetting it for header
+.top_middle_bar_container {
+  .view-purple-ad-view-,.view-mobile-duplicate-of-purple-ad-view-{
+    img {
+      max-width: none;
+    }
+  }
+}
 @include bp-up("xl") {
   //removing extra advertisement from desktop view
   .view-mobile-duplicate-of-purple-ad-view- {
