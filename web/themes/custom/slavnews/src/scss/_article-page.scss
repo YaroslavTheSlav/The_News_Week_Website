@@ -1,0 +1,182 @@
+//variables import
+@import "variables";
+
+//article container
+.node--type-article, .node--view-mode-full {
+  //to position some elements on top
+  position: relative;
+  //padding to keep elements in center
+  padding: 0 20px;
+
+  //stylizing tags
+  .field--name-field-tags {
+    //positioning tags on top
+    position: absolute;
+    //stylizing
+    padding: 0;
+    top: -60vh;
+    color: $white;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    //bos with items
+    .field--tags__items {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+    //one item
+    .field--tags__item {
+      padding: 7px 12px;
+      margin: 0 12px 0 0;
+      width: fit-content;
+      &:nth-child(1) {
+        background-color: $black;
+      }
+      &:nth-child(2) {
+        background-color: $red;
+      }
+      &:nth-child(3) {
+        background-color: $orange;
+
+      }
+      &:nth-child(4) {
+        background-color: $green;
+      }
+      &:nth-child(5) {
+        background-color: $blue;
+      }
+    }
+  }
+
+  //stylizing header
+  .field--name-field-header {
+    //positioning header on top
+    position: absolute;
+    top: -48vh;
+    //stylizing
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-align: left;
+  }
+  //stylizing images
+  img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  //container with author info
+  .author-container {
+    //border
+    border-top: solid $light-gray 1px;
+    border-bottom: solid $light-gray 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 85%;
+
+    display: flex;
+    //positioning it on top
+    position: absolute;
+    top: -14vh;
+    align-items: center;
+
+    //picture
+    .field--name-user-picture {
+      margin: 0 8px 0 0;
+    }
+    //name and picture container
+    .author-container-inner {
+      display: flex;
+      align-items: center;
+      border-right: solid $light-gray 1px;
+      padding-right: 10px;
+    }
+    //name
+    .node__author-name {
+      color: $black;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-right: 3px;
+    }
+    //date
+    .node__author-date-published {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-left: 10px;
+      letter-spacing: 1px;
+    }
+  }
+  //content inside article
+  .layout--content-narrow {
+    margin: 64vh 0 0 0;
+
+    //regular paragraph selector
+    p {
+      display: block;
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: 300;
+      margin:0 0 26px 0;
+    }
+    //highlighted paragraph selector
+    strong {
+      display: block;
+      font-weight: 700;
+      margin:0 0 26px 0;
+    }
+    //block quote styles
+    em {
+      display: inline-block;
+      font-style: italic;
+      text-align: center;
+      margin: 20px 3% 18px;
+      font-weight: 500;
+      color: $black;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  //disabling global theming margin
+  .field:not(:last-child) {
+    margin-bottom: 0;
+  }
+  //hiding exess taxonomy term from paragraph
+  .paragraph--type--taxonomy {
+    display: none;
+  }
+
+  //next and previous article box styling
+  .layout--twocol-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    //previous
+    .layout__region--first {
+    }
+    //next
+    .layout__region--second{
+    }
+    .layout__region--first,.layout__region--second{
+      width: 45%;
+      font-size: 13px;
+      line-height: 1.3;
+      font-weight: 600;
+      color: $black;
+      //view name styling
+      .block__title {
+        font-size: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
