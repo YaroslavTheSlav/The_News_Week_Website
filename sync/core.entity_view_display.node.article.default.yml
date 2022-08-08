@@ -13,8 +13,10 @@ dependencies:
     - field.field.node.article.field_more_sections
     - field.field.node.article.field_tags
     - node.type.article
+    - views.view.mobile_duplicate_of_purple_ad_view_
     - views.view.next_arcticle_
     - views.view.previous_article_
+    - views.view.related_articles_
   module:
     - comment
     - entity_reference_revisions
@@ -151,17 +153,60 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
+          label: 'offer secton'
+          context_mapping: {  }
+        components:
+          f53bf3d6-54cb-40f5-855d-e7d709974365:
+            uuid: f53bf3d6-54cb-40f5-855d-e7d709974365
+            region: content
+            configuration:
+              id: 'views_block:mobile_duplicate_of_purple_ad_view_-squared_blog_offer'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'related articles'
+          context_mapping: {  }
+        components:
+          7c6f85f1-b437-4410-9a1c-346d5c1ae874:
+            uuid: 7c6f85f1-b437-4410-9a1c-346d5c1ae874
+            region: content
+            configuration:
+              id: 'views_block:related_articles_-related_articles_view'
+              label: 'RELATED ARTICLES '
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: 'RELATED ARTICLES '
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
           label: comment-section
           context_mapping: {  }
         components:
-          93aca171-35dd-4e41-93c6-25e38bcd4c52:
-            uuid: 93aca171-35dd-4e41-93c6-25e38bcd4c52
+          3732ebd6-d43a-4241-b074-0175efe6e8df:
+            uuid: 3732ebd6-d43a-4241-b074-0175efe6e8df
             region: content
             configuration:
               id: 'field_block:node:article:comment'
-              label_display: '0'
+              label: COMMENT
+              label_display: visible
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: comment_default
                 label: hidden

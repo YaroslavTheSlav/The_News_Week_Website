@@ -26,6 +26,7 @@ permissions:
   - 'access media overview'
   - 'access site-wide contact form'
   - 'search content'
+  - 'skip comment approval'
   - 'use text format restricted_html'
   - 'view media'
   - 'view paragraph content from_library'
