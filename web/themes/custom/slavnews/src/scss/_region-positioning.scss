@@ -38,9 +38,9 @@
     margin: 0 auto;
   }
 }
-//mobille version widths transition
+//mobile version widths transition
 @include bp-down("lg") {
-  //region for body is full width now 
+  //region for body is full width now
   .page-and-sidebar-inner {
     .region--content-above {
       width: 100%;

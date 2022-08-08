@@ -1,0 +1,30 @@
+uuid: 4cb6412f-51f9-4088-86e4-3a939c8ac429
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_position_left_right
+field_name: field_position_left_right
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: '-> Left'
+    -
+      value: right
+      label: '-> Right'
+    -
+      value: passive
+      label: '-> Not Specified'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
