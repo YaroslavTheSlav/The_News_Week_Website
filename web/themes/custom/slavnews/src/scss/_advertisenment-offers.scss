@@ -1,0 +1,17 @@
+@import "breakpoints";
+//advertisement image styling
+.view-purple-ad-view-,.view-mobile-duplicate-of-purple-ad-view-{
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 260px;
+    padding: 20px 20px 20px 20px;
+  }
+}
+@include bp-up("xl") {
+  //removing extra advertisement from desktop view
+  .view-mobile-duplicate-of-purple-ad-view- {
+    display: none;
+  }
+}

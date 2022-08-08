@@ -1,22 +1,22 @@
-uuid: ba1ef75f-d3ec-4b3c-9326-14791f0c7435
+uuid: a038579f-e42e-4e85-bfd0-8760817d3e0e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - views.view.purple_ad_view_
+    - views.view.mobile_duplicate_of_purple_ad_view_
   module:
     - system
     - views
   theme:
     - slavnews
-id: slavnews_views_block__purple_ad_view__wide_blog_offer
+id: views_block__mobile_duplicate_of_purple_ad_view
 theme: slavnews
 region: content_above
-weight: -17
+weight: -24
 provider: null
-plugin: 'views_block:purple_ad_view_-wide_blog_offer'
+plugin: 'views_block:mobile_duplicate_of_purple_ad_view_-squared_blog_offer'
 settings:
-  id: 'views_block:purple_ad_view_-wide_blog_offer'
+  id: 'views_block:mobile_duplicate_of_purple_ad_view_-squared_blog_offer'
   label: ''
   label_display: '0'
   provider: views

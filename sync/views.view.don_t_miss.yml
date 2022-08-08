@@ -1057,7 +1057,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           type: separator
-          separator: ' '
+          separator: ''
           link_to_taxonomy: true
           limit: false
           vids:

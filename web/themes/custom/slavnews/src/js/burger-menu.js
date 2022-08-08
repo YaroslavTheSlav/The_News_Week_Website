@@ -18,6 +18,14 @@
           $("#page").toggleClass("active_burger_menu_page");
           $(".menu--main-page-menu").toggleClass("active_burger_menu");
         });
+        //burger menu items open children on click
+        $(".menu--main-page-menu .menu__item--level-1").click(function () {
+          let $element = $(this);
+          console.log('me');
+          $(".menu--level-2", $element).toggleClass("display-menu-on-click-class");
+          $element.toggleClass("display-menu-on-click-class-arrows");
+        });
+
       });
 
     }

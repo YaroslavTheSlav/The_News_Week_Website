@@ -7,8 +7,10 @@ dependencies:
   module:
     - comment
     - contact
+    - file
     - filter
     - media
+    - paragraphs_type_permissions
     - search
     - system
 _core:
@@ -20,7 +22,14 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access files overview'
+  - 'access media overview'
   - 'access site-wide contact form'
   - 'search content'
+  - 'skip comment approval'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view paragraph content from_library'
+  - 'view paragraph content paragraph_body_'
+  - 'view paragraph content paragraph_media'
+  - 'view paragraph content taxonomy'

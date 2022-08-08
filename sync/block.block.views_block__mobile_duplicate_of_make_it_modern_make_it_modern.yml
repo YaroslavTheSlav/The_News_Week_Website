@@ -1,0 +1,29 @@
+uuid: 050012e6-8661-4094-b5dc-0e76e5ca8b7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobile_duplicate_of_make_it_modern
+  module:
+    - system
+    - views
+  theme:
+    - slavnews
+id: views_block__mobile_duplicate_of_make_it_modern_make_it_modern
+theme: slavnews
+region: content_above
+weight: -23
+provider: null
+plugin: 'views_block:mobile_duplicate_of_make_it_modern-make_it_modern'
+settings:
+  id: 'views_block:mobile_duplicate_of_make_it_modern-make_it_modern'
+  label: 'MAKE IT MODERN'
+  label_display: visible
+  provider: views
+  views_label: 'MAKE IT MODERN'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
