@@ -3,6 +3,10 @@
 
 //article container
 .node--type-article, .node--view-mode-full {
+  //flex for all content
+  .block__content {
+    display: flex;
+  }
   //to position some elements on top
   position: relative;
   //padding to keep elements in center
@@ -120,7 +124,6 @@
 
     //regular paragraph selector
     p {
-      display: block;
       font-size: 13px;
       line-height: 1.6;
       font-weight: 300;
@@ -128,7 +131,6 @@
     }
     //highlighted paragraph selector
     strong {
-      display: block;
       font-weight: 700;
       margin:0 0 26px 0;
     }
@@ -296,7 +298,20 @@
 //comment styling
 .block-field-blocknodearticlecomment {
   @include stylizing-view-name($black,$white);
-
+  border-bottom: solid $light-gray 1px;
+  //removing border styles for comments
+  .comments {
+    //margin of all content item box
+    margin: 0 0 0 22%;
+    .comment--level-1 {
+      border-top: none;
+    }
+    .block__content {
+      border-top: unset;
+      padding-top: unset;
+      padding-bottom: unset;
+    }
+  }
   .pager {
     display: none;
   }
@@ -315,21 +330,32 @@
   //positioning taxonomy terms
   .node--type-article .field--name-field-tags, .node--view-mode-full .field--name-field-tags {
     top: -7%;
+    }
+    //positioning header
+    .text-content.clearfix.field.field--name-field-header.field--type-text.field--label-hidden.field__item {
+        top: -6%;
+      }
+    //positioning author field
+    .node--type-article .author-container, .node--view-mode-full .author-container {
+        top: -3%;
+      }
+    //positioning page
+    .node--type-article .layout--content-narrow, .node--view-mode-full .layout--content-narrow {
+        margin: 25% 0 0 0;
+      }
   }
-  //positioning header
-  .text-content.clearfix.field.field--name-field-header.field--type-text.field--label-hidden.field__item {
-    top: -6%;
-  }
-  //positioning author field
-  .node--type-article .author-container, .node--view-mode-full .author-container {
-    top: -3%;
-  }
-  //positioning page
-  .node--type-article .layout--content-narrow, .node--view-mode-full .layout--content-narrow {
-    margin: 25% 0 0 0;
-  }
-}
 
 
 //user selected image to the left of to the right
-
+.node--type-article {
+  .article-img-pos-right {
+    width: 40%;
+    margin: 0 0 0 auto;
+    float: right;
+  }
+  .article-img-pos-left {
+    width: 40%;
+    margin: 0 auto 0 0;
+    float: left;
+  }
+}
