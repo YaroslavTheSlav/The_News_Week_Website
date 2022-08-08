@@ -305,7 +305,7 @@
         &.pager__item--active::after {
           content: "<";
           font-size: 14px;
-          padding: 0 10px 0 3px;
+          padding: 0 7px 0 3px;
           color: #b7b7b7;
         }
       }
@@ -313,7 +313,7 @@
         &.pager__item--active::after {
           content: ">";
           font-size: 14px;
-          padding: 0 10px 0 3px;
+          padding: 0 9px 0 3px;
           color: #b7b7b7;
         }
       }
