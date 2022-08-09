@@ -1,0 +1,20 @@
+@import "variables";
+
+
+// styles that slavnews_paragraph_behaviour module applies
+.image-position--left {
+  width: 50%;
+  float: left;
+  img {
+    margin-right: 25px;
+    margin-top: 5px;
+  }
+}
+.image-position--right {
+  width: 50%;
+  float: right;
+  img {
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+}
