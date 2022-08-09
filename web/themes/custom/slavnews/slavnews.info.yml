@@ -39,6 +39,7 @@ libraries-override:
         css/components/wide-image.css: false
         css/components/header-site-branding.css: false
         css/components/skip-link.css: false
+        css/components/text-content.css: false
   olivero/layout-views-grid-vertical:
     css:
       layout:
@@ -47,3 +48,11 @@ libraries-override:
     css:
       layout:
         css/layout/layout-sidebar.css: false
+  olivero/tags:
+    css:
+      theme:
+        css/components/tags.css: false
+  olivero/layout_builder_twocol_section:
+    css:
+      layout:
+        css/layout/layout-builder-twocol-section.css: false
