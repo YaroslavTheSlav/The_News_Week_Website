@@ -9,7 +9,7 @@ dependencies:
 id: slavnews_pagetitle
 theme: slavnews
 region: content_above
-weight: -19
+weight: -18
 provider: null
 plugin: page_title_block
 settings:

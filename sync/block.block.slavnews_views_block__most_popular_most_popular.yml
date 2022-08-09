@@ -1,6 +1,6 @@
 uuid: 47130fb8-86fd-4740-8a36-f323be867e0c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.most_popular
@@ -12,7 +12,7 @@ dependencies:
 id: slavnews_views_block__most_popular_most_popular
 theme: slavnews
 region: sidebar
-weight: -16
+weight: -23
 provider: null
 plugin: 'views_block:most_popular-most_popular'
 settings:

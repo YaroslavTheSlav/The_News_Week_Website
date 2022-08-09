@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_gadgets
 theme: slavnews
 region: content_above
-weight: -18
+weight: -17
 provider: null
 plugin: 'system_menu_block:gadgets'
 settings:
