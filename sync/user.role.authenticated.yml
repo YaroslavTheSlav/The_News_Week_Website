@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - paragraphs_type_permissions
     - search
     - shortcut
     - system
@@ -21,10 +22,15 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access media overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'post comments'
   - 'search content'
-  - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
+  - 'view own unpublished media'
+  - 'view paragraph content from_library'
+  - 'view paragraph content paragraph_body_'
+  - 'view paragraph content paragraph_media'
+  - 'view paragraph content taxonomy'
