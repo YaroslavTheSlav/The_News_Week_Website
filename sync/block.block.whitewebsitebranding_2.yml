@@ -11,7 +11,7 @@ dependencies:
 id: whitewebsitebranding_2
 theme: slavnews
 region: footer_bottom
-weight: -24
+weight: -28
 provider: null
 plugin: 'block_content:cff66a04-f554-4fcc-857a-ea233c39562f'
 settings:

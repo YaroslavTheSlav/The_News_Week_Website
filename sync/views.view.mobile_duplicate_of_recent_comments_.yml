@@ -1,4 +1,4 @@
-uuid: b0d7e5e2-6940-470f-9ddb-377ed7fcfabb
+uuid: 2ecf02f8-f8e3-4b6c-a79d-b3ac95472e0a
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,8 @@ dependencies:
     - comment
     - node
     - user
-id: recent_comments_
-label: 'RECENT COMMENTS '
+id: mobile_duplicate_of_recent_comments_
+label: 'Mobile Duplicate of RECENT COMMENTS '
 module: views
 description: ''
 tag: ''
@@ -277,9 +277,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  recent_comments:
-    id: recent_comments
-    display_title: 'Recent comments'
+  recent_comments_mobile:
+    id: recent_comments_mobile
+    display_title: 'Recent comments Mobile'
     display_plugin: block
     position: 1
     display_options:

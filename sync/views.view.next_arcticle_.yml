@@ -1,15 +1,14 @@
-uuid: b0d7e5e2-6940-470f-9ddb-377ed7fcfabb
+uuid: 9ab26c7b-ff40-42fa-a2a3-2623b953adeb
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.article
   module:
-    - comment
     - node
     - user
-id: recent_comments_
-label: 'RECENT COMMENTS '
+id: next_arcticle_
+label: 'Next Arcticle '
 module: views
 description: ''
 tag: ''
@@ -22,58 +21,8 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'RECENT COMMENTS '
+      title: 'Next Arcticle '
       fields:
-        last_comment_name:
-          id: last_comment_name
-          table: comment_entity_statistics
-          field: last_comment_name
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: comment_ces_last_comment_name
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          link_to_user: true
         title:
           id: title
           table: node_field_data
@@ -83,7 +32,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -115,7 +64,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -137,60 +86,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: custom
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '<div class="recent-comments-container">{{ last_comment_name }} on  {{ title }}</div>'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 1
       exposed_form:
         type: basic
         options:
@@ -220,7 +120,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
@@ -266,6 +166,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: next-article-view
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -277,13 +178,12 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  recent_comments:
-    id: recent_comments
-    display_title: 'Recent comments'
+  next_article_view:
+    id: next_article_view
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
-      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1

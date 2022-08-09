@@ -12,7 +12,7 @@ dependencies:
 id: slavnews_views_block__purple_ad_view__wide_blog_offer
 theme: slavnews
 region: content_above
-weight: -17
+weight: -16
 provider: null
 plugin: 'views_block:purple_ad_view_-wide_blog_offer'
 settings:
