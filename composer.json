@@ -85,10 +85,10 @@
             "locations": {
                 "web-root": "web/"
             },
-              "hooks": {
-                  "pre-commit": "./utility/git-hooks/pre-commit.sh",
-                  "commit-msg": "./utility/git-hooks/commit-msg.sh $1"
-              }
+        "hooks": {
+            "pre-commit": "./utility/git-hooks/pre-commit.sh",
+            "commit-msg": "./utility/git-hooks/commit-msg.sh $1"
+         }
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
