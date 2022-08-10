@@ -33,6 +33,7 @@
 /Not_used
 /*.sql
 /images_for_website
+/node_modules
 
 /web/themes/custom/*/node_modules
 /web/themes/custom/*/dist

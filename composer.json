@@ -79,18 +79,18 @@
     },
  "extra": {
         "drupal-scaffold": {
-             "file-mapping": {
-          "[web-root]/.eslintrc.json": false                      
-          },
+            "file-mapping": {
+                "[web-root]/.eslintrc.json": false
+            },
             "locations": {
                 "web-root": "web/"
-            },
-              "hooks": {
-                  "pre-commit": "./utility/git-hooks/pre-commit.sh",
-                  "commit-msg": "./utility/git-hooks/commit-msg.sh $1"
-              }
+            }
         },
-        "installer-paths": {
+     "hooks": {
+         "pre-commit": "./utility/git-hooks/pre-commit.sh",
+         "commit-msg": "./utility/git-hooks/commit-msg.sh $1"
+     },
+     "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
