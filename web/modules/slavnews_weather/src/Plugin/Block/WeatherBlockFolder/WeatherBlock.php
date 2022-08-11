@@ -7,23 +7,15 @@ use Drupal\Core\Block\BlockBase;
 use Symfony\Component\HttpFoundation;
 
 /**
- * Provides a 'Hello' Block.
+ * Provides a 'Weather' Block.
  *
  * @Block(
- *   id = "hello_block",
- *   admin_label = @Translation("Hello block"),
- *   category = @Translation("Hello World"),
+ *   id = "weather_block",
+ *   admin_label = @Translation("Weather Block"),
+ *   category = @Translation("My Weather"),
  * )
  */
-/**
- * MyClass Class Doc Comment.
- *
- * @category Class
- * @package MyPackage
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License
- * @link http://www.hashbangcode.com/
- */
-class HelloBlock extends BlockBase {
+class WeatherBlock extends BlockBase {
 
   /**
    * {@inheritdoc}
@@ -51,8 +43,7 @@ class HelloBlock extends BlockBase {
     // (outputting all data)
     $my_block_content = [
       '#theme' => 'hello_block',
-      // (display weather)
-      '#markup' => 'Temperature in Your Current city: ' . json_decode($data['current']['temp_c']) . ' My ip: ' . $ip,
+      '#markup' => $data['current']['temp_c'] . ' ' . $data['location']['name'],
     ];
     return $my_block_content;
   }
