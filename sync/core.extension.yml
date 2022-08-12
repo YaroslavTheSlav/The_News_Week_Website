@@ -46,6 +46,8 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  slavnews_paragraph_behaviour: 0
+  slavnews_weather: 0
   system: 0
   taxonomy: 0
   text: 0

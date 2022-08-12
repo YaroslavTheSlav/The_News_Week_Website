@@ -1,0 +1,5 @@
+slavnews_weather.settings:
+  title: 'Admin Weather Settings'
+  description: 'Configure the Weather Module'
+  route_name: slavnews_weather.settings
+  parent: system.admin_config_system

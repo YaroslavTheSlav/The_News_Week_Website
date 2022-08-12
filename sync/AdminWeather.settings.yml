@@ -1,0 +1,5 @@
+AdminWeather:
+  settings:
+    weatherapi_token: 774df53d912143dd9b5124404221008
+    admin_city: 'Lutsk, Ukraine'
+    ipfind_token: b0681a8c-ea7b-49c3-8dab-88900ca30bcb
