@@ -11,7 +11,7 @@ _core:
 id: slavnews_syndicate
 theme: slavnews
 region: header
-weight: -16
+weight: -22
 provider: null
 plugin: node_syndicate_block
 settings:

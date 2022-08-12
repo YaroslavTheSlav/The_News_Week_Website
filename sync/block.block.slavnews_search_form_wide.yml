@@ -11,7 +11,7 @@ _core:
 id: slavnews_search_form_wide
 theme: slavnews
 region: header
-weight: -17
+weight: -23
 provider: null
 plugin: search_form_block
 settings:

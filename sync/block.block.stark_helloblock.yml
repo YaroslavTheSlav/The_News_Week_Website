@@ -1,0 +1,20 @@
+uuid: bb7b4555-a376-484b-8f7b-ae6e76ed038f
+langcode: en
+status: true
+dependencies:
+  module:
+    - slavnews_weather
+  theme:
+    - stark
+id: stark_helloblock
+theme: stark
+region: highlighted
+weight: -29
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello block qq'
+  label_display: visible
+  provider: slavnews_weather
+visibility: {  }

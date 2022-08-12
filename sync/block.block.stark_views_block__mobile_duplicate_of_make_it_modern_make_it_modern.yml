@@ -1,0 +1,29 @@
+uuid: 3b148273-c173-467c-9e6e-40873b95200e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobile_duplicate_of_make_it_modern
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__mobile_duplicate_of_make_it_modern_make_it_modern
+theme: stark
+region: sidebar_first
+weight: -23
+provider: null
+plugin: 'views_block:mobile_duplicate_of_make_it_modern-make_it_modern'
+settings:
+  id: 'views_block:mobile_duplicate_of_make_it_modern-make_it_modern'
+  label: 'MAKE IT MODERN'
+  label_display: visible
+  provider: views
+  views_label: 'MAKE IT MODERN'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

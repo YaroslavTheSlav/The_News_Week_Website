@@ -1,0 +1,24 @@
+uuid: 19518275-eeb6-4642-9197-377b86bc04f9
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.popular_category_
+  module:
+    - views
+  theme:
+    - stark
+id: stark_views_block__popular_category__popular_category
+theme: stark
+region: sidebar_first
+weight: -22
+provider: null
+plugin: 'views_block:popular_category_-popular_category'
+settings:
+  id: 'views_block:popular_category_-popular_category'
+  label: 'POPULAR CATEGORY'
+  label_display: visible
+  provider: views
+  views_label: 'POPULAR CATEGORY'
+  items_per_page: none
+visibility: {  }

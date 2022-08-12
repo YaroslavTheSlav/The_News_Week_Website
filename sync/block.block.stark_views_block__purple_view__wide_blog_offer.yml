@@ -1,0 +1,24 @@
+uuid: 6cbcd6e1-1835-4594-a0a6-1c6b929e0c33
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.purple_ad_view_
+  module:
+    - views
+  theme:
+    - stark
+id: stark_views_block__purple_view__wide_blog_offer
+theme: stark
+region: header
+weight: -26
+provider: null
+plugin: 'views_block:purple_ad_view_-wide_blog_offer'
+settings:
+  id: 'views_block:purple_ad_view_-wide_blog_offer'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

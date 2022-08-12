@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_views_block__top_news_block_1
 theme: slavnews
 region: highlighted
-weight: -16
+weight: -19
 provider: null
 plugin: 'views_block:top_news-block_1'
 settings:

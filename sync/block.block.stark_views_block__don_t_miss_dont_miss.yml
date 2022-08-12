@@ -1,0 +1,29 @@
+uuid: 977d9de4-7388-4efd-8949-d8b783cc83b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.don_t_miss
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__don_t_miss_dont_miss
+theme: stark
+region: sidebar_first
+weight: -28
+provider: null
+plugin: 'views_block:don_t_miss-dont_miss'
+settings:
+  id: 'views_block:don_t_miss-dont_miss'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

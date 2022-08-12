@@ -1,0 +1,29 @@
+uuid: ae44feb4-d1bd-4af3-a67b-bbb5361e90f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobile_duplicate_of_holiday_recipes_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__mobile_duplicate_of_holiday_recipes
+theme: stark
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'views_block:mobile_duplicate_of_holiday_recipes_-holiday_recipes'
+settings:
+  id: 'views_block:mobile_duplicate_of_holiday_recipes_-holiday_recipes'
+  label: 'HOLIDAY RECIPES '
+  label_display: visible
+  provider: views
+  views_label: 'HOLIDAY RECIPES '
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

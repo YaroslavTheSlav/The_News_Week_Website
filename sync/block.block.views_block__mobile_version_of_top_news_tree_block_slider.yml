@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mobile_version_of_top_news_tree_block_slider
 theme: slavnews
 region: highlighted
-weight: 0
+weight: -21
 provider: null
 plugin: 'views_block:mobile_version_of_top_news_tree_block_slider_-mobile_version_of_top_news_three_block_slider'
 settings:

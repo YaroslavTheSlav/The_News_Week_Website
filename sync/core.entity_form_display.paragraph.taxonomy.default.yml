@@ -11,7 +11,7 @@ bundle: taxonomy
 mode: default
 content:
   field_taxonomy:
-    type: options_buttons
+    type: options_select
     weight: 0
     region: content
     settings: {  }

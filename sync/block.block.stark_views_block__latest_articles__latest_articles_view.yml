@@ -1,0 +1,29 @@
+uuid: 985ad443-ee27-4643-8428-ea2a79a3294b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_articles_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__latest_articles__latest_articles_view
+theme: stark
+region: sidebar_first
+weight: -19
+provider: null
+plugin: 'views_block:latest_articles_-latest_articles_view'
+settings:
+  id: 'views_block:latest_articles_-latest_articles_view'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
