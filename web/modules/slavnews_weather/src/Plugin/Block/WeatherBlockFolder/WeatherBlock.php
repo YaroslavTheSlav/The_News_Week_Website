@@ -19,8 +19,10 @@ class WeatherBlock extends BlockBase {
 
   /**
    * {@inheritdoc}
+   *
+   * @todo use dependency injection instead of phpcs:ignore.
+   * Building function.
    */
-  // @todo use dependency injection instead of phpcs:ignore
   public function build() {
     // (receive weather api)
     $method = 'GET';
@@ -50,11 +52,12 @@ class WeatherBlock extends BlockBase {
     $response = $client->get($weather_url);
     $data = json_decode($response->getBody($method), TRUE);
     // (outputting all data)
-    $my_block_content = [
-      '#theme' => 'hello_block',
-      '#markup' => $data['current']['temp_c'] . ' ' . $data['location']['name'],
+    return [
+      '#theme' => 'slavnews__weather__block',
+      '#image' => $data['current']['condition']['icon'],
+      '#temp_c' => $data['current']['temp_c'],
+      '#city' => $data['location']['name'],
     ];
-    return $my_block_content;
   }
 
 }
