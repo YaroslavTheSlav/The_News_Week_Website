@@ -1,0 +1,29 @@
+uuid: 90fb4d9a-bb18-4e0f-a7d4-0fa59f7f0543
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.make_it_modern
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__make_it_modern_make_it_modern
+theme: stark
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'views_block:make_it_modern-make_it_modern'
+settings:
+  id: 'views_block:make_it_modern-make_it_modern'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

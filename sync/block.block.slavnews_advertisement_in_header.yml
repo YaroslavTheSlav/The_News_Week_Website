@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_advertisement_in_header
 theme: slavnews
 region: header
-weight: -15
+weight: -21
 provider: null
 plugin: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
 settings:

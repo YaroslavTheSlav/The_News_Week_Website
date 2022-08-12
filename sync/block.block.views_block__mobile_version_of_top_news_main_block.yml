@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mobile_version_of_top_news_main_block
 theme: slavnews
 region: highlighted
-weight: 0
+weight: -22
 provider: null
 plugin: 'views_block:mobile_version_of_top_news_main_block_-mobile_version_of_top_news_main_block'
 settings:

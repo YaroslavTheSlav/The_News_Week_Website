@@ -12,7 +12,7 @@ dependencies:
 id: slavnews_views_block__trending_now_slider_trending_now_slider
 theme: slavnews
 region: highlighted
-weight: -24
+weight: -30
 provider: null
 plugin: 'views_block:trending_now_slider-trending_now_slider'
 settings:

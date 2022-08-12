@@ -1,0 +1,29 @@
+uuid: fe0a9a22-ccb2-42fe-99ff-428f0813e3a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gadgets
+  module:
+    - system
+  theme:
+    - stark
+id: stark_gadgets
+theme: stark
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'system_menu_block:gadgets'
+settings:
+  id: 'system_menu_block:gadgets'
+  label: GADGETS
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

@@ -1,0 +1,29 @@
+uuid: 90b802f4-3b75-4aa1-9599-7622d4d0c118
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.desktop_version_of_top_news_wide_block_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__desktop_version_of_top_news_wide_block
+theme: stark
+region: highlighted
+weight: -22
+provider: null
+plugin: 'views_block:desktop_version_of_top_news_wide_block_-desktop_version_of_top_news_wide_block'
+settings:
+  id: 'views_block:desktop_version_of_top_news_wide_block_-desktop_version_of_top_news_wide_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

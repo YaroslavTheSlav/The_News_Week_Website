@@ -1,0 +1,25 @@
+uuid: 7736bfbc-9780-441c-81bf-eda6866b8ae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-page-menu
+  module:
+    - system
+  theme:
+    - stark
+id: stark_mainpagemenu
+theme: stark
+region: header
+weight: -25
+provider: null
+plugin: 'system_menu_block:main-page-menu'
+settings:
+  id: 'system_menu_block:main-page-menu'
+  label: 'Main page Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

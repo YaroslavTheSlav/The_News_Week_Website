@@ -1,0 +1,25 @@
+uuid: 8f33f860-a227-4f60-84ad-506477f457d3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:ad_image:64fbec81-cb61-42d9-ba36-88d0304740fa'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_advertisement_in_header
+theme: stark
+region: header
+weight: -21
+provider: null
+plugin: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
+settings:
+  id: 'block_content:64fbec81-cb61-42d9-ba36-88d0304740fa'
+  label: Advertisement_in_header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -11,7 +11,7 @@ id: paragraph.paragraph_media.field_position_left_right
 field_name: field_position_left_right
 entity_type: paragraph
 bundle: paragraph_media
-label: position-left-right
+label: position-left-right-twig
 description: ''
 required: true
 translatable: false

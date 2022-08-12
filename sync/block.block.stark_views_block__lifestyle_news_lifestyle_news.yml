@@ -1,0 +1,29 @@
+uuid: 8e4fc5ec-d0e2-4ff4-b48c-c25d586157c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.lifestyle_news
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__lifestyle_news_lifestyle_news
+theme: stark
+region: sidebar_first
+weight: -27
+provider: null
+plugin: 'views_block:lifestyle_news-lifestyle_news'
+settings:
+  id: 'views_block:lifestyle_news-lifestyle_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

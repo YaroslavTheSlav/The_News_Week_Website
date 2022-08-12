@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_views_block__top_header_menu_header_top_bar
 theme: slavnews
 region: header
-weight: -24
+weight: -30
 provider: null
 plugin: 'views_block:top_header_menu-header_top_bar'
 settings:

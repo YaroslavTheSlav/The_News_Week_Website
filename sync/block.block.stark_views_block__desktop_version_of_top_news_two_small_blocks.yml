@@ -1,0 +1,29 @@
+uuid: 87964f2d-4ca6-4b11-a5d5-21bf0e5595ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.desktop_version_of_top_news_two_small_blocks_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__desktop_version_of_top_news_two_small_blocks
+theme: stark
+region: highlighted
+weight: -21
+provider: null
+plugin: 'views_block:desktop_version_of_top_news_two_small_blocks_-desktop_version_of_top_news_two_small_blocks'
+settings:
+  id: 'views_block:desktop_version_of_top_news_two_small_blocks_-desktop_version_of_top_news_two_small_blocks'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

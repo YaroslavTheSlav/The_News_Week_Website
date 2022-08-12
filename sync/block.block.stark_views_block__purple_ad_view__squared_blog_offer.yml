@@ -1,0 +1,29 @@
+uuid: 21d33a9e-1348-499a-b1d9-b32ab2b0463d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.purple_ad_view_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__purple_ad_view__squared_blog_offer
+theme: stark
+region: sidebar_first
+weight: -27
+provider: null
+plugin: 'views_block:purple_ad_view_-squared_blog_offer'
+settings:
+  id: 'views_block:purple_ad_view_-squared_blog_offer'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

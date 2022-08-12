@@ -1,0 +1,29 @@
+uuid: ee75033d-e7a2-44b6-abc5-a36ef3e82623
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobile_version_of_top_news_tree_block_slider_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__mobile_version_of_top_news_tree_block_slider
+theme: stark
+region: highlighted
+weight: -19
+provider: null
+plugin: 'views_block:mobile_version_of_top_news_tree_block_slider_-mobile_version_of_top_news_three_block_slider'
+settings:
+  id: 'views_block:mobile_version_of_top_news_tree_block_slider_-mobile_version_of_top_news_three_block_slider'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

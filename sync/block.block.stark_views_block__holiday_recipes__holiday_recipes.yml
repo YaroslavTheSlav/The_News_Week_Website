@@ -1,0 +1,29 @@
+uuid: fb2601a9-942c-4b11-b5be-1aec91f44da2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.holiday_recipes_
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__holiday_recipes__holiday_recipes
+theme: stark
+region: sidebar_first
+weight: -24
+provider: null
+plugin: 'views_block:holiday_recipes_-holiday_recipes'
+settings:
+  id: 'views_block:holiday_recipes_-holiday_recipes'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

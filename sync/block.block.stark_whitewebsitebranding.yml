@@ -1,0 +1,25 @@
+uuid: 06706ae1-ec47-4403-b529-ac0ca3e9f190
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:white_website_branding_:cff66a04-f554-4fcc-857a-ea233c39562f'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_whitewebsitebranding
+theme: stark
+region: header
+weight: -27
+provider: null
+plugin: 'block_content:cff66a04-f554-4fcc-857a-ea233c39562f'
+settings:
+  id: 'block_content:cff66a04-f554-4fcc-857a-ea233c39562f'
+  label: 'White website branding '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

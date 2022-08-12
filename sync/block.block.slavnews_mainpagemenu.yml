@@ -11,7 +11,7 @@ dependencies:
 id: slavnews_mainpagemenu
 theme: slavnews
 region: header
-weight: -19
+weight: -25
 provider: null
 plugin: 'system_menu_block:main-page-menu'
 settings:
