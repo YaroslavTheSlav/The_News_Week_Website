@@ -3,8 +3,7 @@
 namespace Drupal\slavnews_weather\Plugin\Block\WeatherBlockFolder;
 
 use Drupal\Core\Block\BlockBase;
-// phpcs:ignore
-use Symfony\Component\HttpFoundation;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Provides a 'Weather' Block.
@@ -26,9 +25,9 @@ class WeatherBlock extends BlockBase {
   public function build() {
     // (receive weather api)
     $method = 'GET';
+    $request = new Request();
     // (receive client ip)
-    // phpcs:ignore
-    $ip = \Drupal::request()->getClientIp();
+    $ip = $request->getClientIp();
     $ip_query = 'auto:' . $ip;
     // (receive weather api)
     // phpcs:ignore
