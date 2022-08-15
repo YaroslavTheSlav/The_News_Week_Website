@@ -1,0 +1,20 @@
+uuid: 5ca27ede-99c6-4643-9030-c271c78da934
+langcode: en
+status: true
+dependencies:
+  module:
+    - slavnews_weather
+  theme:
+    - slavnews
+id: weatherblock
+theme: slavnews
+region: breadcrumb
+weight: 0
+provider: null
+plugin: weather_block
+settings:
+  id: weather_block
+  label: 'Weather Block'
+  label_display: visible
+  provider: slavnews_weather
+visibility: {  }

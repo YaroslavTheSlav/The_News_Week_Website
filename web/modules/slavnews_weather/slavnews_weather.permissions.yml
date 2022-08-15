@@ -1,0 +1,4 @@
+administer slavnews_weather configuration:
+  title: 'Administer slavnews_weather configuration'
+  description: 'Optional description.'
+  restrict access: true

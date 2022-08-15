@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SlavNews Weather module.
+ */
+
+/**
+ * Hook that displays twig.
+ */
+function slavnews_weather_theme() {
+  return [
+    'slavnews__weather__block' => [
+      'variables' => [
+        'image' => '',
+        'temp_c' => '',
+        'city' => '',
+      ],
+    ],
+  ];
+}

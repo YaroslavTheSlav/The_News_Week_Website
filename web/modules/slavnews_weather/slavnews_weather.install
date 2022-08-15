@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the SlavNews Weather module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function slavnews_weather_install() {
+  \Drupal::messenger()->addStatus(__FUNCTION__);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function slavnews_weather_uninstall() {
+  \Drupal::messenger()->addStatus(__FUNCTION__);
+}
