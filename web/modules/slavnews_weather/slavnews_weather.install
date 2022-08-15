@@ -10,6 +10,15 @@
  */
 function slavnews_weather_install() {
   \Drupal::messenger()->addStatus(__FUNCTION__);
+
+  /*
+   * Checking if yml file exists, if not then fill it with empty items.
+   */
+  $config = Drupal::config('AdminWeather.settings');
+  if (!$config) {
+    \Drupal::logger('slavnews_weather')->warning('Config (AdminWeather.settings) does not have values!!');
+    \Drupal::messenger()->addStatus('Config (AdminWeather.settings) does not have values!!');
+  }
 }
 
 /**
