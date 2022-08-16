@@ -9,12 +9,13 @@
  * Implements hook_install().
  */
 function slavnews_weather_install() {
-  \Drupal::messenger()->addStatus(__FUNCTION__);
-}
+  // If in config factory we search for AdminWeather.settings config is new.
+  // New = object does not yet exist in storage.
+  if (\Drupal::configFactory()->get('AdminWeather.settings')->isNew()) {
+    \Drupal::messenger()
+      ->addWarning(' Default api keys missing, please fill out weather form');
+    \Drupal::logger('slavnews_weather')
+      ->warning('Module installed, But AdminWeather.settings(config) is empty');
 
-/**
- * Implements hook_uninstall().
- */
-function slavnews_weather_uninstall() {
-  \Drupal::messenger()->addStatus(__FUNCTION__);
+  }
 }

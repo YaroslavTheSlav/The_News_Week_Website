@@ -58,7 +58,7 @@ class WeatherForm extends ConfigFormBase {
     ];
     $form['ipfind_token'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Enter Token for IpFind: '),
+      '#title' => $this->t('Enter Token for IpFind:'),
       '#default_value' => $config->get('ipfind_token'),
       '#required' => TRUE,
     ];
@@ -73,10 +73,9 @@ class WeatherForm extends ConfigFormBase {
 
   /**
    * Sub Validating Api Key.
-   *
-   * @todo use dependency injection instead of phpcs:ignore
    */
   private function checkApi($apiKey) {
+    // @todo use dependency injection instead of phpcs:ignore
     // phpcs:ignore
     $client = \Drupal::httpClient();
     $method = 'GET';
@@ -135,6 +134,7 @@ class WeatherForm extends ConfigFormBase {
     }
     return TRUE;
   }
+
   /**
    * Validating form.
    */
