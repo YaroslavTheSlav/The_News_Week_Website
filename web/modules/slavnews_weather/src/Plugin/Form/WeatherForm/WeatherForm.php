@@ -58,7 +58,7 @@ class WeatherForm extends ConfigFormBase {
     ];
     $form['ipfind_token'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Enter Token for IpFind: '),
+      '#title' => $this->t('Enter Token for IpFind:'),
       '#default_value' => $config->get('ipfind_token'),
       '#required' => TRUE,
     ];
