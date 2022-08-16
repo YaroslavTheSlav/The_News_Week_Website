@@ -73,10 +73,9 @@ class WeatherForm extends ConfigFormBase {
 
   /**
    * Sub Validating Api Key.
-   *
-   * @todo use dependency injection instead of phpcs:ignore
    */
   private function checkApi($apiKey) {
+    // @todo use dependency injection instead of phpcs:ignore
     // phpcs:ignore
     $client = \Drupal::httpClient();
     $method = 'GET';
@@ -135,6 +134,7 @@ class WeatherForm extends ConfigFormBase {
     }
     return TRUE;
   }
+
   /**
    * Validating form.
    */
