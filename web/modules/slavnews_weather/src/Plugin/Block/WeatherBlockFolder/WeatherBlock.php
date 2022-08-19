@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 use GuzzleHttp\Client;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Config\ConfigFactoryInterface;
 
 /**
  * Provides a 'Weather' Block.
@@ -40,13 +41,21 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
   protected $cacheBackend;
 
   /**
+   * The config factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected $configFactory;
+
+  /**
    * Constructing requests and other using dependency injection.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, $cache_backend) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, $cache_backend, ConfigFactoryInterface $config_factory) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->client = new Client();
     $this->request = new Request();
     $this->cacheBackend = $cache_backend;
+    $this->configFactory = $config_factory;
   }
 
   /**
@@ -59,6 +68,15 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
       $plugin_definition,
       $container->get('cache.default'),
     );
+  }
+
+  /**
+   * Config zones configuration.
+   */
+  protected function getZonesFromConfig($requestedParameter) {
+    $config = $this->configFactory->get('AdminWeather.settings');
+    $returnedParameter = $requestedParameter . '.';
+    return $config->get($returnedParameter);
   }
 
   /**
@@ -118,6 +136,7 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
    * Validate and receive user IP.
    */
   public function getIplocation() {
+    $user = $this->dbNuser();
     // Request user Ip.
     // phpcs:ignore
     $ip = \Drupal::request()->getClientIp();
@@ -132,8 +151,7 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
     else {
       // We request ipFind token from config, get ip and return...
       // ready to use user geological location.
-      // phpcs:ignore
-      if ($ip_token = \Drupal::config('AdminWeather.settings')->get('AdminWeather.settings.ipfind_token') != NULL) {
+      if ($ip_token = $this->getZonesFromConfig('ipfind_token') != NULL) {
         $ip_api_url = 'https://api.ipfind.com?ip=' . $ip . '&auth=' . $ip_token;
         $response = $this->client->get($ip_api_url);
         $ipData = json_decode($response->getBody($this->method), TRUE);
@@ -144,6 +162,20 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
       // phpcs:ignore
       return \Drupal::config('AdminWeather.settings')->get('AdminWeather.settings.admin_city') ?? NULL;
     }
+  }
+
+  /**
+   * Function that inputs user id and hil location into data Base.
+   */
+  private function dbNuser() {
+    // phpcs:ignore
+    $userId = \Drupal::currentUser();
+    // phpcs:ignore
+    $connection = \Drupal::database();
+    foreach ($userId as $entry) {
+      $connection->insert('user_dbtng')->fields($entry)->execute();
+    }
+
   }
 
   /**
