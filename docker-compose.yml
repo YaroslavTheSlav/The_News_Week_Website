@@ -138,27 +138,27 @@ services:
 #    container_name: "${PROJECT_NAME}_redis"
 #    image: wodby/redis:$REDIS_TAG
 
-#  adminer:
-#    container_name: "${PROJECT_NAME}_adminer"
-#    image: wodby/adminer:$ADMINER_TAG
-#    environment:
-#      # For PostgreSQL:
-#      #      ADMINER_DEFAULT_DB_DRIVER: pgsql
-#      ADMINER_DEFAULT_DB_HOST: $DB_HOST
-#      ADMINER_DEFAULT_DB_NAME: $DB_NAME
-#    labels:
-#    - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
+  adminer:
+    container_name: "${PROJECT_NAME}_adminer"
+    image: wodby/adminer:$ADMINER_TAG
+    environment:
+      # For PostgreSQL:
+      #      ADMINER_DEFAULT_DB_DRIVER: pgsql
+      ADMINER_DEFAULT_DB_HOST: $DB_HOST
+      ADMINER_DEFAULT_DB_NAME: $DB_NAME
+    labels:
+    - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
 
-  pma:
-   image: phpmyadmin/phpmyadmin
-   container_name: "${PROJECT_NAME}_pma"
-   environment:
-     PMA_HOST: $DB_HOST
-     PMA_USER: $DB_USER
-     PMA_PASSWORD: $DB_PASSWORD
-     UPLOAD_LIMIT: 1G
-   labels:
-   - "traefik.http.routers.${PROJECT_NAME}_pma.rule=Host(`pma.${PROJECT_BASE_URL}`)"
+#   pma:
+#    image: phpmyadmin/phpmyadmin
+#    container_name: "${PROJECT_NAME}_pma"
+#    environment:
+#      PMA_HOST: $DB_HOST
+#      PMA_USER: $DB_USER
+#      PMA_PASSWORD: $DB_PASSWORD
+#      UPLOAD_LIMIT: 1G
+#    labels:
+#    - "traefik.http.routers.${PROJECT_NAME}_pma.rule=Host(`pma.${PROJECT_BASE_URL}`)"
 
 #  solr:
 #    image: wodby/solr:$SOLR_TAG

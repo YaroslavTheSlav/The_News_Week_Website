@@ -95,6 +95,8 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
     // Function that request's user geological location by ip.
     $location = $this->getIplocation();
     $this->cidMachineName($location);
+    // Call to DB.
+    $this->dbCall($location);
     // Setting cid for cache that is saved.
     // If we have data in cache we do following.
     if ($cache = $this->cacheBackend->get($this->cidMachineNameVar)) {
@@ -126,8 +128,6 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
    * Validate and receive user IP.
    */
   public function getIplocation() {
-    // phpcs:ignore
-//    $user = $this->dbNuser();
     // Request user Ip.
     // phpcs:ignore
     $ip = \Drupal::request()->getClientIp();
@@ -154,6 +154,36 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
       // If we dont have IpFind token we just return default city.
       // phpcs:ignore
       return \Drupal::config('AdminWeather.settings')->get('AdminWeather.settings.admin_city') ?? NULL;
+    }
+  }
+
+  /**
+   * Function that check if entities in bd already exist.
+   *
+   * If not then we insert new fields.
+   */
+  private function dbCall($location) {
+    // @todo use dependency injection
+    // phpcs:ignore
+    $connection = \Drupal::database();
+    // phpcs:ignore
+    $userId = (\Drupal::currentUser()->id());
+    // Check if fields with this data already exists.
+    if ($connection->select('slavnews_weather', 'sw')
+      ->fields('sw', ['userID', 'city_country'])
+      ->condition('userID', $userId)
+      ->condition('city_country', $location)
+      ->execute()
+      ->fetchAssoc()) {
+      return TRUE;
+    }
+    else {
+      // Return fields into db.
+      return $connection->insert('slavnews_weather')->fields([
+        'userID' => $userId,
+        'city_country' => $location,
+      ])
+        ->execute();
     }
   }
 

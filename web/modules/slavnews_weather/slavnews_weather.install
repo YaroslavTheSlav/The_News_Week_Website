@@ -18,4 +18,71 @@ function slavnews_weather_install() {
       ->warning('Module installed, But AdminWeather.settings(config) is empty');
 
   }
+
+  $entries = [
+    [
+      'userID' => '1',
+      'city_country' => 'Lutsk, Ukraine',
+    ],
+    [
+      'userID' => '0',
+      'city_country' => 'Kiev, Ukraine',
+    ],
+
+  ];
+
+  $connection = \Drupal::database();
+  foreach ($entries as $entry) {
+    $connection->insert('slavnews_weather')->fields($entry)->execute();
+  }
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup slavnews_weather
+ *  Ths slavnews_weather_schema can be read as database the new generation.
+ */
+function slavnews_weather_schema() {
+  $schema['slavnews_weather'] = [
+    'description' => 'Stores user location and his Id.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique ID.',
+      ],
+      'userID' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => "User's {users}.uid",
+      ],
+      'city_country' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'City and country of the user.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'userID' => ['userID'],
+      'city_country' => ['city_country'],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Function that does update without uninstalling module.
+ */
+function slavnews_weather_update_8203() {
+  drupal_install_schema('slavwnews_weather');
 }
