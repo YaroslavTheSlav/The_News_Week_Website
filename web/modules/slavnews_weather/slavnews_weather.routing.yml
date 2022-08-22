@@ -7,3 +7,11 @@ slavnews_weather.settings:
     _permission: 'administer site configuration'
   options:
     _admin_route: TRUE
+
+slavnews_weather.statistics:
+  path: '/admin/config/system/slavnews_weather_list/adminsettings'
+  defaults:
+    _controller: 'Drupal\slavnews_weather\Controller\UserStatistics:theJoin'
+    _title: "User's location Statistics"
+  requirements:
+    _permission: 'administer site configuration'

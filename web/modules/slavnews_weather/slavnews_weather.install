@@ -18,23 +18,6 @@ function slavnews_weather_install() {
       ->warning('Module installed, But AdminWeather.settings(config) is empty');
 
   }
-
-  $entries = [
-    [
-      'userID' => '1',
-      'city_country' => 'Lutsk, Ukraine',
-    ],
-    [
-      'userID' => '0',
-      'city_country' => 'Kiev, Ukraine',
-    ],
-
-  ];
-
-  $connection = \Drupal::database();
-  foreach ($entries as $entry) {
-    $connection->insert('slavnews_weather')->fields($entry)->execute();
-  }
 }
 
 /**

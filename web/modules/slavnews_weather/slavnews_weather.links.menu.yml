@@ -3,3 +3,9 @@ slavnews_weather.settings:
   description: 'Configure the Weather Module'
   route_name: slavnews_weather.settings
   parent: system.admin_config_system
+
+slavnews_weather.statistics:
+  title: 'Admin Weather Statistics'
+  description: 'See the Weather Module statistics'
+  route_name: slavnews_weather.statistics
+  parent: system.admin_config_system
