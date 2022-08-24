@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for slavnews_register module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Alter hook for form, adds additional field's.
+ */
+function slavnews_weather_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_register_form') {
+    $form['#validate'][] = 'user_register_form_validate';
+  }
+
+}
+
+/**
+ * Function that validates Phone number.
+ */
+function user_register_form_validate(&$form, FormStateInterface $form_state) {
+  $data = $form_state->getUserInput();
+  $phoneNum = preg_replace('/[^0-9+\(\)-]/', '', $data['field_phone']['0']['value']);
+  if (!empty($phoneNum)) {
+    if (!preg_match('/^(\+1|001)?\(?([0-9]{3})\)?([ .-]?)([0-9]{3})([ .-]?)([0-9]{4})/', $phoneNum)) {
+      $form_state->setErrorByName('incorrect_number', 'You have entered invalid phone number.');
+      if (!strlen($phoneNum) < 10) {
+        $form_state->setErrorByName('incorrect_number', 'You have entered invalid phone number! Only numbers allowed! Missed a number?');
+      }
+      if (!strlen($phoneNum) > 10) {
+        $form_state->setErrorByName('incorrect_number', 'You have entered invalid phone number! Only numbers allowed! Too many numbers.');
+      }
+    }
+    elseif (!strlen($phoneNum) < 10) {
+      $form_state->setErrorByName('incorrect_number', 'You have entered invalid phone number! Only numbers allowed! Missed a number?');
+    }
+  }
+  else {
+    $form_state->setErrorByName('incorrect_number', 'You have not entered phone number');
+  }
+}
