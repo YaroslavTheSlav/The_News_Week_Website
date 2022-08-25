@@ -13,7 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function slavnews_weather_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form_id == 'user_register_form') {
-    $form['#validate'][] = 'user_register_form_validate';
+    $form['#validate'][] = '_slavnews_weather_user_register_form_validate';
   }
 
 }
@@ -21,7 +21,7 @@ function slavnews_weather_form_user_register_form_alter(&$form, FormStateInterfa
 /**
  * Function that validates Phone number.
  */
-function user_register_form_validate(&$form, FormStateInterface $form_state) {
+function _slavnews_weather_user_register_form_validate(&$form, FormStateInterface $form_state) {
   $data = $form_state->getUserInput();
   if (($phoneNum = $data['field_phone']['0']['value']) != '') {
     if (!preg_match('/^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$/', $phoneNum)) {
