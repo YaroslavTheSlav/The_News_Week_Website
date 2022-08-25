@@ -27,6 +27,7 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/field_group": "^3.2",
         "drupal/paragraphs": "^1.14",
+        "drupal/recaptcha": "^3.0",
         "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"

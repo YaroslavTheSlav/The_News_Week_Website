@@ -1,0 +1,12 @@
+uuid: e0826a7b-9b2b-4032-8edd-97e5160e9f96
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: reader
+label: Reader
+weight: -8
+is_admin: null
+permissions:
+  - 'view all revisions'
