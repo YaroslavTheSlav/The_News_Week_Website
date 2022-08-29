@@ -85,6 +85,12 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
       '#image' => $data['current']['condition']['icon'],
       '#temp_c' => $data['current']['temp_c'],
       '#city' => $data['location']['name'],
+      '#cache' => [
+        'max-age' => 10800,
+        'contexts' => [
+          'session',
+        ],
+      ],
     ];
   }
 
