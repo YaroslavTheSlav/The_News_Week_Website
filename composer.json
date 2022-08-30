@@ -26,6 +26,7 @@
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/field_group": "^3.2",
+        "drupal/migrate_plus": "^6.0",
         "drupal/paragraphs": "^1.14",
         "drupal/recaptcha": "^3.0",
         "drush/drush": "^11.0",
