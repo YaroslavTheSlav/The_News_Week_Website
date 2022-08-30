@@ -3,3 +3,7 @@ type: module
 description: Provides additional functionality for the site.
 package: Custom
 core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:migrate_plus
+  - drupal:migrate_source_csv
+  - drupal:migrate_tools
