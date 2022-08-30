@@ -1,0 +1,63 @@
+id: slavnews_migrate_users
+label: 'Users'
+
+migration_group: slavnews_migrate
+
+migration_tags:
+  - user
+
+source:
+  plugin: csv
+  path: modules/slavnews_migrate/assets/csv/bootcamp-people.csv
+  delimiter: ','
+  enclosure: ' '
+
+  header_row_count: 1
+  fields:
+    first_name:
+      name: first_name
+      label: 'first_name'
+    last_name:
+      name: last_name
+      label: 'last_name'
+    email:
+      name: email
+      label: 'email'
+    ip_address:
+      name: ip_address
+      label: 'ip_address'
+    date_of_birth:
+      name: date_of_birth
+      label: 'date_of_birth'
+
+  ids:
+    - email
+
+  constants:
+
+    status: 1
+    roles:
+      - authenticated
+process:
+  mail: email
+  init: email
+  status: 'constants/status'
+  roles: 'constants/roles'
+  name: first_name
+  field_display_username_: first_name
+  field_last_name: last_name
+  field_ip_address: ip_address
+  field_date_of_birth: date_of_birth
+
+destination:
+  plugin: entity:user
+
+migration_dependencies: {}
+
+dependencies:
+  enforced:
+    module:
+      - slavnews_migrate
+      - migrate_source_csv
+      - migrate_plus
+      - migrate_tools

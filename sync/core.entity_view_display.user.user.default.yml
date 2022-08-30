@@ -3,8 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_address
+    - field.field.user.user.field_date_of_birth
     - field.field.user.user.field_display_username_
+    - field.field.user.user.field_ip_address
+    - field.field.user.user.field_last_name
     - field.field.user.user.field_link_
+    - field.field.user.user.field_phone
     - field.field.user.user.field_user_description_
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -118,7 +123,87 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 5
+            weight: 6
+            additional: {  }
+          89559bef-40cf-459e-9173-96563af80f26:
+            uuid: 89559bef-40cf-459e-9173-96563af80f26
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          f920db93-8482-4ddf-afa9-f3ed0c80cf33:
+            uuid: f920db93-8482-4ddf-afa9-f3ed0c80cf33
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_ip_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          4dd786db-8df7-4849-9127-8e5430836fd0:
+            uuid: 4dd786db-8df7-4849-9127-8e5430836fd0
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_date_of_birth'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          7809711f-45e6-41d7-93a0-707496ac8af8:
+            uuid: 7809711f-45e6-41d7-93a0-707496ac8af8
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_phone'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          7c790bf0-307e-46ba-a27e-2c472ee7103b:
+            uuid: 7c790bf0-307e-46ba-a27e-2c472ee7103b
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_last_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 _core:
@@ -128,6 +213,22 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_date_of_birth:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_display_username_:
     type: text_default
     label: hidden
@@ -135,12 +236,36 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_ip_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_link_:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_social_media_:
     type: entity_reference_entity_view
