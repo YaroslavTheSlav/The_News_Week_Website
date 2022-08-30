@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_address
+    - field.field.user.user.field_date_of_birth
     - field.field.user.user.field_display_username_
+    - field.field.user.user.field_ip_address
+    - field.field.user.user.field_last_name
     - field.field.user.user.field_link_
+    - field.field.user.user.field_phone
     - field.field.user.user.field_user_description_
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -31,7 +36,12 @@ content:
     weight: 0
     region: content
 hidden:
+  field_address: true
+  field_date_of_birth: true
   field_display_username_: true
+  field_ip_address: true
+  field_last_name: true
   field_link_: true
+  field_phone: true
   field_user_description_: true
   member_for: true

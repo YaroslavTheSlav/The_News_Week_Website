@@ -1,9 +1,9 @@
-name: slavnews_migrate
+name: Slavnews_migrate
 type: module
 description: Provides additional functionality for the site.
-package: Custom
+package: slavnews_migrate_users
 core_version_requirement: ^9 || ^10
 dependencies:
-  - drupal:migrate_plus
-  - drupal:migrate_source_csv
-  - drupal:migrate_tools
+  - migrate_plus:migrate_plus
+  - migrate_source_csv:migrate_source_csv
+  - migrate_tools:migrate_tools
