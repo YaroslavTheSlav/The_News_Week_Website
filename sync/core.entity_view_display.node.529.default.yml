@@ -1,0 +1,29 @@
+uuid: b19a46ba-0dea-40f9-9a96-45d672cc5669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.529.field_media_image_one
+    - node.type.529
+  module:
+    - user
+id: node.529.default
+targetEntityType: node
+bundle: '529'
+mode: default
+content:
+  field_media_image_one:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
