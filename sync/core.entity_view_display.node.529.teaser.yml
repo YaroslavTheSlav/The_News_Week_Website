@@ -1,0 +1,30 @@
+uuid: 81dd6b2e-e346-40ed-b497-9c138f2b0aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.529.field_media_image_one
+    - image.style.large
+    - node.type.529
+  module:
+    - slavnews_fieldformatter
+    - user
+id: node.529.teaser
+targetEntityType: node
+bundle: '529'
+mode: teaser
+content:
+  field_media_image_one:
+    type: slavnews_fieldformatter
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true
