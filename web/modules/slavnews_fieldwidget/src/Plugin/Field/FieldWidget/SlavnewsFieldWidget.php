@@ -67,10 +67,9 @@ class SlavnewsFieldWidget extends StringTextfieldWidget {
     return $element;
   }
 
-//phpcs:disable
   /**
    * Validate Hex value entered in taxonomy term field.
-//   */
+   */
   public function validate($element, FormStateInterface $form_state) {
     $input = strtolower($element['#value']);
 
