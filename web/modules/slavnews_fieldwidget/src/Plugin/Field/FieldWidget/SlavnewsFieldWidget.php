@@ -59,7 +59,7 @@ class SlavnewsFieldWidget extends StringTextfieldWidget {
         'color' => ['field_color'],
         'background-color' => ['field_background_color'],
       ],
-      '#element_validate' => [$this, 'validate'],
+      '#element_validate' => [[$this, 'validate']],
       '#attached' => [
         'library' => ['slavnews_fieldwidget/preview'],
       ],
@@ -67,25 +67,26 @@ class SlavnewsFieldWidget extends StringTextfieldWidget {
     return $element;
   }
 
+//phpcs:disable
   /**
    * Validate Hex value entered in taxonomy term field.
 //   */
-//  public function validate($element, FormStateInterface $form_state) {
-//    $input = strtolower($element['value']);
-//
-//    if (!empty($input)) {
-//      if (strlen($input) == 7) {
-//        if (!preg_match('/^#([a-f0-9]{6})$/iD', $input)) {
-//          $form_state->setError($element, $this->t('Please enter a valid HEX value!'));
-//        }
-//      }
-//      else {
-//        $form_state->setError($element, $this->t('Please enter a valid HEX value, it shout include one # and six numbers!'));
-//      }
-//    }
-//    else {
-//      $form_state->setError($element, $this->t('Please enter a valid HEX value, dont leave field empty!'));
-//    }
-//  }
+  public function validate($element, FormStateInterface $form_state) {
+    $input = strtolower($element['#value']);
+
+    if (!($input == '')) {
+      if (strlen($input) == 7) {
+        if (!preg_match('/^#([a-f0-9]{6})$/iD', $input)) {
+          $form_state->setError($element, $this->t('Please enter a valid HEX value!'));
+        }
+      }
+      else {
+        $form_state->setError($element, $this->t('Please enter a valid HEX value, it shout include one # and six numbers!'));
+      }
+    }
+    else {
+      $form_state->setError($element, $this->t('Please enter a valid HEX value, dont leave field empty!'));
+    }
+  }
 
 }
