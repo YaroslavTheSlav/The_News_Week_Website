@@ -1,0 +1,8 @@
+uuid: 780d1a1f-e645-4f71-bf20-ff74674e53d2
+langcode: en
+status: true
+dependencies: {  }
+name: FieldWidget_Vocab
+vid: fieldwidget_vocab
+description: 'Vocabulary for field widget '
+weight: 0
