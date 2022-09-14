@@ -1,0 +1,9 @@
+preview:
+  version: 1.x
+  css:
+    theme:
+      css/hex_box_preview.css: {}
+  js:
+    js/preview.js: {}
+  dependencies:
+    - core/jquery

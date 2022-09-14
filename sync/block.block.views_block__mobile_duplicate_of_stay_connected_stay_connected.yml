@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mobile_duplicate_of_stay_connected_stay_connected
 theme: slavnews
 region: content_above
-weight: -25
+weight: -26
 provider: null
 plugin: 'views_block:mobile_duplicate_of_stay_connected-stay_connected'
 settings:

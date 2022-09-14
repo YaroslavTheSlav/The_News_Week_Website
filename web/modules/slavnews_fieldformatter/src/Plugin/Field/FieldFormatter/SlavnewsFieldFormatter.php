@@ -25,8 +25,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   }
  * )
  */
-//phpcs:ignore
- class slavnews_fieldformatter extends ImageFormatter {
+class SlavnewsFieldFormatter extends ImageFormatter {
 
   /**
    * The renderer service.
@@ -130,9 +129,12 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
   /**
    * {@inheritdoc}
    */
-  // Default function customized in order to display only the first item in
-  // the view.
+
+  /**
+   * The view.
+   */
   public function viewElements(FieldItemListInterface $items, $langcode) {
+    // Default function customized in order to display only the first item in.
     $render_array = [];
     // Receive first item under id [0], and checks type of data.
     $media = $this->getEntitiesToView($items, $langcode)[0] ?? [];

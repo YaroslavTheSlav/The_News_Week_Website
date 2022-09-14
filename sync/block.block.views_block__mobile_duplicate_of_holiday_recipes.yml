@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mobile_duplicate_of_holiday_recipes
 theme: slavnews
 region: content_above
-weight: -21
+weight: -22
 provider: null
 plugin: 'views_block:mobile_duplicate_of_holiday_recipes_-holiday_recipes'
 settings:

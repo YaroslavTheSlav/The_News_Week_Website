@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.529.field_media_image_one
     - node.type.529
   module:
+    - slavnews_fieldformatter
     - user
 id: node.529.default
 targetEntityType: node
@@ -13,11 +14,13 @@ bundle: '529'
 mode: default
 content:
   field_media_image_one:
-    type: entity_reference_entity_view
+    type: slavnews_fieldformatter
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_style: ''
+      image_link: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content

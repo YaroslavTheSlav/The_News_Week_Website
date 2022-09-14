@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mobile_duplicate_of_make_it_modern_make_it_modern
 theme: slavnews
 region: content_above
-weight: -23
+weight: -24
 provider: null
 plugin: 'views_block:mobile_duplicate_of_make_it_modern-make_it_modern'
 settings:

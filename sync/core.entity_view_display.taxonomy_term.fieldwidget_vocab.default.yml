@@ -1,0 +1,63 @@
+uuid: 615beaf8-a72e-41a9-9e13-cf7d91327034
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.fieldwidget_vocab.field_background_color
+    - field.field.taxonomy_term.fieldwidget_vocab.field_color
+    - taxonomy.vocabulary.fieldwidget_vocab
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_color_fields:
+      children:
+        - description
+        - field_color
+        - field_background_color
+      label: color-fields
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: taxonomy_term.fieldwidget_vocab.default
+targetEntityType: taxonomy_term
+bundle: fieldwidget_vocab
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_background_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
