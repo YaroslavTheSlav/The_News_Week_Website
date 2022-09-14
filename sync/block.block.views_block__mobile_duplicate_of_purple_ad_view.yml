@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mobile_duplicate_of_purple_ad_view
 theme: slavnews
 region: content_above
-weight: -24
+weight: -25
 provider: null
 plugin: 'views_block:mobile_duplicate_of_purple_ad_view_-squared_blog_offer'
 settings:

@@ -1,0 +1,16 @@
+uuid: 6a94618a-e529-463a-a405-b1e42bc1add5
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - node_type_example
+_core:
+  default_config_hash: Ifm4mM1YYpYnjH93lgrkFhZhZyPj-nivpquslG903X8
+name: 'Example: Locked Content Type'
+type: locked_content_type
+description: 'Demo of a locked content type. Locking must be done in code. You must uninstall this module before you can delete the content type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,6 +1,6 @@
-uuid: 5ca27ede-99c6-4643-9030-c271c78da934
+uuid: b5c2e923-e127-424a-82e8-77b611a8f6be
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - slavnews_weather

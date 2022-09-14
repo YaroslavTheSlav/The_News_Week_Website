@@ -1,0 +1,20 @@
+uuid: 0db1b8a6-fd9e-41df-8522-89471722ca17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ip_address
+  module:
+    - user
+id: user.user.field_ip_address
+field_name: field_ip_address
+entity_type: user
+bundle: user
+label: ip_address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

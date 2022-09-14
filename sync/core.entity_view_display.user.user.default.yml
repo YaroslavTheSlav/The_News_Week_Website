@@ -82,7 +82,7 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 2
+            weight: 3
             additional: {  }
           7b8aa0ae-f88c-4f2e-90a3-535b1ef560fd:
             uuid: 7b8aa0ae-f88c-4f2e-90a3-535b1ef560fd
@@ -97,7 +97,7 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 3
+            weight: 4
             additional: {  }
           ac1ce30a-e214-48f2-966c-4ce49605b355:
             uuid: ac1ce30a-e214-48f2-966c-4ce49605b355
@@ -110,7 +110,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 4
+            weight: 5
             additional: {  }
           539b9a4f-52e6-4631-a8c3-0ef6ed14be3b:
             uuid: 539b9a4f-52e6-4631-a8c3-0ef6ed14be3b
